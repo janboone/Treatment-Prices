@@ -1,4 +1,7 @@
 # Treatment-Prices
 
+This paper introduces a theoretical model to understand why pharmaceutical prices are so high. One explanation for this phenomenon is that drugs are sold to a health insurance market where there are adverse selection problems. Then covering an expensive treatment helps insurance companies to separate consumer types and in this way reduce information rents. This in turn allows pharmaceutical companies to charge prices for drugs that exceed the value that they offer patients. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
 
-This paper shows that it is possible for intermediate goods to be priced above the value that the good has for final consumers. This happens in sectors selling to markets with adverse selection problems, where the cost difference between consumer types is dominated by their elasticity difference. High input prices then help to separate consumer types and reduce information rents. We use the example of pharmaceutical companies selling drugs to a health insurance market at prices exceeding value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
+The pdf can be downloaded here: https://github.com/janboone/Treatment-Prices/raw/main/TreatmentPrices.pdf
+
+The html version of the paper: https://janboone.github.io/Treatment-Prices/
