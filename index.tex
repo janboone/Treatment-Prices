@@ -1,45 +1,45 @@
 % Intended LaTeX compiler: pdflatex
 \documentclass[a4paper,12pt]{article}
-  \usepackage[utf8]{inputenc}
-\usepackage{sectsty}
-\sectionfont{\normalfont\scshape}
-\subsectionfont{\normalfont\itshape}
-\usepackage[authoryear]{natbib}
-\usepackage{amsmath}
-\newtheorem{theorem}{Theorem}
-\newtheorem{assumption}{Assumption}
-\newtheorem{acknowledgement}{Acknowledgement}
-\newtheorem{algorithm}{Algorithm}
-\newtheorem{axiom}{Axiom}
-\newtheorem{case}{Case}
-\newtheorem{claim}{Claim}
-\newtheorem{conclusion}{Conclusion}
-\newtheorem{condition}{Condition}
-\newtheorem{conjecture}{Conjecture}
-\newtheorem{corollary}{Corollary}
-\newtheorem{criterion}{Criterion}
-\newtheorem{definition}{Definition}
-\newtheorem{example}{Example}
-\newtheorem{exercise}{Exercise}
-\newtheorem{lemma}{Lemma}
-\newtheorem{notation}{Notation}
-\newtheorem{observation}{Observation}
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}
-\newtheorem{remark}{Remark}
-\newtheorem{result}{Result}
-\newtheorem{summary}{Summary}
-\newtheorem{Hypothesis}{Hypothesis}
-\newcommand{\qed}{\hspace*{\fill} {\em Q.E.D.}}
-\usepackage{pdftexcmds}
-\usepackage{minted}
-\usepackage{textcomp}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{mathtools}
-\mathtoolsset{showonlyrefs=true}
-\linespread{1.3}
-\usepackage[right=3cm, left=3cm,top=3cm,bottom=3cm]{geometry}
+          \usepackage[utf8]{inputenc}
+          \usepackage{sectsty}
+          \sectionfont{\normalfont\scshape}
+          \subsectionfont{\normalfont\itshape}
+          \usepackage[round,authoryear]{natbib}
+          \usepackage{amsmath}
+          \newtheorem{theorem}{Theorem}
+          \newtheorem{assumption}{Assumption}
+          \newtheorem{acknowledgement}{Acknowledgement}
+          \newtheorem{algorithm}{Algorithm}
+          \newtheorem{axiom}{Axiom}
+          \newtheorem{case}{Case}
+          \newtheorem{claim}{Claim}
+          \newtheorem{conclusion}{Conclusion}
+          \newtheorem{condition}{Condition}
+          \newtheorem{conjecture}{Conjecture}
+          \newtheorem{corollary}{Corollary}
+          \newtheorem{criterion}{Criterion}
+          \newtheorem{definition}{Definition}
+          \newtheorem{example}{Example}
+          \newtheorem{exercise}{Exercise}
+          \newtheorem{lemma}{Lemma}
+          \newtheorem{notation}{Notation}
+          \newtheorem{observation}{Observation}
+          \newtheorem{problem}{Problem}
+          \newtheorem{proposition}{Proposition}
+          \newtheorem{remark}{Remark}
+          \newtheorem{result}{Result}
+          \newtheorem{summary}{Summary}
+          \newtheorem{Hypothesis}{Hypothesis}
+          \newcommand{\qed}{\hspace*{\fill} {\em Q.E.D.}}
+          \usepackage{pdftexcmds}
+          \usepackage{minted}
+          \usepackage{textcomp}
+          \usepackage{hyperref}
+          \usepackage{graphicx}
+          \usepackage{mathtools}
+          \mathtoolsset{showonlyrefs=true}
+          \linespread{1.3}
+          \usepackage[right=3cm, left=3cm,top=3cm,bottom=3cm]{geometry}
 \author{Jan Boone\thanks{Tilburg University, Department of Economics, Tilec and CEPR, E-mail: \textit{j.boone@uvt.nl}.}}
 \date{\today}
 \title{Pricing above value: selling \emph{to} an adverse selection market}
@@ -53,10 +53,7 @@
 \begin{document}
 
 \maketitle
-\begin{PREFACE}
 \maketitle
-\end{PREFACE}
-
 \begin{abstract}
 This paper shows that selection incentives in downstream markets affect upstream prices. In fact, it is possible for inputs to be priced above the value that the good has for final consumers. This happens in adverse selection markets where low types mimic high types. High input prices then help to separate consumer types and reduce information rents. We use the example of pharmaceutical companies selling drugs to a health insurance market at prices exceeding treatment value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
 \end{abstract}
@@ -69,7 +66,7 @@ This paper shows that selection incentives in downstream markets affect upstream
 \newpage
 
 \section{Introduction}
-\label{sec:orgb57d053}
+\label{sec:org1ea2982}
 
 Consider a value chain where firms in an upstream market \(U\) sell inputs to firms in a downstream market \(D\) and the latter sell to final consumers. When considering the input prices set by firms in \(U\), there are a number of common sense results: 1. do not set the input price above the final consumers' valuation of your input; 2. try to innovate to make your product attractive to a bigger group of final consumers and 3. reduce your price as the downstream market becomes more competitive.
 
@@ -107,7 +104,7 @@ Finally, pricing above value can happen in an industrial organization context wh
 Our paper is organized as follows. First, we illustrate our main effect in a simple insurer monopoly model. Then we present our general framework with competing insurers. We argue that supra profits appear when the elasticity/competition difference between the segments of the two risk types exceeds their expected cost difference. We use a Hotelling competition model to illustrate that parameter values exist under which this happens. Then we present our results in a general framework. We discuss the effects of bounded rationality and conclude with a discussion of policy implications.
 
 \section{Simple example}
-\label{sec:org6142676}
+\label{sec:org7d1ab6b}
 
 To see how it is possible at all that an insurer pays more for a treatment than the treatment's value to the insured, consider the following simple example with two treatments and a monopolist insurer. The example introduces the notation and illustrates the mechanics of the result: the high type's allocation is distorted upwards which makes it less attractive to the low type and hence reduces the low type's information rent.
 
@@ -184,7 +181,7 @@ Note the role of generic drugs, here captured by treatment 2, being sold at a pr
 Next we introduce our general framework to analyze the effects of insurer competition and to endogenize that \(IC_l\) is binding. We will see that price exceeding value can happen in both pooling and separating equilibria.
 
 \section{Framework}
-\label{sec:orgdcc4a94}
+\label{sec:org0b51b56}
 
 Let \(P\) denote the set of treatments that are currently under patent and \(O\) the set of treatments where the patent has run out (``open'' as in open source). To simplify the exposition we assume that \(\psi_{il}<\psi_{ih}\) for each \(i \in P\).\footnote{Otherwise we need to distinguish treatments \(i\) where the inequality in \(\psi_{il} \leq \psi_{ih}\) is strict or not below. This is tedious while not adding to our understanding of the problem.} For \(j \in O\) we assume \(\psi_{jl} \leq \psi_{jh}\). This ensures that single crossing is satisfied in our set up.\footnote{See \cite{BooneS13} for an analysis of the health insurance market where single crossing is violated.}
 
@@ -324,12 +321,12 @@ For reference below, the condition in the lemma can be written as \(t_l-t_h>c_h-
 
 
 \section{Supra profits}
-\label{sec:org9903abe}
+\label{sec:org63f9ad0}
 
 We consider two contractual arrangements that lead to a profit for the patent holder that exceeds the value of its innovation; we call these extra rents ``supra profits''. First, we consider the innovator using a two-part tariff which captures most non-linear pricing schemes. Then we consider the case where the innovator can only use a linear fee (a price per unit).
 
 \subsection{two-part tariff}
-\label{sec:org73d2747}
+\label{sec:org2a2b9a4}
 
 The easiest way to see the main effects of this paper is to assume that innovators sell treatments to insurers using two-part tariffs. It turns out that the intuitions we find here, carry over to the case of linear pricing.
 
@@ -464,7 +461,7 @@ The corollary shows that a treatment which is more high type targeted leads to h
 To the extent that the specialty pharmaceutical market and  personalized medicine are examples of high type targeting, the corollary implies that they have contributed to the rise in treatment prices documented in the Introduction. This is also our explanation for the observation that ``payers value rarity'': prices tend to be high for (orphan) drugs with very small patient populations. If such drugs are hardly used by high types (low \(\psi_{ih}\)) and even fewer low types (high \(\Delta \psi_i\)) prices and supra profits will be high.
 
 \subsection{linear pricing and separation}
-\label{sec:org1829515}
+\label{sec:orgdcbfbc7}
 
 Consider the case where the innovating firm cannot use a two-part tariff but only linear pricing. To capture the supra profits, firm \(i\) cannot use the fixed fee but has to set \(p_i > v_i\). We know from lemma \ref{Baseline_results} that \(p_i>v_i\) implies \(x_{il}=0\): the insurer drops treatment \(i\) in the \(l\) contract. Hence, firm \(i\) weighs a higher price \(p_i\) against a smaller group of customers using the treatment.
 
@@ -561,7 +558,7 @@ The argument is not that the specialty pharmaceutical market and personalized me
 
 
 \section{Bounded rationality}
-\label{sec:orgf3f6c36}
+\label{sec:orgcb786c1}
 
 Above we assume that consumers are perfectly rational: they understand the value of the treatments covered by the insurance plan and they know their probability of needing a particular treatment. The main result is that part of the reason why drug prices are so high is that they are sold to a health insurance market with adverse selection problems. We formalize this by showing that even with rational consumers it can be optimal for insurers to over-pay for a treatment, that is pay more than the treatment's value for patients.
 
@@ -602,7 +599,7 @@ Hence, we can have a pooling contract with \(x_{il}=x_{ih}=1\) for \(p_i>v_i\) a
 Assuming that low risk types over-estimate (to some extent) the probability that they need treatment, the patent holder on this treatment can charge a (linear) price that exceeds the value of its treatment and the treatment is covered by health insurance for both risk types. In this sense, taking bounded rationality into account strengthens our result that a pharmaceutical company can profitably charge a price above the value of its treatment.
 
 \section{Policy implications}
-\label{sec:org1e9d9a8}
+\label{sec:orgf4ecf3a}
 
 This paper introduces a framework where upstream firms sell inputs to a downstream market where the downstream market suffers from adverse selection problems. We find that if the low type's incentive compatibility constraint is binding in the downstream market, we find a number of results that are counter-intuitive at first sight. First, upstream firms can charge prices in excess of consumers' valuation of their product. Second, upstream firms have an incentive to narrow their market; that is, make their product attractive to a subset of final consumers. Third, making downstream market segments more competitive, tends to increase upstream prices.
 
@@ -620,13 +617,17 @@ Second, assuming that consumers stop buying insurance in case the expected value
 \bibliographystyle{plainnat}
 \bibliography{../marginalinnovation}
 
+\newpage
+\appendix
+
+
 \setcounter{table}{0}
 \renewcommand{\thetable}{\thesection\arabic{table}}
 
 
 
 \section{Proof of results}
-\label{sec:orgd81983f}
+\label{sec:org2474157}
 
 \textbf{Proof of Lemma \ref{Baseline_results}}
 Because

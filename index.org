@@ -3,53 +3,10 @@
 #+TITLE: Pricing above value: selling /to/ an adverse selection market
 #+Author: Jan Boone@@latex:\thanks{Tilburg University, Department of Economics, Tilec and CEPR, E-mail: \textit{j.boone@uvt.nl}.}@@
 
-#+BEGIN_PREFACE
 #+OPTIONS: d:(not "CODE")
 #+LANGUAGE:  en
 #+INFOJS_OPT: view:showall toc:t ltoc:t mouse:underline path:http://orgmode.org/org-info.js
 #+LaTeX_CLASS: article-12
-#+LaTeX_HEADER: \usepackage[utf8]{inputenc}
-#+LaTeX_HEADER: \usepackage{sectsty}
-#+LaTeX_HEADER: \sectionfont{\normalfont\scshape}
-#+LaTeX_HEADER: \subsectionfont{\normalfont\itshape}
-#+latex_header: \usepackage[authoryear]{natbib}
-#+latex_header: \usepackage{amsmath}
-#+latex_header: \newtheorem{theorem}{Theorem}
-#+latex_header: \newtheorem{assumption}{Assumption}
-#+latex_header: \newtheorem{acknowledgement}{Acknowledgement}
-#+latex_header: \newtheorem{algorithm}{Algorithm}
-#+latex_header: \newtheorem{axiom}{Axiom}
-#+latex_header: \newtheorem{case}{Case}
-#+latex_header: \newtheorem{claim}{Claim}
-#+latex_header: \newtheorem{conclusion}{Conclusion}
-#+latex_header: \newtheorem{condition}{Condition}
-#+latex_header: \newtheorem{conjecture}{Conjecture}
-#+latex_header: \newtheorem{corollary}{Corollary}
-#+latex_header: \newtheorem{criterion}{Criterion}
-#+latex_header: \newtheorem{definition}{Definition}
-#+latex_header: \newtheorem{example}{Example}
-#+latex_header: \newtheorem{exercise}{Exercise}
-#+latex_header: \newtheorem{lemma}{Lemma}
-#+latex_header: \newtheorem{notation}{Notation}
-#+latex_header: \newtheorem{observation}{Observation}
-#+latex_header: \newtheorem{problem}{Problem}
-#+latex_header: \newtheorem{proposition}{Proposition}
-#+latex_header: \newtheorem{remark}{Remark}
-#+latex_header: \newtheorem{result}{Result}
-#+latex_header: \newtheorem{summary}{Summary}
-#+latex_header: \newtheorem{Hypothesis}{Hypothesis}
-#+latex_header: \newcommand{\qed}{\hspace*{\fill} {\em Q.E.D.}}
-#+latex_header: \usepackage{pdftexcmds}
-#+latex_header: \usepackage{minted}
-#+latex_header: \usepackage{textcomp}
-#+latex_header: \usepackage{hyperref}
-#+latex_header: \usepackage{graphicx}
-#+latex_header: \usepackage{mathtools}
-#+latex_header: \mathtoolsset{showonlyrefs=true}
-#+latex_header: \linespread{1.3}
-#+latex_header: \usepackage[right=3cm, left=3cm,top=3cm,bottom=3cm]{geometry}
-
-
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+OPTIONS: toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t timestamp:nil
@@ -57,7 +14,6 @@
 #+HTML_HEAD: <link rel="stylesheet" href="./css/Latex.css">
 #+HTML_HEAD: <link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-#+END_PREFACE
 
 #+begin_abstract
 This paper shows that selection incentives in downstream markets affect upstream prices. In fact, it is possible for inputs to be priced above the value that the good has for final consumers. This happens in adverse selection markets where low types mimic high types. High input prices then help to separate consumer types and reduce information rents. We use the example of pharmaceutical companies selling drugs to a health insurance market at prices exceeding treatment value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
@@ -690,8 +646,11 @@ The implications of our analysis for policy can be summarized as follows. First,
 Second, assuming that consumers stop buying insurance in case the expected value of the insurance plan is lower than the premium, treatment prices can be reduced by creating a separate insurance market for patented treatments. The separation would be similar to having basic and supplementary insurance markets as some countries have; but here there would be insurance for patented drugs and separate insurance for treatments  where the patent has run out (which we called "open" above). "Open insurance" would cover all generic drugs which yield high patient utility compared to their cost. This leaves less rents for patented treatments on their insurance market segment to appropriate by charging a price above treatment value. Such a segmentation of the health insurance market helps to reduce treatment prices.
 
 
-bibliographystyle:plainnat
-bibliography:../marginalinnovation.bib
+#+BIBLIOGRAPHY:../marginalinnovation plainnat limit:t option:-nobibsource
+
+@@latex:\newpage@@
+@@latex:\appendix@@
+
 
 #+BEGIN_EXPORT latex
 \setcounter{table}{0}

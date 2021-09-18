@@ -250,27 +250,23 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org596f1a5">1. Introduction</a></li>
-<li><a href="#org195e39f">2. Simple example</a></li>
-<li><a href="#orgae5db2c">3. Framework</a></li>
+<li><a href="#org59a4783">1. Introduction</a></li>
+<li><a href="#org37978ee">2. Simple example</a></li>
+<li><a href="#org2a15330">3. Framework</a></li>
 <li><a href="#sec:example">4. Competition example</a></li>
-<li><a href="#orgb84fa15">5. Supra profits</a>
+<li><a href="#org7d3e4a3">5. Supra profits</a>
 <ul>
-<li><a href="#org2876293">5.1. two-part tariff</a></li>
-<li><a href="#orgcec30d8">5.2. linear pricing and separation</a></li>
+<li><a href="#orgb99174e">5.1. two-part tariff</a></li>
+<li><a href="#org9b89833">5.2. linear pricing and separation</a></li>
 </ul>
 </li>
-<li><a href="#orge3c7a4c">6. Bounded rationality</a></li>
-<li><a href="#org0c0469b">7. Policy implications</a></li>
-<li><a href="#orgb3617a1">8. Proof of results</a></li>
+<li><a href="#org2acf858">6. Bounded rationality</a></li>
+<li><a href="#orgcc7b928">7. Policy implications</a></li>
+<li><a href="#org5f776c8">8. Proof of results</a></li>
 </ul>
 </div>
 </div>
-<div class="PREFACE" id="org8b7496c">
-
-</div>
-
-<div class="abstract" id="orgb69b2cf">
+<div class="abstract" id="org30654e8">
 <p>
 This paper shows that selection incentives in downstream markets affect upstream prices. In fact, it is possible for inputs to be priced above the value that the good has for final consumers. This happens in adverse selection markets where low types mimic high types. High input prices then help to separate consumer types and reduce information rents. We use the example of pharmaceutical companies selling drugs to a health insurance market at prices exceeding treatment value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
 </p>
@@ -285,8 +281,8 @@ This paper shows that selection incentives in downstream markets affect upstream
 <b>JEL codes:</b> I13, I11
 </p>
 
-<div id="outline-container-org596f1a5" class="outline-2">
-<h2 id="org596f1a5"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org59a4783" class="outline-2">
+<h2 id="org59a4783"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Consider a value chain where firms in an upstream market \(U\) sell inputs to firms in a downstream market \(D\) and the latter sell to final consumers. When considering the input prices set by firms in \(U\), there are a number of common sense results: 1. do not set the input price above the final consumers&rsquo; valuation of your input; 2. try to innovate to make your product attractive to a bigger group of final consumers and 3. reduce your price as the downstream market becomes more competitive.
@@ -297,11 +293,11 @@ However, when \(U\) sells to a market \(D\) with adverse selection problems, the
 </p>
 
 <p>
-An interesting market to apply this framework to is the health insurance market (\(D\)) where pharmaceutical companies in market \(U\) sell drugs to insurers to be included in their insurance contracts. Health insurance markets are known for their adverse selection problems and almost daily there are stories in the news about pharmaceutical companies charging &ldquo;outrageous&rdquo; prices for their treatments.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> <a class='org-ref-reference' href="#Howard2015">Howard2015</a> document price developments in the market for anticancer drugs. Although it is hard to put a value on an additional year of life to see whether prices are above treatment value, they argue (pp. 149) that &ldquo;in 1995 patients and their insurers paid $54,100 for a year of life. A decade later, 2005, they paid $139,100 for the same benefit. By 2013, they were paying $207,000.&rdquo; Most regulators in the world use less than $200k as the monetary value of a life year and indeed <a class='org-ref-reference' href="#cavalli-2013-appeal-to">cavalli-2013-appeal-to</a> states that at the World Oncology Forum the &ldquo;prevailing opinion was that &#x2026; the cost of the new generation of drugs is getting out of all proportion to the added benefit.&rdquo; Note that many of these expensive drugs are not the first to treat these forms of cancer. Their added benefit is compared to existing (sometimes generic) drugs.
+An interesting market to apply this framework to is the health insurance market (\(D\)) where pharmaceutical companies in market \(U\) sell drugs to insurers to be included in their insurance contracts. Health insurance markets are known for their adverse selection problems and almost daily there are stories in the news about pharmaceutical companies charging &ldquo;outrageous&rdquo; prices for their treatments.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> [<a href="#Howard2015">Howard et&nbsp;al.(2015)Howard, Bach, Berndt, and Conti</a>] document price developments in the market for anticancer drugs. Although it is hard to put a value on an additional year of life to see whether prices are above treatment value, they argue (pp. 149) that &ldquo;in 1995 patients and their insurers paid $54,100 for a year of life. A decade later, 2005, they paid $139,100 for the same benefit. By 2013, they were paying $207,000.&rdquo; Most regulators in the world use less than $200k as the monetary value of a life year and indeed [<a href="#cavalli-2013-appeal-to">Cavalli(2013)</a>] states that at the World Oncology Forum the &ldquo;prevailing opinion was that &#x2026; the cost of the new generation of drugs is getting out of all proportion to the added benefit.&rdquo; Note that many of these expensive drugs are not the first to treat these forms of cancer. Their added benefit is compared to existing (sometimes generic) drugs.
 </p>
 
 <p>
-Finally, <a class='org-ref-reference' href="#Howard2015">Howard2015</a> note that &ldquo;launch prices of new anticancer drugs and other drugs in the so-called &lsquo;specialty&rsquo; pharmaceutical market have been increasing over time&rdquo; (pp. 140). The promise of specialty or precision medicine was &ldquo;to give &lsquo;the right drug to the right patient&rsquo; to maximize the effectiveness and safety of the treatment&rdquo; <a class='org-ref-reference' href="#Garattini2015">Garattini2015</a>. However, up till now this targeting of treatments has not lived up to this promise and one reason is that these treatments turn out to be extremely expensive. It is not clear that we can afford precision medicine; see <a class='org-ref-reference' href="#Doble2016">Doble2016</a> for a discussion in the case of oncology with examples of treatments costing $300,000 while they &ldquo;only result in minimal benefit&rdquo;.
+Finally, [<a href="#Howard2015">Howard et&nbsp;al.(2015)Howard, Bach, Berndt, and Conti</a>] note that &ldquo;launch prices of new anticancer drugs and other drugs in the so-called &lsquo;specialty&rsquo; pharmaceutical market have been increasing over time&rdquo; (pp. 140). The promise of specialty or precision medicine was &ldquo;to give &lsquo;the right drug to the right patient&rsquo; to maximize the effectiveness and safety of the treatment&rdquo; <a class='org-ref-reference' href="#Garattini2015">Garattini2015</a>. However, up till now this targeting of treatments has not lived up to this promise and one reason is that these treatments turn out to be extremely expensive. It is not clear that we can afford precision medicine; see [<a href="#Doble2016">Doble(2016)</a>] for a discussion in the case of oncology with examples of treatments costing $300,000 while they &ldquo;only result in minimal benefit&rdquo;.
 </p>
 
 <p>
@@ -313,23 +309,23 @@ We show that supra profits are increasing in the competitiveness of the high typ
 </p>
 
 <p>
-The main assumption we need is that low types want to mimic high types. We provide two rationales for this assumption. First, in the main model the high type market segment is more competitive than the low type segment in the insurance market. In our health insurance context this implies that high risk individuals are more sensitive to value differences between insurance contracts than low risk types. There are a number of reasons why this is the case. <a class='org-ref-reference' href="#Parente2004">Parente2004</a> find that the insurance premium elasticity is substantially higher for employees with a chronic condition than without. One explanation for this is that high risk types are more likely to have experience with healthcare and therefore know more about quality differences between treatments. As they are better informed, they are more sensitive to quality differences between plans <a class='org-ref-reference' href="#NBERw19800">NBERw19800</a>.
+The main assumption we need is that low types want to mimic high types. We provide two rationales for this assumption. First, in the main model the high type market segment is more competitive than the low type segment in the insurance market. In our health insurance context this implies that high risk individuals are more sensitive to value differences between insurance contracts than low risk types. There are a number of reasons why this is the case. [<a href="#Parente2004">Parente et&nbsp;al.(2004)Parente, Feldman, and Christianson</a>] find that the insurance premium elasticity is substantially higher for employees with a chronic condition than without. One explanation for this is that high risk types are more likely to have experience with healthcare and therefore know more about quality differences between treatments. As they are better informed, they are more sensitive to quality differences between plans <a class='org-ref-reference' href="#NBERw19800">NBERw19800</a>.
 </p>
 
 <p>
-A second intuition is that high risk types tend to have lower incomes and therefore pay more attention to value differences between plans.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup> <a class='org-ref-reference' href="#hogan2017">hogan2017</a> find that consumers&rsquo; insurer switching probability falls with income. Also <a class='org-ref-reference' href="#Atherly2004">Atherly2004</a>, <a class='org-ref-reference' href="#Auerbach2006">Auerbach2006</a> and <a class='org-ref-reference' href="#SALTZMAN2019197">SALTZMAN2019197</a> find that people on low income are more price sensitive when choosing health insurance. This is in line with <a class='org-ref-reference' href="#Royalty99">Royalty99</a> where the higher educated and the wealthier are less price sensitive.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+A second intuition is that high risk types tend to have lower incomes and therefore pay more attention to value differences between plans.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup> [<a href="#hogan2017">Ho et&nbsp;al.(2017)Ho, Hogan, and Scott&nbsp;Morton</a>] find that consumers&rsquo; insurer switching probability falls with income. Also [<a href="#Atherly2004">Atherly et&nbsp;al.(2004)Atherly, Dowd, and Feldman</a>], [<a href="#Auerbach2006">Auerbach and Ohri(2006)</a>] and [<a href="#SALTZMAN2019197">Saltzman(2019)</a>] find that people on low income are more price sensitive when choosing health insurance. This is in line with [<a href="#Royalty99">Royalty and Solomon(1999)</a>] where the higher educated and the wealthier are less price sensitive.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
 </p>
 
 <p>
-Next to differences in competitiveness, a second rationale why low risk types mimic high risk types is a lack of information/rationality. For example, <a class='org-ref-reference' href="#handel-2015-healt-insur-human">handel-2015-healt-insur-human</a> document that low risk types buy the contract with low out-of-pocket expenditures (targeted at high risk types) because they (incorrectly) believe this contract is more generous than it actually is, e.g. because they believe it covers more treatments and a wider network of providers. Below we show how this lack of rationality/information strengthens our results.
+Next to differences in competitiveness, a second rationale why low risk types mimic high risk types is a lack of information/rationality. For example, [<a href="#handel-2015-healt-insur-human">Handel and Kolstad(2015)</a>] document that low risk types buy the contract with low out-of-pocket expenditures (targeted at high risk types) because they (incorrectly) believe this contract is more generous than it actually is, e.g. because they believe it covers more treatments and a wider network of providers. Below we show how this lack of rationality/information strengthens our results.
 </p>
 
 <p>
-Our analysis is related to the following strands of literature. <a class='org-ref-reference' href="#Howard2015">Howard2015</a> discuss a number of explanations for high drug prices that are found in the literature. However,  these cannot fully explain why prices would exceed treatment value. To illustrate, an explanation that is often mentioned is that with health insurance people want a treatment, no matter what the cost since the insurer pays (most of) the price. This is true ex post: once I have insurance, the effects of the cost of treatment are reduced for me. Economists tend to refer to this as moral hazard. However, why would I buy insurance coverage for a treatment that costs more than the benefit it provides? Dropping such a treatment from the contract leads to a bigger reduction in the premium than the loss in expected utility. Hence, an insurer &#x2013;whether or not it has market power&#x2013; benefits from removing such treatments from its insurance contract. This threat of not being covered by an insurance contract limits the price a pharmaceutical company can ask for patented drugs.
+Our analysis is related to the following strands of literature. [<a href="#Howard2015">Howard et&nbsp;al.(2015)Howard, Bach, Berndt, and Conti</a>] discuss a number of explanations for high drug prices that are found in the literature. However,  these cannot fully explain why prices would exceed treatment value. To illustrate, an explanation that is often mentioned is that with health insurance people want a treatment, no matter what the cost since the insurer pays (most of) the price. This is true ex post: once I have insurance, the effects of the cost of treatment are reduced for me. Economists tend to refer to this as moral hazard. However, why would I buy insurance coverage for a treatment that costs more than the benefit it provides? Dropping such a treatment from the contract leads to a bigger reduction in the premium than the loss in expected utility. Hence, an insurer &#x2013;whether or not it has market power&#x2013; benefits from removing such treatments from its insurance contract. This threat of not being covered by an insurance contract limits the price a pharmaceutical company can ask for patented drugs.
 </p>
 
 <p>
-Similarly, <a class='org-ref-reference' href="#Garrison2017">Garrison2017</a> mention the high sunk costs of R&amp;D to explain high treatment prices. Although high fixed/sunk costs can explain high prices in competitive markets (by limiting entry), this mechanism is not obvious for a monopoly market where a firm is protected by a patent. Since a monopolist tries to appropriate most or all of the surplus from its customers, its sunk fixed costs are not directly relevant for setting prices. And also here, if the treatment is too expensive, it should be dropped by the insurer from the contract.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>
+Similarly, [<a href="#Garrison2017">Garrison and Towse(2017)</a>] mention the high sunk costs of R&amp;D to explain high treatment prices. Although high fixed/sunk costs can explain high prices in competitive markets (by limiting entry), this mechanism is not obvious for a monopoly market where a firm is protected by a patent. Since a monopolist tries to appropriate most or all of the surplus from its customers, its sunk fixed costs are not directly relevant for setting prices. And also here, if the treatment is too expensive, it should be dropped by the insurer from the contract.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>
 </p>
 
 <p>
@@ -342,15 +338,15 @@ Other explanations for cross country price differences include GDP per head (ric
 
 
 <p>
-<a class='org-ref-reference' href="#Kamphorst2021">Kamphorst2021</a> focus on the relation between prices and disease rarity: the lower the prevalence of a disease, the higher the prices for drugs treating it. In the context of orphan drugs, this is sometimes referred to as payers valuing rarity <a class='org-ref-reference' href="#Medic2017">Medic2017</a>,<a class='org-ref-reference' href="#Messoric4615">Messoric4615</a>. They show that if the insurance premium is determined by the budget constraint of the marginal insured, an inverse relation exists between disease prevalence and drug price. We offer a complementary explanation for this inverse relation via the selection incentives on the health insurance market.
+[<a href="#Kamphorst2021">Kamphorst and Karamychev(2021)</a>] focus on the relation between prices and disease rarity: the lower the prevalence of a disease, the higher the prices for drugs treating it. In the context of orphan drugs, this is sometimes referred to as payers valuing rarity <a class='org-ref-reference' href="#Medic2017">Medic2017</a>,<a class='org-ref-reference' href="#Messoric4615">Messoric4615</a>. They show that if the insurance premium is determined by the budget constraint of the marginal insured, an inverse relation exists between disease prevalence and drug price. We offer a complementary explanation for this inverse relation via the selection incentives on the health insurance market.
 </p>
 
 <p>
-In terms of the mechanism design literature, our focus on a binding incentive compatibility constraint for low types is in line with the countervailing incentives literature <a class='org-ref-reference' href="#LEWIS1989294">LEWIS1989294</a>. This literature considers type dependent outside options, which we generate through differing demand elasticities for different types. Although we use health insurance and adverse selection to illustrate our model, the mechanism applies in any screening model where the incentive compatibility constraint is binding for the low type. It is then optimal to distort the high type&rsquo;s allocation upward <a class='org-ref-reference' href="#laf02">laf02</a>. One way to get the upward distortion is to add a feature to the allocation at a price that exceeds the feature&rsquo;s value. <a class='org-ref-reference' href="#BooneS13">BooneS13</a> and references therein consider adverse selection markets with a violation of single crossing. There it also happens that the incentive compatibility constraint of the low risk type is binding. These papers then analyze the equilibrium outcomes and the welfare properties of the equilibria, but not the effect on price and innovation incentives in an upstream market.
+In terms of the mechanism design literature, our focus on a binding incentive compatibility constraint for low types is in line with the countervailing incentives literature <a class='org-ref-reference' href="#LEWIS1989294">LEWIS1989294</a>. This literature considers type dependent outside options, which we generate through differing demand elasticities for different types. Although we use health insurance and adverse selection to illustrate our model, the mechanism applies in any screening model where the incentive compatibility constraint is binding for the low type. It is then optimal to distort the high type&rsquo;s allocation upward <a class='org-ref-reference' href="#laf02">laf02</a>. One way to get the upward distortion is to add a feature to the allocation at a price that exceeds the feature&rsquo;s value. [<a href="#BooneS13">Boone and Schottm&uuml;ller(2017)</a>] and references therein consider adverse selection markets with a violation of single crossing. There it also happens that the incentive compatibility constraint of the low risk type is binding. These papers then analyze the equilibrium outcomes and the welfare properties of the equilibria, but not the effect on price and innovation incentives in an upstream market.
 </p>
 
 <p>
-Finally, pricing above value can happen in an industrial organization context where there are negative externalities. In the context of R&amp;D, this externality can be the business stealing effect. An early analysis of how an R&amp;D lab can extract more than the social value of an innovation is <a class='org-ref-reference' href="#KatzShapiro1986">KatzShapiro1986</a>. They focus on the licensing mechanism that can be used to extract the maximum profit out of an innovation. This literature on auction mechanisms to maximize revenue in the context of a negative externality was further developed by <a class='org-ref-reference' href="#jehiel1996">jehiel1996</a>. Papers in this literature do not consider innovation incentives for firms selling to an adverse selection market.
+Finally, pricing above value can happen in an industrial organization context where there are negative externalities. In the context of R&amp;D, this externality can be the business stealing effect. An early analysis of how an R&amp;D lab can extract more than the social value of an innovation is [<a href="#KatzShapiro1986">Katz and Shapiro(1986)</a>]. They focus on the licensing mechanism that can be used to extract the maximum profit out of an innovation. This literature on auction mechanisms to maximize revenue in the context of a negative externality was further developed by [<a href="#jehiel1996">Jehiel et&nbsp;al.(1996)Jehiel, Moldovanu, and Stacchetti</a>]. Papers in this literature do not consider innovation incentives for firms selling to an adverse selection market.
 </p>
 
 <p>
@@ -359,8 +355,8 @@ Our paper is organized as follows. First, we illustrate our main effect in a sim
 </div>
 </div>
 
-<div id="outline-container-org195e39f" class="outline-2">
-<h2 id="org195e39f"><span class="section-number-2">2.</span> Simple example</h2>
+<div id="outline-container-org37978ee" class="outline-2">
+<h2 id="org37978ee"><span class="section-number-2">2.</span> Simple example</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 To see how it is possible at all that an insurer pays more for a treatment than the treatment&rsquo;s value to the insured, consider the following simple example with two treatments and a monopolist insurer. The example introduces the notation and illustrates the mechanics of the result: the high type&rsquo;s allocation is distorted upwards which makes it less attractive to the low type and hence reduces the low type&rsquo;s information rent.
@@ -480,8 +476,8 @@ Next we introduce our general framework to analyze the effects of insurer compet
 </div>
 </div>
 
-<div id="outline-container-orgae5db2c" class="outline-2">
-<h2 id="orgae5db2c"><span class="section-number-2">3.</span> Framework</h2>
+<div id="outline-container-org2a15330" class="outline-2">
+<h2 id="org2a15330"><span class="section-number-2">3.</span> Framework</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Let \(P\) denote the set of treatments that are currently under patent and \(O\) the set of treatments where the patent has run out (&ldquo;open&rdquo; as in open source). To simplify the exposition we assume that \(\psi_{il}<\psi_{ih}\) for each \(i \in P\).<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup> For \(j \in O\) we assume \(\psi_{jl} \leq \psi_{jh}\). This ensures that single crossing is satisfied in our set up.<sup><a id="fnr.12" class="footref" href="#fn.12" role="doc-backlink">12</a></sup>
@@ -546,7 +542,7 @@ where \(q^{\iota}(u_k^{\iota},u_k^{-\iota},\theta_k)\) denotes the market share 
 <p>
 An insurer maximizes profits over coverage and utility (i.e. the premium): \(x_{ik},x_{jk},u_k\) for \(i \in P, j \in O, k \in \{l,h\}\). We can already see the following properties of the solution.
 </p>
-<div class="lemma" id="orged0cd04">
+<div class="lemma" id="orgc671c21">
 <p>
 <div id="Baseline_results"></div>
 Assume \(p_i = v_i\) and \(\alpha_i \in \langle 0,1]\) for \(i \in P\), then we have:
@@ -563,7 +559,7 @@ Finally, \(p_i >v_i\) implies \(x_{il} =0\).
 </div>
 
 
-<div id="org4a2fbed" class="figure">
+<div id="org0fc31f0" class="figure">
 <p><img src="profitfunctions.png" alt="profitfunctions.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Insurer \(a\)&rsquo;s profits \(\pi(u^a,\theta_l),\pi(u^a,\theta_h)\) as a function of \(u^a\).</p>
@@ -574,7 +570,7 @@ If \eqref{eq:12a} is binding, coverage for the low type is distorted downwards. 
 </p>
 
 <p>
-We focus on the case where \eqref{eq:12} is binding, while \eqref{eq:12a} is not. We show in Section <a href="#sec:example">4</a> that such a case indeed exists in a model with Hotelling competition. Figure <a href="#org4a2fbed">1</a> illustrates how this can happen.<sup><a id="fnr.13" class="footref" href="#fn.13" role="doc-backlink">13</a></sup> As illustrated in the figure, the \(l\) market is more profitable than the \(h\) market in that profits on the \(l\) market exceed \(h\) profits over the relevant range of \(u\). This is intuitive since \(l\) customers are cheaper in expectation than \(h\) types. In addition, for the insurer to attract customers on the \(h\) market, a larger utility level needs to be left to its customers than on the \(l\) market. This can be due to the fact that \(h\) customers have more experience with treatments and are better able to compare the values offered by different insurance plans. Or \(h\) types (high risk/low health status) tend to have low income and hence pay a relatively low premium \(\sigma_h\) leading to high \(u_h\). Hence, the profit maximizing level of \(u_h\) exceeds that of \(u_l\). But the utility left to \(h\) customers cannot be too high, because this would induce \(l\) customers to buy the \(h\) contract.<sup><a id="fnr.14" class="footref" href="#fn.14" role="doc-backlink">14</a></sup> The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.
+We focus on the case where \eqref{eq:12} is binding, while \eqref{eq:12a} is not. We show in Section <a href="#sec:example">4</a> that such a case indeed exists in a model with Hotelling competition. Figure <a href="#org0fc31f0">1</a> illustrates how this can happen.<sup><a id="fnr.13" class="footref" href="#fn.13" role="doc-backlink">13</a></sup> As illustrated in the figure, the \(l\) market is more profitable than the \(h\) market in that profits on the \(l\) market exceed \(h\) profits over the relevant range of \(u\). This is intuitive since \(l\) customers are cheaper in expectation than \(h\) types. In addition, for the insurer to attract customers on the \(h\) market, a larger utility level needs to be left to its customers than on the \(l\) market. This can be due to the fact that \(h\) customers have more experience with treatments and are better able to compare the values offered by different insurance plans. Or \(h\) types (high risk/low health status) tend to have low income and hence pay a relatively low premium \(\sigma_h\) leading to high \(u_h\). Hence, the profit maximizing level of \(u_h\) exceeds that of \(u_l\). But the utility left to \(h\) customers cannot be too high, because this would induce \(l\) customers to buy the \(h\) contract.<sup><a id="fnr.14" class="footref" href="#fn.14" role="doc-backlink">14</a></sup> The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.
 </p>
 
 <p>
@@ -656,7 +652,7 @@ We finish the section with an example where indeed \(IC_l\) is binding. As the g
 <p>
 We derive the following equilibrium outcome.
 </p>
-<div class="lemma" id="orga8125c8">
+<div class="lemma" id="org1103c8e">
 <p>
 <div id="Hotelling_equilibrium"></div>
 In the Hotelling model, assume that \(p_1 =v_1\) and \(t_l - t_h > v_1 (\psi_{1h}-\psi_{1l})\). Then in equilibrium, it is the case that \(x_{1h}=x_{2h}=x_{2l}=1\), \(x_{1l} \in [0,1]\) and
@@ -698,16 +694,16 @@ For reference below, the condition in the lemma can be written as \(t_l-t_h>c_h-
 </div>
 
 
-<div id="outline-container-orgb84fa15" class="outline-2">
-<h2 id="orgb84fa15"><span class="section-number-2">5.</span> Supra profits</h2>
+<div id="outline-container-org7d3e4a3" class="outline-2">
+<h2 id="org7d3e4a3"><span class="section-number-2">5.</span> Supra profits</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 We consider two contractual arrangements that lead to a profit for the patent holder that exceeds the value of its innovation; we call these extra rents &ldquo;supra profits&rdquo;. First, we consider the innovator using a two-part tariff which captures most non-linear pricing schemes. Then we consider the case where the innovator can only use a linear fee (a price per unit).
 </p>
 </div>
 
-<div id="outline-container-org2876293" class="outline-3">
-<h3 id="org2876293"><span class="section-number-3">5.1.</span> two-part tariff</h3>
+<div id="outline-container-orgb99174e" class="outline-3">
+<h3 id="orgb99174e"><span class="section-number-3">5.1.</span> two-part tariff</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 The easiest way to see the main effects of this paper is to assume that innovators sell treatments to insurers using two-part tariffs. It turns out that the intuitions we find here, carry over to the case of linear pricing.
@@ -761,7 +757,7 @@ If both markets would be served independently (i.e. without being linked via an 
 Here we consider the case where R&amp;D firm \(i\) sets \(p_i=v_i\) and uses the fixed part of the tariff to appropriate the supra profits. Lemma <a href="#Baseline_results">Baseline_results</a> implies that \(x_{ih}=x_{il}=x_{jh}=x_{jl}=1\). Hence, we have a pooling contract.<sup><a id="fnr.15" class="footref" href="#fn.15" role="doc-backlink">15</a></sup> Therefore, \(\mu_l\) and \(\mu_h\) in \eqref{eq:28} are based on the same premium \(\sigma\). Thus, we can solve for \(\sigma\). Since we have \(\sigma_l=\sigma_h=\sigma\), we have \(\mu_l > \mu_h\) because \(c_h>c_l\).
 </p>
 
-<div class="lemma" id="org25c52e1">
+<div class="lemma" id="org6a6df7f">
 <p>
 <div id="Two_part_tariff"></div>
 With \(p_i \leq v_i\), we find the following expressions for the premium and the mark-ups on the two markets:
@@ -794,7 +790,7 @@ Even if treatment \(i\) is priced at consumer value \(p_i = v_i\), reducing \(\a
 The following assumption ensurers that we are in the relevant parameter space that allows for supra profits. First, we need that \eqref{eq:12} is binding: \(\lambda_l >0\). Further, for the insurers&rsquo; optimization problem to be well defined, we need that the &ldquo;average elasticity&rdquo; on the two markets exceeds 1.<sup><a id="fnr.16" class="footref" href="#fn.16" role="doc-backlink">16</a></sup> Throughout this paper, we make the following assumptions such that both conditions are satisfied.
 </p>
 
-<div class="assumption" id="orgde2c3c5">
+<div class="assumption" id="org351a541">
 <p>
 <div id="Elasticities"></div>
 </p>
@@ -811,7 +807,7 @@ c_h \varepsilon_h (1- \varepsilon_l )-c_l \varepsilon_l(1-\varepsilon_h) > 0 \\
 As the denominator of \eqref{eq:43} is positive, \(\lambda_l >0\) if and only if inequality \eqref{eq:33} holds. Equation \eqref{eq:33a} makes sure that \(\sigma\) in \eqref{eq:29} has a finite value. The following lemma derives two conditions under which \eqref{eq:33} is satisfied.
 </p>
 
-<div class="lemma" id="org6f4fb7c">
+<div class="lemma" id="org81a7b16">
 <p>
 <div id="IC_l_binding"></div>
 We find that \(\lambda_l >0\) if either
@@ -839,7 +835,7 @@ Note that the inequality on \(c_h-c_l\) is reminiscent of the condition in Lemma
 The following lemma derives properties of insurance markets that tend to lead to high supra profits.
 </p>
 
-<div class="lemma" id="org17816d7">
+<div class="lemma" id="org86b4c07">
 <p>
 <div id="Comparative_static_lambda"></div>
 The shadow price \(\lambda_l\) on the low type&rsquo;s IC constraint is:
@@ -856,11 +852,12 @@ Recall that supra profits \(\tau_i\) are increasing in \(\lambda_l\). Hence, we 
 </p>
 
 <p>
-When explaining differences in pharmaceutical prices between countries, attention is focused on institutional features like income per head, who bargains with pharmaceutical companies (e.g. government vs. individual insurers), use of reference pricing and cost effectiveness analysis etc.; see <a class='org-ref-reference' href="#ScottMorton2011763">ScottMorton2011763</a> and references therein. Lemma <a href="#Comparative_static_lambda">Comparative_static_lambda</a> suggests that selection incentives on the health insurance market can play a role as well. As a preliminary illustration of this point, selection problems in US health insurance tend to be seen as worse than in European countries with competitive health insurance markets (like the Czech Republic, Germany, Israel, The Netherlands). The latter countries have automatic/mandatory coverage levels above 90% of the population in contrast to the US where a large share of the population goes without health insurance. Also branded drug prices in the US are far higher than in Europe <a class='org-ref-reference' href="#RR-2956-ASPEC">RR-2956-ASPEC</a>. The analysis here suggests that these two phenomena could be connected.
+When explaining differences in pharmaceutical prices between countries, attention is focused on institutional features like income per head, who bargains with pharmaceutical companies (e.g. government vs. individual insurers), use of reference pricing and cost effectiveness analysis etc.; see [<a href="#ScottMorton2011763">Morton and Kyle(2011)</a>] and references therein. Lemma <a href="#Comparative_static_lambda">Comparative_static_lambda</a> suggests that selection incentives on the health insurance market can play a role as well. As a preliminary illustration of this point, selection problems in US health insurance tend to be seen as worse than in European countries with competitive health insurance markets (like the Czech Republic, Germany, Israel, The Netherlands). The latter countries have automatic/mandatory coverage levels above 90% of the population in contrast to the US where a large share of the population goes without health insurance. Also branded drug prices in the US are far higher than in Europe <a class='org-ref-reference' href="#RR-2956-ASPEC">RR-2956-ASPEC</a>. The analysis here suggests that these two phenomena could be connected.
 </p>
 
 <p>
-Another factor determining treatment prices is the (individual rationality) constraint \(u_k \geq 0\) where the outside option is normalized to 0. If drug prices increase to such an extent that \(u_k < 0\), consumers stop buying health insurance because the expected benefit is lower than the price (premium). The introduction of generic drugs in the past decades which &#x2013;due to competition&#x2013; are priced below value (\(p_j < v_j\)) creates the space for patented drugs to price above value and still the value of insurance is bigger than or equal to \(\sigma\). <a class='org-ref-reference' href="#RR-2956-ASPEC">RR-2956-ASPEC</a> show that generic drug prices are lower in the US than in Europe which allows branded drug producers to charge higher prices before the individual rationality constraint is binding.
+Another factor determining treatment prices is the (individual rationality) constraint \(u_k \geq 0\) where the outside option is normalized to 0. If drug prices increase to such an extent that \(u_k < 0\), consumers stop buying health insurance because the expected benefit is lower than the price (premium). The introduction of generic drugs in the past decades which &#x2013;due to competition&#x2013; are priced below value (\(p_j < v_j\)) creates the space for patented drugs to price above value and still the value of insurance is bigger than or equal to \(\sigma\). [<a href="#RR-2956-ASPEC">Mulcahy et&nbsp;al.(2021)Mulcahy, Whaley, Gizaw, Schwam, Edenfield, and
+  Becerra-Ornelas</a>] show that generic drug prices are lower in the US than in Europe which allows branded drug producers to charge higher prices before the individual rationality constraint is binding.
 </p>
 
 <p>
@@ -878,7 +875,7 @@ Consider two treatments, 1 and 2; which treatment captures a higher supra profit
 From this it follows immediately that:
 </p>
 
-<div class="corollary" id="org8c95af9">
+<div class="corollary" id="org1eebc0c">
 <p>
 <div id="Effect_Delta_psi"></div>
 Relative to other patented treatments in \(P\), the supra profit of treatment \(i\) increases in \(\Delta \psi_i\).
@@ -891,7 +888,7 @@ Hence drugs with a clear distinction between heavy users and a low probability f
 </p>
 
 <p>
-Second, R&amp;D lab \(i\) can invest in projects that are targeted at sub-populations of patients with a disease. <a class='org-ref-reference' href="#Dugger2018">Dugger2018</a> describe this as &ldquo;a transition away from the production of &lsquo;one-size-fits-all&rsquo; treatments towards targeted treatments&rdquo;. With precision or personalized medicine, the treatment takes the patient&rsquo;s underlying mechanism of the disease into account. Such targeted therapies require the co-development of diagnostic tools to identify the optimal treatment for individual patients. Biomarkers are used to define the subset of patients who benefit from the treatment. The use of biomarkers in clinical trials has increased substantially over time <a class='org-ref-reference' href="#NBERc13994">NBERc13994</a>.
+Second, R&amp;D lab \(i\) can invest in projects that are targeted at sub-populations of patients with a disease. [<a href="#Dugger2018">Dugger et&nbsp;al.(2018)Dugger, Platt, and Goldstein</a>] describe this as &ldquo;a transition away from the production of &lsquo;one-size-fits-all&rsquo; treatments towards targeted treatments&rdquo;. With precision or personalized medicine, the treatment takes the patient&rsquo;s underlying mechanism of the disease into account. Such targeted therapies require the co-development of diagnostic tools to identify the optimal treatment for individual patients. Biomarkers are used to define the subset of patients who benefit from the treatment. The use of biomarkers in clinical trials has increased substantially over time <a class='org-ref-reference' href="#NBERc13994">NBERc13994</a>.
 </p>
 
 <p>
@@ -920,8 +917,8 @@ To the extent that the specialty pharmaceutical market and  personalized medicin
 </div>
 </div>
 
-<div id="outline-container-orgcec30d8" class="outline-3">
-<h3 id="orgcec30d8"><span class="section-number-3">5.2.</span> linear pricing and separation</h3>
+<div id="outline-container-org9b89833" class="outline-3">
+<h3 id="org9b89833"><span class="section-number-3">5.2.</span> linear pricing and separation</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Consider the case where the innovating firm cannot use a two-part tariff but only linear pricing. To capture the supra profits, firm \(i\) cannot use the fixed fee but has to set \(p_i > v_i\). We know from lemma <a href="#Baseline_results">Baseline_results</a> that \(p_i>v_i\) implies \(x_{il}=0\): the insurer drops treatment \(i\) in the \(l\) contract. Hence, firm \(i\) weighs a higher price \(p_i\) against a smaller group of customers using the treatment.
@@ -935,7 +932,7 @@ The first order conditions for \(u_h,u_l\) are unchanged, hence equations \eqref
 The following result characterizes the insurance premia charged on both market segments. The set \(E_h\) denotes the patented treatments that are exclusively available to \(h\) types: \(x_{ih}=1\) and \(x_{il}=0\) for all \(i \in E_h\).
 </p>
 
-<div class="lemma" id="orgcb02678">
+<div class="lemma" id="org640e5aa">
 <p>
 <div id="Linear_pricing_premium"></div>
 Let \(\sigma=\sigma_l\). Then \(\sigma_h=\sigma+\Delta \sigma\) where
@@ -962,7 +959,7 @@ Interestingly, the additional premium \(\Delta \sigma\) paid by the \(h\) type i
 Note that with \(\Delta \sigma =0\), the expression in \eqref{eq:37} is identical to \eqref{eq:29}: if the set \(E_h\) is empty, we are back to a pooling contract. In the pooling setting above, we know that \(\mu_l>\mu_h\); the same is true here.
 </p>
 
-<div class="lemma" id="orgd32f083">
+<div class="lemma" id="orgd20133c">
 <p>
 <div id="Linear_pricing_profit_margins"></div>
 With \(\Delta \sigma > 0\), we find that \(\mu_l > \mu_h\).
@@ -985,7 +982,7 @@ Using the first order condition of profits \eqref{eq:15} with respect to \(x_{ih
 This equation needs to hold with equality. If it would be negative, \(p_i\) is so high that the insurer drops \(i\) also from the \(h\) contract (\(x_{ih}=0\)). If it is positive, \(p_i\) can be increased further by firm \(i\) without losing sales. It follows that \(\lambda_l>0\) implies \(p_i>v_i\). Hence, firm \(i\) faces a trade off: set \(p_i=v_i\) and sell to both types or set \(p_i>v_i\) and \(i\)&rsquo;s treatment is only covered by the \(h\) contract. The proposition presents the condition under which setting \(p_i>v_i\) maximizes \(i\)&rsquo;s profits.
 </p>
 
-<div class="proposition" id="org3b36e1c">
+<div class="proposition" id="org708cbf2">
 <p>
 <div id="Linear_price_above_value"></div>
 If \(\psi_{il} \leq \Delta \psi_i (1-\varepsilon_l (1-\frac{c_l}{\sigma}))\) then
@@ -1019,7 +1016,7 @@ Intuitively, if the \(l\) market is big (high \(\psi_{il}\)), it is profitable t
 We derive the following comparative static results with respect to the supra profits. When considering the effects of high type targeting, we make the following simplifying assumption. An insurance contract covers many treatments and a change in \(\psi_{ih},\psi_{il}\) has a negligible effect on \(c_h, c_l\) and \(\sigma\).<sup><a id="fnr.18" class="footref" href="#fn.18" role="doc-backlink">18</a></sup>
 </p>
 
-<div class="lemma" id="orgc95d30d">
+<div class="lemma" id="org921a6a0">
 <p>
 <div id="Linear_pricing_comparative_statics"></div>
 The supra profit \(\frac{p_i-v_i}{v_i}\) is
@@ -1057,7 +1054,7 @@ Let \(\pi_i\) denote the profits earned on the insurance market by research lab 
 We can then derive the following result which does not hold in &ldquo;normal&rdquo; markets.
 </p>
 
-<div class="corollary" id="org4962d39">
+<div class="corollary" id="org5282617">
 <p>
 <div id="Targeting_profitable"></div>
 For each \(d\psi_{ih}/d\zeta_i<0\) and \(d\Delta\psi_i/d\zeta_i>0\), there exists \(\phi \in [0,1]\) close enough to 1 such that \(d\pi_i/d\zeta_i>0\).
@@ -1077,15 +1074,15 @@ The argument is not that the specialty pharmaceutical market and personalized me
 </div>
 
 
-<div id="outline-container-orge3c7a4c" class="outline-2">
-<h2 id="orge3c7a4c"><span class="section-number-2">6.</span> Bounded rationality</h2>
+<div id="outline-container-org2acf858" class="outline-2">
+<h2 id="org2acf858"><span class="section-number-2">6.</span> Bounded rationality</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Above we assume that consumers are perfectly rational: they understand the value of the treatments covered by the insurance plan and they know their probability of needing a particular treatment. The main result is that part of the reason why drug prices are so high is that they are sold to a health insurance market with adverse selection problems. We formalize this by showing that even with rational consumers it can be optimal for insurers to over-pay for a treatment, that is pay more than the treatment&rsquo;s value for patients.
 </p>
 
 <p>
-We know that consumers find healthcare markets difficult to (fully) understand. For instance, <a class='org-ref-reference' href="#handel-2015-healt-insur-human">handel-2015-healt-insur-human</a> show that people over-estimate the value of more generous insurance plans. In particular, low risk types tend to buy the more generous plan aimed at high risk consumers.
+We know that consumers find healthcare markets difficult to (fully) understand. For instance, [<a href="#handel-2015-healt-insur-human">Handel and Kolstad(2015)</a>] show that people over-estimate the value of more generous insurance plans. In particular, low risk types tend to buy the more generous plan aimed at high risk consumers.
 </p>
 
 <p>
@@ -1142,15 +1139,15 @@ Assuming that low risk types over-estimate (to some extent) the probability that
 </div>
 </div>
 
-<div id="outline-container-org0c0469b" class="outline-2">
-<h2 id="org0c0469b"><span class="section-number-2">7.</span> Policy implications</h2>
+<div id="outline-container-orgcc7b928" class="outline-2">
+<h2 id="orgcc7b928"><span class="section-number-2">7.</span> Policy implications</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 This paper introduces a framework where upstream firms sell inputs to a downstream market where the downstream market suffers from adverse selection problems. We find that if the low type&rsquo;s incentive compatibility constraint is binding in the downstream market, we find a number of results that are counter-intuitive at first sight. First, upstream firms can charge prices in excess of consumers&rsquo; valuation of their product. Second, upstream firms have an incentive to narrow their market; that is, make their product attractive to a subset of final consumers. Third, making downstream market segments more competitive, tends to increase upstream prices.
 </p>
 
 <p>
-An indication that the low type&rsquo;s incentive constraint is binding is that low types buy the (generous) contracts that are aimed at high types. <a class='org-ref-reference' href="#handel-2015-healt-insur-human">handel-2015-healt-insur-human</a> show that this happens in health insurance markets. 
+An indication that the low type&rsquo;s incentive constraint is binding is that low types buy the (generous) contracts that are aimed at high types. [<a href="#handel-2015-healt-insur-human">Handel and Kolstad(2015)</a>] show that this happens in health insurance markets. 
 </p>
 
 <p>
@@ -1170,106 +1167,382 @@ Second, assuming that consumers stop buying insurance in case the expected value
 </p>
 
 
+<div id="bibliography">
+<h2>References</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Atherly2004">Atherly et&nbsp;al.(2004)Atherly, Dowd, and Feldman</a>]
+</td>
+<td class="bibtexitem">
+Adam Atherly, Bryan&nbsp;E. Dowd, and Roger Feldman.
+ The effect of benefits, premiums, and health risk on health plan
+  choice in the medicare program.
+ <em>Health Services Research</em>, 390 (4p1):0
+  847--864, 2004.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Auerbach2006">Auerbach and Ohri(2006)</a>]
+</td>
+<td class="bibtexitem">
+David Auerbach and Sabina Ohri.
+ Price and the demand for nongroup health insurance.
+ <em>INQUIRY: The Journal of Health Care Organization, Provision,
+  and Financing</em>, 430 (2):0 122--134, 2006.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="BEAULIEU200243">Beaulieu(2002)</a>]
+</td>
+<td class="bibtexitem">
+Nancy&nbsp;Dean Beaulieu.
+ Quality information and consumer health plan choices.
+ <em>Journal of Health Economics</em>, 210 (1):0 43 --
+  63, 2002.
+ Health Plan Choice.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="BooneS13">Boone and Schottm&uuml;ller(2017)</a>]
+</td>
+<td class="bibtexitem">
+Jan Boone and Christoph Schottm&uuml;ller.
+ Health insurance without single crossing: why healthy people have
+  high coverage.
+ <em>Economic Journal</em>, 1270 (599):0 84--105, 2017.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="cavalli-2013-appeal-to">Cavalli(2013)</a>]
+</td>
+<td class="bibtexitem">
+Franco Cavalli.
+ An appeal to world leaders: Stop cancer now.
+ <em>The Lancet</em>, 3810 (9865):0 425--426, 2013.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Costa_2003">Costa and Garcia(2003)</a>]
+</td>
+<td class="bibtexitem">
+Joan Costa and Jaume Garcia.
+ Demand for private health insurance: how important is the quality
+  gap?
+ <em>Health Economics</em>, 120 (7):0 587–599, 2003.
+ ISSN 1099-1050.
+ 10.1002/hec.756.
+[&nbsp;<a href="http://dx.doi.org/10.1002/hec.756">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Doble2016">Doble(2016)</a>]
+</td>
+<td class="bibtexitem">
+Brett Doble.
+ Budget impact and cost-effectiveness: can we afford precision
+  medicine in oncology?
+ <em>Scandinavian Journal of Clinical and Laboratory Investigation</em>,
+  760 (sup245):0 S6--S11, 2016.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Dugger2018">Dugger et&nbsp;al.(2018)Dugger, Platt, and Goldstein</a>]
+</td>
+<td class="bibtexitem">
+S.A. Dugger, A.&nbsp;Platt, and D.B. Goldstein.
+ Drug development in the era of precision medicine.
+ <em>Nature Reviews Drug Discovery</em>, 17:0 183--196, March
+  2018.
+ 10.1038/nrd.2017.226.
+[&nbsp;<a href="http://dx.doi.org/10.1038/nrd.2017.226">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="fin06">Finkelstein and McGarry(2006)</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;Finkelstein and K.&nbsp;McGarry.
+ Multiple dimensions of private information: evidence from the
+  long-term care insurance market.
+ <em>The American Economic Review</em>, 960 (4):0
+  938--958, 2006.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="fri05">Frijters et&nbsp;al.(2005)Frijters, Haisken-DeNew, and Shields</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Frijters, J.P. Haisken-DeNew, and M.A. Shields.
+ The causal effect of income on health: Evidence from german
+  reunification.
+ <em>Journal of Health Economics</em>, 240 (5):0
+  997--1017, 2005.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Garrison2017">Garrison and Towse(2017)</a>]
+</td>
+<td class="bibtexitem">
+Jr. Garrison, L.P. and A.&nbsp;Towse.
+ Value-based pricing and reimbursement in personalised healthcare:
+  Introduction to the basic health economics.
+ <em>Journal of Personalized Medicine</em>, 70 (3), 2017.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="gra09">Gravelle and Sutton(2009)</a>]
+</td>
+<td class="bibtexitem">
+H.&nbsp;Gravelle and M.&nbsp;Sutton.
+ Income, relative income, and self-reported health in britain
+  1979-2000.
+ <em>Health Economics</em>, 180 (2):0 125--145, 2009.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="handel-2015-healt-insur-human">Handel and Kolstad(2015)</a>]
+</td>
+<td class="bibtexitem">
+Benjamin&nbsp;R. Handel and Jonathan&nbsp;T. Kolstad.
+ Health insurance for "humans": Information frictions, plan choice,
+  and consumer welfare.
+ <em>American Economic Review</em>, 1050 (8):0
+  2449--2500, 2015.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hogan2017">Ho et&nbsp;al.(2017)Ho, Hogan, and Scott&nbsp;Morton</a>]
+</td>
+<td class="bibtexitem">
+Kate Ho, Joseph Hogan, and Fiona Scott&nbsp;Morton.
+ The impact of consumer inattention on insurer pricing in the medicare
+  part d program.
+ <em>The RAND Journal of Economics</em>, 480 (4):0
+  877--905, 2017.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Howard2015">Howard et&nbsp;al.(2015)Howard, Bach, Berndt, and Conti</a>]
+</td>
+<td class="bibtexitem">
+David&nbsp;H. Howard, Peter&nbsp;B. Bach, Ernst&nbsp;R. Berndt, and Rena&nbsp;M. Conti.
+ Pricing in the market for anticancer drugs.
+ <em>Journal of Economic Perspectives</em>, 290 (1):0
+  139--62, February 2015.
+ 10.1257/jep.29.1.139.
+[&nbsp;<a href="http://dx.doi.org/10.1257/jep.29.1.139">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="jehiel1996">Jehiel et&nbsp;al.(1996)Jehiel, Moldovanu, and Stacchetti</a>]
+</td>
+<td class="bibtexitem">
+Philippe Jehiel, Benny Moldovanu, and Ennio Stacchetti.
+ How (not) to sell nuclear weapons.
+ <em>The American Economic Review</em>, 860 (4):0
+  814--829, 1996.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Kamphorst2021">Kamphorst and Karamychev(2021)</a>]
+</td>
+<td class="bibtexitem">
+Jurjen Kamphorst and Vladimir&nbsp;A. Karamychev.
+ Going through the roof: On prices for drugs sold through insurance,
+  2021.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="KatzShapiro1986">Katz and Shapiro(1986)</a>]
+</td>
+<td class="bibtexitem">
+Michael&nbsp;L. Katz and Carl Shapiro.
+ How to license intangible property.
+ <em>Quarterly Journal of Economics</em>, 1010 (3):0 567
+  -- 589, 1986.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="ScottMorton2011763">Morton and Kyle(2011)</a>]
+</td>
+<td class="bibtexitem">
+Fiona&nbsp;Scott Morton and Margaret Kyle.
+ Chapter twelve - markets for pharmaceutical products.
+ In Thomas G.&nbsp;Mcguire Mark V.&nbsp;Pauly and Pedro&nbsp;P. Barros, editors,
+  <em>Handbook of Health Economics</em>, volume&nbsp;2, pages 763 -- 823. Elsevier,
+  2011.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="RR-2956-ASPEC">Mulcahy et&nbsp;al.(2021)Mulcahy, Whaley, Gizaw, Schwam, Edenfield, and
+  Becerra-Ornelas</a>]
+</td>
+<td class="bibtexitem">
+Andrew&nbsp;W. Mulcahy, Christopher&nbsp;M. Whaley, Mahlet Gizaw, Daniel Schwam,
+  Nathaniel Edenfield, and Alejandro&nbsp;U. Becerra-Ornelas.
+ <em>International Prescription Drug Price Comparisons: Current
+  Empirical Estimates and Comparisons with Previous Studies</em>.
+ RAND Corporation, Santa Monica, CA, 2021.
+ 10.7249/RR2956.
+[&nbsp;<a href="http://dx.doi.org/10.7249/RR2956">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="mun10">Munkin and Trivedi(2010)</a>]
+</td>
+<td class="bibtexitem">
+M.K. Munkin and P.K. Trivedi.
+ Disentangling incentives effects of insurance coverage from adverse
+  selection in the case of drug expenditure: a finite mixture approach.
+ <em>Health Economics</em>, 190 (9):0 1093--1108, 2010.
+ ISSN 1099-1050.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Parente2004">Parente et&nbsp;al.(2004)Parente, Feldman, and Christianson</a>]
+</td>
+<td class="bibtexitem">
+Stephen&nbsp;T. Parente, Roger Feldman, and Jon&nbsp;B. Christianson.
+ Employee choice of consumer-driven health insurance in a multiplan,
+  multiproduct setting.
+ <em>Health Services Research</em>, 390 (4p2):0
+  1091--1112, 2004.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Royalty99">Royalty and Solomon(1999)</a>]
+</td>
+<td class="bibtexitem">
+Anne&nbsp;Beeson Royalty and Neil Solomon.
+ Health plan choice: Price elasticities in a managed competition
+  setting.
+ <em>The Journal of Human Resources</em>, 340 (1):0
+  1--41, 1999.
+ ISSN 0022166X.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SALTZMAN2019197">Saltzman(2019)</a>]
+</td>
+<td class="bibtexitem">
+Evan Saltzman.
+ Demand for health insurance: Evidence from the california and
+  washington aca exchanges.
+ <em>Journal of Health Economics</em>, 63:0 197 -- 222, 2019.
+ https://doi.org/10.1016/j.jhealeco.2018.11.004.
+[&nbsp;<a href="https://doi.org/10.1016/j.jhealeco.2018.11.004">DOI</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+</div>
+
 <p>
 
-<h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="Howard2015">[Howard2015]</a> <a name="Howard2015"></a>Howard, Bach, Berndt & Conti, Pricing in the Market for Anticancer Drugs, <i>Journal of Economic Perspectives</i>, <b>29(1)</b>, 139-62 (2015). <a href="http://www.aeaweb.org/articles?id=10.1257/jep.29.1.139">link</a>. <a href="http://dx.doi.org/10.1257/jep.29.1.139">doi</a>.</li>
-<li><a id="cavalli-2013-appeal-to">[cavalli-2013-appeal-to]</a> <a name="cavalli-2013-appeal-to"></a>Franco Cavalli, An Appeal To World Leaders: Stop Cancer Now, <i>The Lancet</i>, <b>381(9865)</b>, 425-426 (2013). <a href="https://doi.org/10.1016/s0140-6736(13)60059-8">link</a>. <a href="http://dx.doi.org/10.1016/s0140-6736(13)60059-8">doi</a>.</li>
-<li><a id="Garattini2015">[Garattini2015]</a> <a name="Garattini2015"></a>Livio Garattini, Alessandro Curto & Nick Freemantle, Personalized medicine and economic evaluation in oncology: all theory and no practice?, <i>Expert Review of Pharmacoeconomics & Outcomes Research</i>, <b>15(5)</b>, 733-738 (2015). <a href="http://dx.doi.org/10.1586/14737167.2015.1078239">doi</a>.</li>
-<li><a id="Doble2016">[Doble2016]</a> <a name="Doble2016"></a>Brett Doble, Budget impact and cost-effectiveness: can we afford precision medicine in oncology?, <i>Scandinavian Journal of Clinical and Laboratory Investigation</i>, <b>76(sup245)</b>, S6-S11 (2016). <a href="https://doi.org/10.1080/00365513.2016.1206437">link</a>. <a href="http://dx.doi.org/10.1080/00365513.2016.1206437">doi</a>.</li>
-<li><a id="LEWIS1989294">[LEWIS1989294]</a> <a name="LEWIS1989294"></a>"Tracy R Lewis & David M Sappington", Countervailing incentives in agency problems, <i>"Journal of Economic Theory"</i>, <b>49(2)</b>, 294 - 313 (1989). <a href="http://www.sciencedirect.com/science/article/pii/0022053189900835">link</a>. <a href="http://dx.doi.org/https://doi.org/10.1016/0022-0531(89)90083-5">doi</a>.</li>
-<li><a id="Parente2004">[Parente2004]</a> <a name="Parente2004"></a>Parente, Feldman & Christianson, Employee Choice of Consumer-Driven Health Insurance in a Multiplan, Multiproduct Setting, <i>Health Services Research</i>, <b>39(4p2)</b>, 1091-1112 (2004). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-6773.2004.00275.x">link</a>. <a href="http://dx.doi.org/10.1111/j.1475-6773.2004.00275.x">doi</a>.</li>
-<li><a id="NBERw19800">[NBERw19800]</a> <a name="NBERw19800"></a>Gaynor, Ho & Town, The Industrial Organization of Health-Care Markets, <i>Journal of Economic Literature</i>, <b>53(2)</b>, 235-84 (2015). <a href="http://www.aeaweb.org/articles?id=10.1257/jel.53.2.235">link</a>. <a href="http://dx.doi.org/10.1257/jel.53.2.235">doi</a>.</li>
-<li><a id="fri05">[fri05]</a> <a name="fri05"></a>Frijters, Haisken-DeNew & Shields, The Causal Effect of Income on Health: Evidence from German Reunification, <i>Journal of Health Economics</i>, <b>24(5)</b>, 997-1017 (2005).</li>
-<li><a id="fin06">[fin06]</a> <a name="fin06"></a>Finkelstein & McGarry, Multiple dimensions of private information: evidence from the long-term  care insurance market, <i>The American Economic Review</i>, <b>96(4)</b>, 938-958 (2006).</li>
-<li><a id="gra09">[gra09]</a> <a name="gra09"></a>Gravelle & Sutton, Income, Relative Income, and Self-Reported Health in Britain 1979-2000, <i>Health Economics</i>, <b>18(2)</b>, 125-145 (2009).</li>
-<li><a id="mun10">[mun10]</a> <a name="mun10"></a>Munkin & Trivedi, Disentangling incentives effects of insurance coverage from adverse selection in the case of drug expenditure: a finite mixture approach, <i>Health Economics</i>, <b>19(9)</b>, 1093-1108 (2010).</li>
-<li><a id="hogan2017">[hogan2017]</a> <a name="hogan2017"></a>Ho, Hogan & Scott Morton, The impact of consumer inattention on insurer pricing in the Medicare Part D program, <i>The RAND Journal of Economics</i>, <b>48(4)</b>, 877-905 (2017). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1756-2171.12207">link</a>. <a href="http://dx.doi.org/10.1111/1756-2171.12207">doi</a>.</li>
-<li><a id="Atherly2004">[Atherly2004]</a> <a name="Atherly2004"></a>Atherly, Dowd & Feldman, The Effect of Benefits, Premiums, and Health Risk on Health Plan Choice in the Medicare Program, <i>Health Services Research</i>, <b>39(4p1)</b>, 847-864 (2004). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-6773.2004.00261.x">link</a>. <a href="http://dx.doi.org/10.1111/j.1475-6773.2004.00261.x">doi</a>.</li>
-<li><a id="Auerbach2006">[Auerbach2006]</a> <a name="Auerbach2006"></a>David Auerbach & Sabina Ohri, Price and the Demand for Nongroup Health Insurance, <i>INQUIRY: The Journal of Health Care Organization, Provision, and Financing</i>, <b>43(2)</b>, 122-134 (2006). <a href="https://doi.org/10.5034/inquiryjrnl_43.2.122">link</a>. <a href="http://dx.doi.org/10.5034/inquiryjrnl\_43.2.122">doi</a>.</li>
-<li><a id="SALTZMAN2019197">[SALTZMAN2019197]</a> <a name="SALTZMAN2019197"></a>"Evan Saltzman", Demand for health insurance: Evidence from the California and Washington ACA exchanges, <i>"Journal of Health Economics"</i>, <b>63</b>, 197 - 222 (2019). <a href="http://www.sciencedirect.com/science/article/pii/S016762961730070X">link</a>. <a href="http://dx.doi.org/https://doi.org/10.1016/j.jhealeco.2018.11.004">doi</a>.</li>
-<li><a id="Royalty99">[Royalty99]</a> <a name="Royalty99"></a>Anne Beeson Royalty & Neil Solomon, Health Plan Choice: Price Elasticities in a Managed Competition Setting, <i>The Journal of Human Resources</i>, <b>34(1)</b>, 1-41 (1999). <a href="http://www.jstor.org/stable/146301">link</a>.</li>
-<li><a id="STROMBOM200289">[STROMBOM200289]</a> <a name="STROMBOM200289"></a>"Bruce A Strombom, Thomas C Buchmueller & Paul J Feldstein", Switching costs, price sensitivity and health plan choice, <i>"Journal of Health Economics"</i>, <b>21(1)</b>, 89 - 116 (2002). <a href="http://www.sciencedirect.com/science/article/pii/S0167629601001242">link</a>. <a href="http://dx.doi.org/https://doi.org/10.1016/S0167-6296(01)00124-2">doi</a>.</li>
-<li><a id="Costa_2003">[Costa_2003]</a> <a name="Costa_2003"></a>Costa & Garcia, Demand for private health insurance: how important is  the quality gap?, <i>Health Economics</i>, <b>12(7)</b>, 587–599 (2003). <a href="http://dx.doi.org/10.1002/hec.756">link</a>. <a href="http://dx.doi.org/10.1002/hec.756">doi</a>.</li>
-<li><a id="BEAULIEU200243">[BEAULIEU200243]</a> <a name="BEAULIEU200243"></a>"Nancy Dean Beaulieu", Quality information and consumer health plan choices, <i>"Journal of Health Economics"</i>, <b>21(1)</b>, 43 - 63 (2002). <a href="http://www.sciencedirect.com/science/article/pii/S0167629601001266">link</a>. <a href="http://dx.doi.org/https://doi.org/10.1016/S0167-6296(01)00126-6">doi</a>.</li>
-<li><a id="handel-2015-healt-insur-human">[handel-2015-healt-insur-human]</a> <a name="handel-2015-healt-insur-human"></a>Benjamin Handel & Jonathan Kolstad, Health Insurance for "Humans": Information  Frictions, Plan Choice, and Consumer Welfare, <i>American Economic Review</i>, <b>105(8)</b>, 2449-2500 (2015). <a href="https://doi.org/10.1257/aer.20131126">link</a>. <a href="http://dx.doi.org/10.1257/aer.20131126">doi</a>.</li>
-<li><a id="Garrison2017">[Garrison2017]</a> <a name="Garrison2017"></a>Garrison & Towse, Value-based pricing and reimbursement in personalised healthcare: Introduction to the basic health economics, <i>Journal of Personalized Medicine</i>, <b>7(3)</b>, (2017). <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85031121023&doi=10.3390Garrison2017.pdfjpm7030010&partnerID=40&md5=46632869b87bdfb3472b7206adf04ba2">link</a>. <a href="http://dx.doi.org/10.3390/jpm7030010">doi</a>.</li>
-<li><a id="McCabe2005">[McCabe2005]</a> <a name="McCabe2005"></a>McCabe, Claxton & Tsuchiya, Orphan drugs and the NHS: should we value rarity?, <i>BMJ</i>, <b>331</b>, 1016-1019 (2005).</li>
-<li><a id="Hawkese2627">[Hawkese2627]</a> <a name="Hawkese2627"></a>Hawkes, UK to spend \textsterling250m on proton beam treatment despite no appraisal by NICE, <i>BMJ</i>, <b>344</b>, (2012). <a href="https://www.bmj.com/content/344/bmj.e2627">link</a>. <a href="http://dx.doi.org/10.1136/bmj.e2627">doi</a>.</li>
-<li><a id="Langreth2012">[Langreth2012]</a> <a name="Langreth2012"></a>Langreth, Prostate Cancer Therapy Too Good to Be True Explodes Health Cost, <i>Bloomberg Technology</i>,  (2012). <a href="https://www.bloomberg.com/news/articles/2012-03-26/prostate-cancer-therapy-too-good-to-be-true-explodes-health-cost">link</a>.</li>
-<li><a id="Danzon2010">[Danzon2010]</a> <a name="Danzon2010"></a>Danzon & Taylor, Drug Pricing and Value in Oncology, <i>The Oncologist</i>, <b>15(S1)</b>, 24-31 (2010). <a href="https://theoncologist.onlinelibrary.wiley.com/doi/abs/10.1634/theoncologist.2010-S1-24">link</a>. <a href="http://dx.doi.org/10.1634/theoncologist.2010-S1-24">doi</a>.</li>
-<li><a id="RR-2956-ASPEC">[RR-2956-ASPEC]</a> <a name="RR-2956-ASPEC"></a>"Mulcahy, Christopher Whaley, Mahlet Gizaw, Daniel Schwam, Nathaniel Edenfield & Alejandro Becerra-Ornelas", International Prescription Drug Price Comparisons: Current Empirical Estimates and Comparisons with Previous Studies, RAND Corporation (2021).</li>
-<li><a id="Young2017">[Young2017]</a> <a name="Young2017"></a>Young, Soussi, Hemels & Toumi, A comparative study of orphan drug prices in Europe, <i>Journal of Market Access and Health Policy</i>, <b>5</b>, (2017).</li>
-<li><a id="Kamphorst2021">[Kamphorst2021]</a> <a name="Kamphorst2021"></a>@ReportKamphorst2021,
-  author = 	 Kamphorst, Jurjen and Karamychev, Vladimir A.,
-  title = 	 Going Through The Roof: On Prices for Drugs Sold Through Insurance,
-  institution =  Erasmus University Rotterdam,
-  year = 	 2021,
-  OPTkey = 	 ,
-  OPTtype = 	 ,
-  OPTnumber = 	 ,
-  OPTaddress = 	 ,
-  OPTmonth = 	 ,
-  OPTnote = 	 ,
-  OPTannote = 	 
-</li>
-<li><a id="Medic2017">[Medic2017]</a> <a name="Medic2017"></a>Medic, Korchagina, Young, Toumi, Postma, Wille & Hemels, Do payers value rarity? An analysis of the relationship between disease rarity and orphan drug prices in Europe, <i>Journal of Market Access and Health Policy</i>, <b>5</b>, (2017).</li>
-<li><a id="Messoric4615">[Messoric4615]</a> <a name="Messoric4615"></a>Messori, Cicchetti & Patregani, Relating price determination to disease prevalence, <i>BMJ</i>, <b>341</b>, (2010). <a href="https://www.bmj.com/content/341/bmj.c4615">link</a>. <a href="http://dx.doi.org/10.1136/bmj.c4615">doi</a>.</li>
-<li><a id="laf02">[laf02]</a> <a name="laf02"></a>Laffont & Martimort, The theory of incentives: the principal-agent model, Princeton University Press (2002).</li>
-<li><a id="BooneS13">[BooneS13]</a> <a name="BooneS13"></a>Jan Boone & Christoph Schottm\"uller, Health insurance without single crossing: why healthy people have high coverage, <i>Economic Journal</i>, <b>127(599)</b>, 84-105 (2017).</li>
-<li><a id="KatzShapiro1986">[KatzShapiro1986]</a> <a name="KatzShapiro1986"></a>Katz & Shapiro, HOW TO LICENSE INTANGIBLE PROPERTY., <i>Quarterly Journal of Economics</i>, <b>101(3)</b>, 567 - 589 (1986). <a href="http://search.ebscohost.com.tilburguniversity.idm.oclc.org/login.aspx?direct=true&db=bsu&AN=4624759&site=ehost-live">link</a>.</li>
-<li><a id="jehiel1996">[jehiel1996]</a> <a name="jehiel1996"></a>Philippe Jehiel, Benny Moldovanu & Ennio Stacchetti, How (Not) to Sell Nuclear Weapons, <i>The American Economic Review</i>, <b>86(4)</b>, 814-829 (1996). <a href="http://www.jstor.org/stable/2118306">link</a>.</li>
-<li><a id="Cohn07">[Cohn07]</a> <a name="Cohn07"></a>Cohn, Sick: the untold story of America's health care crisis-and the people who pay the price, Harper Perennial (2007).</li>
-<li><a id="Nyman1999141">[Nyman1999141]</a> <a name="Nyman1999141"></a>"John Nyman", The value of health insurance: the access motive, <i>"Journal of Health Economics"</i>, <b>18(2)</b>, 141 - 152 (1999). <a href="http://www.sciencedirect.com/science/article/pii/S0167629698000496">link</a>. <a href="http://dx.doi.org/10.1016/S0167-6296(98)00049-6">doi</a>.</li>
-<li><a id="Schoen2008">[Schoen2008]</a> <a name="Schoen2008"></a>Schoen, Collins, Kriss & Doty, How many are underinsured? Trends among U.S. adults, 2003 and 2007., <i>Health affairs (Project Hope)</i>, <b>27(4)</b>, 298-309 (2008). <a href="http://www.ncbi.nlm.nih.gov/pubmed/18544591">link</a>. <a href="http://dx.doi.org/10.1377/hlthaff.27.4.w298">doi</a>.</li>
-<li><a id="Schoen2010a">[Schoen2010a]</a> <a name="Schoen2010a"></a>Schoen, Osborn, Squires, Doty, Pierson & Applebaum, How Health Insurance Design Affects Access To Care And Costs, By Income, In Eleven Countries, <i>Health Affairs</i>, <b>29(12)</b>, 1-12 (2010). <a href="http://content.healthaffairs.org/cgi/content/abstract/hlthaff.2010.0862v1">link</a>. <a href="http://dx.doi.org/10.1377/hlthaff.2010.0862">doi</a>.</li>
-<li><a id="Schokkaert2011o">[Schokkaert2011o]</a> <a name="Schokkaert2011o"></a>@incollectionSchokkaert2011o,
-title = "Chapter 15 - User charges",
-editor = "S. Glied and P. Smith",
-booktitle = "Oxford Handbook of Health Economics",
-publisher = "Oxford University Press",
-year = "2011",
-pages = "329 - 353",
-author = "Erik Schokkaert and Carine van de Voorde"
-</li>
-<li><a id="rot76">[rot76]</a> <a name="rot76"></a>Rothschild & Stiglitz, Equilibrium in Competitive Insurance Markets: An Essay on the Economics  of Imperfect Information, <i>The Quarterly Journal of Economics</i>, <b>90(4)</b>, 629-649 (1976).</li>
-<li><a id="Tirole">[Tirole]</a> <a name="Tirole"></a>"Jean Tirole", The theory of industrial organization, MIT Press (1988).</li>
-<li><a id="ScottMorton2011763">[ScottMorton2011763]</a> <a name="ScottMorton2011763"></a>@incollectionScottMorton2011763,
-title = "Chapter Twelve - Markets for Pharmaceutical Products",
-editor = "Mark V. Pauly, Thomas G. Mcguire and Pedro P. Barros",
-booktitle = "Handbook of Health Economics",
-publisher = "Elsevier",
-year = "2011",
-volume = "2",
-pages = "763 - 823",
-OPTissn = "1574-0064",
-OPTdoi = "10.1016/B978-0-444-53592-4.00012-8",
-OPTurl = "http://www.sciencedirect.com/science/article/pii/B9780444535924000128",
-author = "Fiona Scott Morton and Margaret Kyle"
-</li>
-<li><a id="Dugger2018">[Dugger2018]</a> <a name="Dugger2018"></a>Dugger, Platt & Goldstein, Drug development in the era of precision medicine, <i>Nature Reviews Drug Discovery</i>, <b>17(3)</b>, 183-196 (2018). <a href="http://dx.doi.org/10.1038/nrd.2017.226">doi</a>.</li>
-<li><a id="NBERc13994">[NBERc13994]</a> <a name="NBERc13994"></a>@inbookNBERc13994,
- title = "Characterizing the Drug Development Pipeline for Precision Medicines",
- author = "Amitabh Chandra and Craig Garthwaite and Ariel Dora Stern",
- BookTitle = "Economic Dimensions of Personalized and Precision Medicine",
- Publisher = "University of Chicago Press",
- pages = "115-157",
- year = "2018",
- month = "May",
- OPTURL = "http://www.nber.org/chapters/c13994",
-</li>
-<li><a id="Emmerich2021">[Emmerich2021]</a> <a name="Emmerich2021"></a>Emmerich, Gamboa, Hofmann, Bonin-Andresen, Arbach, Schendel, Gerlach, Hempel, Bespalov, Dirnagl & Parnham, Improving target assessment in biomedical research: the GOT-IT recommendations, <i>Nature Reviews Drug Discovery</i>, <b>20(3)</b>, 64-81 (2021). <a href="http://dx.doi.org/10.1038/s41573-020-0087-3">doi</a>.</li>
-<li><a id="Knowles2003">[Knowles2003]</a> <a name="Knowles2003"></a>Knowles & Gromo, Target selection in drug discovery, <i>Nature Reviews Drug Discovery</i>, <b>2</b>, 63-69 (2003).</li>
-<li><a id="jakka13_econom_persp_person_medic">[jakka13_econom_persp_person_medic]</a> <a name="jakka13_econom_persp_person_medic"></a>Sairamesh Jakka & Michael Rossbach, An Economic Perspective on Personalized Medicine, <i>The HUGO Journal</i>, <b>7(1)</b>, 1 (2013). <a href="https://doi.org/10.1186/1877-6566-7-1">link</a>. <a href="http://dx.doi.org/10.1186/1877-6566-7-1">doi</a>.</li>
-</ul>
+
 </p>
 </div>
 </div>
 
 
 
-<div id="outline-container-orgb3617a1" class="outline-2">
-<h2 id="orgb3617a1"><span class="section-number-2">8.</span> Proof of results</h2>
+<div id="outline-container-org5f776c8" class="outline-2">
+<h2 id="org5f776c8"><span class="section-number-2">8.</span> Proof of results</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 <b>Proof of Lemma <a href="#Baseline_results">Baseline_results</a></b>
@@ -1420,7 +1693,7 @@ We can also derive \(\lambda_{l}^a,\lambda_{l}^b\).
 One of the questions in this paper is: how does this extra profit \(d\Pi/d\alpha|_{p_1=v_1}\) vary with competition? In our model, competition is inversely related to travel cost \(t\). Hence, in the notation of the previous section, we would define our variable capturing competition as \(\theta_k = 1/t_k\). As \eqref{eq:21d} illustrates, \(d\Pi/d\alpha\) increases in \(\lambda_l\).
 </p>
 
-<div class="lemma" id="org2fa4085">
+<div class="lemma" id="org9912c4f">
 <p>
 <div id="Hotelling_lambda"></div>
 In the Hotelling model, the multiplier \(\lambda_l\) is increasing in \(t_l\) and decreasing in \(t_h\).
@@ -1617,14 +1890,14 @@ Deriving comparative statics from implicit equation \eqref{eq:37}, we view this 
 </p>
 
 
-<div id="orgf01494d" class="figure">
+<div id="org218c47e" class="figure">
 <p><img src="./fixedpoint.png" alt="fixedpoint.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Solving equation \eqref{eq:37} for \(\sigma\).</p>
 </div>
 
 <p>
-We will show that \(\partial rhs/\partial \sigma \in \langle 0,1 \rangle\) and hence a change in a variable that shifts \(rhs\) up (down) will increase (decrease) \(\sigma\) in \eqref{eq:37}; see Figure <a href="#orgf01494d">2</a>. Hence, we want to show that
+We will show that \(\partial rhs/\partial \sigma \in \langle 0,1 \rangle\) and hence a change in a variable that shifts \(rhs\) up (down) will increase (decrease) \(\sigma\) in \eqref{eq:37}; see Figure <a href="#org218c47e">2</a>. Hence, we want to show that
 </p>
 \begin{equation}
 \label{eq:25}
@@ -1661,7 +1934,7 @@ To prove this inequality, first consider the case of \(\Delta \sigma=0\), i.e. w
 </p>
 
 <p>
-As \(\varepsilon_h\) increases, \(rhs\) shifts downwards in Figure <a href="#orgf01494d">2</a> and \(\sigma\) falls. Hence, we find that
+As \(\varepsilon_h\) increases, \(rhs\) shifts downwards in Figure <a href="#org218c47e">2</a> and \(\sigma\) falls. Hence, we find that
 </p>
 \begin{equation}
 \label{eq:45}
@@ -1753,9 +2026,9 @@ for \(\phi\) close enough to 1 because \(d\psi_{ih}/d\zeta_{i}<0\) and \(d\Delta
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Examples include <a href="https://nyti.ms/2NvLoZx">https://nyti.ms/2NvLoZx</a>, <a href="https://nyti.ms/2bHXkFj">https://nyti.ms/2bHXkFj</a> and <a href="https://nyti.ms/2nKMJ2a">https://nyti.ms/2nKMJ2a</a>.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">The correlation between health status and income is well documented in the empirical health literature, see for example <a class='org-ref-reference' href="#fri05">fri05</a>, <a class='org-ref-reference' href="#fin06">fin06</a>, <a class='org-ref-reference' href="#gra09">gra09</a> or <a class='org-ref-reference' href="#mun10">mun10</a>. Potential explanations for this correlation include the following. High income people are better educated and hence know the importance of healthy food, exercise etc. Healthy food options tend to be more expensive and therefore better affordable to high income people. Or (with causality running in the other direction) healthy people are more productive and therefore earn higher incomes.</p></div></div>
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">The correlation between health status and income is well documented in the empirical health literature, see for example [<a href="#fri05">Frijters et&nbsp;al.(2005)Frijters, Haisken-DeNew, and Shields</a>], [<a href="#fin06">Finkelstein and McGarry(2006)</a>], [<a href="#gra09">Gravelle and Sutton(2009)</a>] or [<a href="#mun10">Munkin and Trivedi(2010)</a>]. Potential explanations for this correlation include the following. High income people are better educated and hence know the importance of healthy food, exercise etc. Healthy food options tend to be more expensive and therefore better affordable to high income people. Or (with causality running in the other direction) healthy people are more productive and therefore earn higher incomes.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">There are also papers suggesting that people with lower health status tend to be less price elastic when choosing insurance. A number of these papers are based on age as an indicator of health status: older people tend to have lower health status <a class='org-ref-reference' href="#STROMBOM200289">STROMBOM200289</a>,<a class='org-ref-reference' href="#Royalty99">Royalty99</a>. But <a class='org-ref-reference' href="#Costa_2003">Costa_2003</a> find no difference in elasticity between age groups. As pointed out by <a class='org-ref-reference' href="#BEAULIEU200243">BEAULIEU200243</a>, another reason for the lower price elasticity is that older people (people with low health status in general) tend to be better informed about the quality of the different health plans and the treatments they cover. This can explain why they react less to price changes and to plan quality information published by the government or an employer.</p></div></div>
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">There are also papers suggesting that people with lower health status tend to be less price elastic when choosing insurance. A number of these papers are based on age as an indicator of health status: older people tend to have lower health status <a class='org-ref-reference' href="#STROMBOM200289">STROMBOM200289</a>,<a class='org-ref-reference' href="#Royalty99">Royalty99</a>. But [<a href="#Costa_2003">Costa and Garcia(2003)</a>] find no difference in elasticity between age groups. As pointed out by [<a href="#BEAULIEU200243">Beaulieu(2002)</a>], another reason for the lower price elasticity is that older people (people with low health status in general) tend to be better informed about the quality of the different health plans and the treatments they cover. This can explain why they react less to price changes and to plan quality information published by the government or an employer.</p></div></div>
 
 <div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">In free market systems, the insurer can decide what to cover or not in its contracts. In regulated market systems, like the Netherlands, the government prescribes which conditions need to be covered by basic insurance but does not define which treatments need to be covered.</p></div></div>
 
@@ -1771,7 +2044,7 @@ for \(\phi\) close enough to 1 because \(d\psi_{ih}/d\zeta_{i}<0\) and \(d\Delta
 
 <div class="footdef"><sup><a id="fn.11" class="footnum" href="#fnr.11" role="doc-backlink">11</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Otherwise we need to distinguish treatments \(i\) where the inequality in \(\psi_{il} \leq \psi_{ih}\) is strict or not below. This is tedious while not adding to our understanding of the problem.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">See <a class='org-ref-reference' href="#BooneS13">BooneS13</a> for an analysis of the health insurance market where single crossing is violated.</p></div></div>
+<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">See [<a href="#BooneS13">Boone and Schottm&uuml;ller(2017)</a>] for an analysis of the health insurance market where single crossing is violated.</p></div></div>
 
 <div class="footdef"><sup><a id="fn.13" class="footnum" href="#fnr.13" role="doc-backlink">13</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This figure is based on the example in Section <a href="#sec:example">4</a> with parameter values: \(\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5,t_h=1,t_l=3,\eta =1,y_l=y_h=0\).</p></div></div>
 
