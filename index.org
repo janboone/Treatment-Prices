@@ -215,6 +215,7 @@ where $q^{\iota}(u_k^{\iota},u_k^{-\iota},\theta_k)$ denotes the market share of
 An insurer maximizes profits over coverage and utility (i.e. the premium): $x_{ik},x_{jk},u_k$ for $i \in P, j \in O, k \in \{l,h\}$. We can already see the following properties of the solution.
 #+begin_lemma
 label:Baseline_results
+#+name: Baseline_results
 Assume $p_i = v_i$ and $\alpha_i \in \langle 0,1]$ for $i \in P$, then we have:
 - $\lambda_h>0$ implies $x_{il}=0$;
 - it cannot be the case that both $IC$ constraints bind;
@@ -326,7 +327,7 @@ As equation eqref:eq:51 shows, the demand elasticity of type $k$ decreases with 
 $\frac{\partial \varepsilon}{\partial u}=\frac{\eta}{t} \frac{(y+u)^{-\eta}}{(y+u)^{2(1-\eta)}} (y+\eta u) >0$
 #+end_comment
 
-We finish the section with an example where indeed $IC_l$ is binding. As the goal is to show that something is /possible/ we simplify further by assuming $\eta=1,y_k=0$ for $k=l,h$. We first assume that $IC_h$ is slack (and check later that this assumption is correct; see the proof of lemma ref:Hotelling_equilibrium). With $p_1=v_1$ and only one treatment in each of the sets $P,O$, we write equation eqref:eq:15 as follows:
+We finish the section with an example where indeed $IC_l$ is binding. As the goal is to show that something is /possible/ we simplify further by assuming $\eta=1,y_k=0$ for $k=l,h$. We first assume that $IC_h$ is slack (and check later that this assumption is correct; see the proof of lemma [[Hotelling_equilibrium]]). With $p_1=v_1$ and only one treatment in each of the sets $P,O$, we write equation eqref:eq:15 as follows:
 \begin{align}
 \nonumber
     \max_{u_l^a,u_h^a,x_{1h}^a,x_{2l}^a,x_{2h}^a} & \phi \left(\frac{1}{2} + \frac{u_l^a-u_l^b}{2t_l} \right) (\psi_2 x_{2l}^a v_2 -u_l^a) \\
@@ -338,6 +339,7 @@ We finish the section with an example where indeed $IC_l$ is binding. As the goa
 We derive the following equilibrium outcome.
 #+begin_lemma
 label:Hotelling_equilibrium
+#+name: Hotelling_equilibrium
 In the Hotelling model, assume that $p_1 =v_1$ and $t_l - t_h > v_1 (\psi_{1h}-\psi_{1l})$. Then in equilibrium, it is the case that $x_{1h}=x_{2h}=x_{2l}=1$, $x_{1l} \in [0,1]$ and
 \begin{align}
 \label{eq:21}
@@ -399,10 +401,11 @@ In symmetric equilibrium ($q_l=q_h=1/n$ where $n$ denotes the number of insurers
 \end{equation}
 If both markets would be served independently (i.e. without being linked via an IC constraint), the insurer would set its price cost margin equal to $\mu = 1/\varepsilon$; the well known Lerner expression for a profit maximizing mark-up. Because the markets are linked via eqref:eq:12, the weighted sum of these two terms equals zero. That is the mark-up is too high in one market (compared to $\mu=1/\varepsilon$) and this is compensated by a mark-up which is too low in the other market.
 
-Here we consider the case where R&D firm $i$ sets $p_i=v_i$ and uses the fixed part of the tariff to appropriate the supra profits. Lemma ref:Baseline_results implies that $x_{ih}=x_{il}=x_{jh}=x_{jl}=1$. Hence, we have a pooling contract.[fn::Given that we have a pooling contract, we could have solved the model by assuming the pooling contract from the start and not bother with IC constraints. Our approach has the following advantages. First, we can prove under which conditions pooling is optimal. Second, we use the same approach to derive the pooling and the separating outcomes. Third, we get the Lagrange multiplier $\lambda_l$ as a measure of the cost of the information rent to the insurer.] Therefore, $\mu_l$ and $\mu_h$ in eqref:eq:28 are based on the same premium $\sigma$. Thus, we can solve for $\sigma$. Since we have $\sigma_l=\sigma_h=\sigma$, we have $\mu_l > \mu_h$ because $c_h>c_l$.
+Here we consider the case where R&D firm $i$ sets $p_i=v_i$ and uses the fixed part of the tariff to appropriate the supra profits. Lemma [[Baseline_results]] implies that $x_{ih}=x_{il}=x_{jh}=x_{jl}=1$. Hence, we have a pooling contract.[fn::Given that we have a pooling contract, we could have solved the model by assuming the pooling contract from the start and not bother with IC constraints. Our approach has the following advantages. First, we can prove under which conditions pooling is optimal. Second, we use the same approach to derive the pooling and the separating outcomes. Third, we get the Lagrange multiplier $\lambda_l$ as a measure of the cost of the information rent to the insurer.] Therefore, $\mu_l$ and $\mu_h$ in eqref:eq:28 are based on the same premium $\sigma$. Thus, we can solve for $\sigma$. Since we have $\sigma_l=\sigma_h=\sigma$, we have $\mu_l > \mu_h$ because $c_h>c_l$.
 
 #+begin_lemma
 label:Two_part_tariff
+#+name: Two_part_tariff
 With $p_i \leq v_i$, we find the following expressions for the premium and the mark-ups on the two markets:
 \begin{align}
 \label{eq:29}
@@ -425,20 +428,19 @@ Even if treatment $i$ is priced at consumer value $p_i = v_i$, reducing $\alpha_
 
 The following assumption ensurers that we are in the relevant parameter space that allows for supra profits. First, we need that eqref:eq:12 is binding: $\lambda_l >0$. Further, for the insurers' optimization problem to be well defined, we need that the "average elasticity" on the two markets exceeds 1.[fn::If the average elasticity is below 1, it is optimal for the insurer to set the premium at $+\infty$. Discarding this possibility is without loss of generality.] Throughout this paper, we make the following assumptions such that both conditions are satisfied.
 
-#+begin_assumption
-label:Elasticities
+*Assumption*
 \begin{align}
 \label{eq:33}
-c_h \varepsilon_h (1- \varepsilon_l )-c_l \varepsilon_l(1-\varepsilon_h) > 0 \\
+c_h \varepsilon_h (1- \varepsilon_l )-c_l \varepsilon_l(1-\varepsilon_h) &> 0 \\
 \label{eq:33a}
-\phi \varepsilon_l + (1-\phi) \varepsilon_h > 1
+\phi \varepsilon_l + (1-\phi) \varepsilon_h &> 1
 \end{align}
-#+end_assumption
 
 As the denominator of eqref:eq:43 is positive, $\lambda_l >0$ if and only if inequality eqref:eq:33 holds. Equation eqref:eq:33a makes sure that $\sigma$ in eqref:eq:29 has a finite value. The following lemma derives two conditions under which eqref:eq:33 is satisfied.
 
 #+begin_lemma
 label:IC_l_binding
+#+name: IC_l_binding
 We find that $\lambda_l >0$ if either
 - $\varepsilon_l \leq 1$
 - or
@@ -450,12 +452,13 @@ We find that $\lambda_l >0$ if either
 
 If $\varepsilon_l \leq 1$ then eqref:eq:33a implies that $\varepsilon_h > 1$. Insurers then want to set such a high price on the $l$ market that $IC_l$ binds. If $\varepsilon_l > 1$, we have that $\varepsilon_h > \varepsilon_l>1$. This implies that the fraction on the right hand side of eqref:eq:34 is bigger than 0. Hence, there is a range of values for $c_h>c_l$ for which eqref:eq:34 is satisfied. Put differently, for given $c_h-c_l>0$, there exist $\varepsilon_h$ big enough and $\varepsilon_l>1$ small enough such that eqref:eq:34 holds.
 
-Note that the inequality on $c_h-c_l$ is reminiscent of the condition in Lemma ref:Hotelling_equilibrium: the difference in costs between the types is bounded by the difference in elasticities. Intuitively, if the cost difference is too big (compared to the difference in elasticities), the $h$ contract will be too expensive to be attractive for the $l$ type. $IC_l$ is not binding in this case. If the cost difference is small, the higher elasticity on the $h$ market reduces the mark-up on the $h$ contract compared to the $l$ contract to such an extent that the $h$ contract is attractive to the $l$ type: $IC_l$ is binding.
+Note that the inequality on $c_h-c_l$ is reminiscent of the condition in Lemma [[Hotelling_equilibrium]]: the difference in costs between the types is bounded by the difference in elasticities. Intuitively, if the cost difference is too big (compared to the difference in elasticities), the $h$ contract will be too expensive to be attractive for the $l$ type. $IC_l$ is not binding in this case. If the cost difference is small, the higher elasticity on the $h$ market reduces the mark-up on the $h$ contract compared to the $l$ contract to such an extent that the $h$ contract is attractive to the $l$ type: $IC_l$ is binding.
 
 The following lemma derives properties of insurance markets that tend to lead to high supra profits.
 
 #+begin_lemma
 label:Comparative_static_lambda
+#+name: Comparative_static_lambda
 The shadow price $\lambda_l$ on the low type's IC constraint is:
 - increasing in $\varepsilon_h$ and decreasing in $\varepsilon_l$,
 - decreasing in $c_h$ and increasing in $c_l$.
@@ -463,7 +466,7 @@ The shadow price $\lambda_l$ on the low type's IC constraint is:
 
 Recall that supra profits $\tau_i$ are increasing in $\lambda_l$. Hence, we find that supra profits are increasing in the difference between $\varepsilon_h$ and $\varepsilon_l$. The more competitive the $h$ market becomes, compared to the $l$ market, the lower the mark-up on the $h$ contract compared to the $l$ contract. This makes the $h$ market more attractive to the $l$ type and hence the latter's IC constraint "more binding". Similarly, as the difference $c_h-c_l$ falls, the $h$ market becomes more attractive for insurers to compete on which, in turn, makes the $h$ contract more attractive to $l$ types.
 
-When explaining differences in pharmaceutical prices between countries, attention is focused on institutional features like income per head, who bargains with pharmaceutical companies (e.g. government vs. individual insurers), use of reference pricing and cost effectiveness analysis etc.; see cite:ScottMorton2011763 and references therein. Lemma ref:Comparative_static_lambda suggests that selection incentives on the health insurance market can play a role as well. As a preliminary illustration of this point, selection problems in US health insurance tend to be seen as worse than in European countries with competitive health insurance markets (like the Czech Republic, Germany, Israel, The Netherlands). The latter countries have automatic/mandatory coverage levels above 90% of the population in contrast to the US where a large share of the population goes without health insurance. Also branded drug prices in the US are far higher than in Europe citep:RR-2956-ASPEC. The analysis here suggests that these two phenomena could be connected.
+When explaining differences in pharmaceutical prices between countries, attention is focused on institutional features like income per head, who bargains with pharmaceutical companies (e.g. government vs. individual insurers), use of reference pricing and cost effectiveness analysis etc.; see cite:ScottMorton2011763 and references therein. Lemma [[Comparative_static_lambda]] suggests that selection incentives on the health insurance market can play a role as well. As a preliminary illustration of this point, selection problems in US health insurance tend to be seen as worse than in European countries with competitive health insurance markets (like the Czech Republic, Germany, Israel, The Netherlands). The latter countries have automatic/mandatory coverage levels above 90% of the population in contrast to the US where a large share of the population goes without health insurance. Also branded drug prices in the US are far higher than in Europe citep:RR-2956-ASPEC. The analysis here suggests that these two phenomena could be connected.
 
 Another factor determining treatment prices is the (individual rationality) constraint $u_k \geq 0$ where the outside option is normalized to 0. If drug prices increase to such an extent that $u_k < 0$, consumers stop buying health insurance because the expected benefit is lower than the price (premium). The introduction of generic drugs in the past decades which --due to competition-- are priced below value ($p_j < v_j$) creates the space for patented drugs to price above value and still the value of insurance is bigger than or equal to $\sigma$. cite:RR-2956-ASPEC show that generic drug prices are lower in the US than in Europe which allows branded drug producers to charge higher prices before the individual rationality constraint is binding.
 
@@ -478,6 +481,7 @@ From this it follows immediately that:
 
 #+begin_corollary
 label:Effect_Delta_psi
+#+name: Effect_Delta_psi
 Relative to other patented treatments in $P$, the supra profit of treatment $i$ increases in $\Delta \psi_i$.
 #+end_corollary
 
@@ -499,7 +503,7 @@ To the extent that the specialty pharmaceutical market and  personalized medicin
 
 ** linear pricing and separation
 
-Consider the case where the innovating firm cannot use a two-part tariff but only linear pricing. To capture the supra profits, firm $i$ cannot use the fixed fee but has to set $p_i > v_i$. We know from lemma ref:Baseline_results that $p_i>v_i$ implies $x_{il}=0$: the insurer drops treatment $i$ in the $l$ contract. Hence, firm $i$ weighs a higher price $p_i$ against a smaller group of customers using the treatment.
+Consider the case where the innovating firm cannot use a two-part tariff but only linear pricing. To capture the supra profits, firm $i$ cannot use the fixed fee but has to set $p_i > v_i$. We know from lemma [[Baseline_results]] that $p_i>v_i$ implies $x_{il}=0$: the insurer drops treatment $i$ in the $l$ contract. Hence, firm $i$ weighs a higher price $p_i$ against a smaller group of customers using the treatment.
 
 The first order conditions for $u_h,u_l$ are unchanged, hence equations eqref:eq:26, eqref:eq:36 and eqref:eq:28 remain valid here. However, in this case, $x_{il}=0$ while $x_{ih}=1$; thus, there is no pooling contract.
 
@@ -507,6 +511,7 @@ The following result characterizes the insurance premia charged on both market s
 
 #+begin_lemma
 label:Linear_pricing_premium
+#+name: Linear_pricing_premium
 Let $\sigma=\sigma_l$. Then $\sigma_h=\sigma+\Delta \sigma$ where
 \begin{equation}
 \label{eq:52}
@@ -525,6 +530,7 @@ Note that with $\Delta \sigma =0$, the expression in eqref:eq:37 is identical to
 
 #+begin_lemma
 label:Linear_pricing_profit_margins
+#+name: Linear_pricing_profit_margins
 With $\Delta \sigma > 0$, we find that $\mu_l > \mu_h$.
 #+end_lemma
 
@@ -539,6 +545,7 @@ This equation needs to hold with equality. If it would be negative, $p_i$ is so 
 
 #+begin_proposition
 label:Linear_price_above_value
+#+name: Linear_price_above_value
 If $\psi_{il} \leq \Delta \psi_i (1-\varepsilon_l (1-\frac{c_l}{\sigma}))$ then
 \begin{equation}
 \label{eq:56}
@@ -560,6 +567,7 @@ We derive the following comparative static results with respect to the supra pro
 
 #+begin_lemma
 label:Linear_pricing_comparative_statics
+#+name: Linear_pricing_comparative_statics
 The supra profit $\frac{p_i-v_i}{v_i}$ is
 - increasing in $\varepsilon_h$ and decreasing in $\varepsilon_l$;
 - decreasing in $c_h$ and increasing in $c_l$;
@@ -583,6 +591,7 @@ We can then derive the following result which does not hold in "normal" markets.
 
 #+begin_corollary
 label:Targeting_profitable
+#+name: Targeting_profitable
 For each $d\psi_{ih}/d\zeta_i<0$ and $d\Delta\psi_i/d\zeta_i>0$, there exists $\phi \in [0,1]$ close enough to 1 such that $d\pi_i/d\zeta_i>0$.
 #+end_corollary
 
@@ -648,6 +657,10 @@ Second, assuming that consumers stop buying insurance in case the expected value
 
 #+BIBLIOGRAPHY:../marginalinnovation plainnat limit:t option:-nobibsource
 
+
+
+
+
 @@latex:\newpage@@
 @@latex:\appendix@@
 
@@ -661,7 +674,7 @@ Second, assuming that consumers stop buying insurance in case the expected value
 
 * Proof of results
 
-*Proof of Lemma ref:Baseline_results*
+*Proof of Lemma [[Baseline_results]]*
 Because
 \begin{equation}
 \label{eq:16}
@@ -682,7 +695,7 @@ Finally, if $p_i > v_i$ then $d\Pi/dx_{il} <0$ (even if $\lambda_h =0$) and henc
 @@latex: \qed@@
 
 
-*Proof of Lemma ref:Hotelling_equilibrium*
+*Proof of Lemma [[Hotelling_equilibrium]]*
 First observe that the derivative of equation eqref:eq:20 with respect to $x_{1h},x_{2h},x_{2l}$ is strictly positive (with $\lambda_l >0$) and hence each of these variables equals 1, the derivative with respect to $x_{1l}$ equals 0 and this variable can take on any value between 0 and 1. The first order conditions with respect to $u_l^a$ and $u_h^a$ can be written as
 \begin{align}
 \label{eq:22}
@@ -766,16 +779,14 @@ We can also derive $\lambda_{l}^a,\lambda_{l}^b$.
 
 One of the questions in this paper is: how does this extra profit $d\Pi/d\alpha|_{p_1=v_1}$ vary with competition? In our model, competition is inversely related to travel cost $t$. Hence, in the notation of the previous section, we would define our variable capturing competition as $\theta_k = 1/t_k$. As eqref:eq:21d illustrates, $d\Pi/d\alpha$ increases in $\lambda_l$.
 
-#+begin_lemma
-label:Hotelling_lambda
+*Lemma*
 In the Hotelling model, the multiplier $\lambda_l$ is increasing in $t_l$ and decreasing in $t_h$.
-#+end_lemma
 
-*Proof of Lemma ref:Hotelling_lambda*
+*Proof of Lemma*
 Taking the derivatives of $\lambda_l$ with respect to $t_h$ and $t_l$, it is routine to verify that $d\lambda_l/d t_h <0$ and $d\lambda_l/dt_l > 0$. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of Lemma ref:Two_part_tariff*
+*Proof of Lemma [[Two_part_tariff]]*
 We write equation eqref:eq:28 as
 \begin{equation}
 \label{eq:31}
@@ -787,12 +798,12 @@ From equations eqref:eq:26 and eqref:eq:29a we find the expression for $\lambda_
 @@latex: \qed@@
 
 
-*Proof of Lemma ref:IC_l_binding*
+*Proof of Lemma [[IC_l_binding]]*
 Equation eqref:eq:33 clearly holds if $\varepsilon_l < 1$ since by assumption $\varepsilon_h > \varepsilon_l$.
 If $\varepsilon_{h} > \varepsilon_l > 1$, then the inequality can be written as eqref:eq:34. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of Lemma ref:Comparative_static_lambda*
+*Proof of Lemma [[Comparative_static_lambda]]*
 Differentiating equation eqref:eq:43 with respect to $\varepsilon_h$, we find
 \begin{align*}
 \frac{d \lambda_l}{d \varepsilon_h} &\propto (c_h (1-\varepsilon_l)+c_l \varepsilon_l) (\phi \varepsilon_l c_l + (1-\phi) \varepsilon_hc_h)\\
@@ -828,13 +839,13 @@ Similarly, we find for $c_l$ that
 @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of lemma ref:Linear_pricing_premium*
+*Proof of lemma [[Linear_pricing_premium]]*
 Combining a binding $IC_l$ constraint with the expressions for $u_{h,l}$ in equation eqref:eq:11, we find that
 \begin{equation}
 \label{eq:53}
 \sigma_h = \sigma_l + \sum_{i \in P} \psi_{il}v_i (x_{ih}-x_{il}) + \sum_{j \in O} \psi_{jl} v_j (x_{jh}-x_{jl})
 \end{equation}
-Using the results in lemma ref:Baseline_results we can write this equation as eqref:eq:52.
+Using the results in lemma [[Baseline_results]] we can write this equation as eqref:eq:52.
 
 Using $\sigma_l=\sigma$ and $\sigma_h=\sigma+\Delta\sigma$ in equation eqref:eq:28, we can write this as
 \begin{equation}
@@ -844,7 +855,7 @@ Using $\sigma_l=\sigma$ and $\sigma_h=\sigma+\Delta\sigma$ in equation eqref:eq:
 From this it follows that eqref:eq:29 needs to be adjusted to eqref:eq:37 in case $\Delta \sigma \neq 0$. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of lemma ref:Linear_pricing_profit_margins*
+*Proof of lemma [[Linear_pricing_profit_margins]]*
 $\mu_l = (\sigma-c_l)/\sigma$ while
 \begin{equation}
 \label{eq:59}
@@ -858,7 +869,7 @@ c_h-\sum_{i \in E_h} \psi_{il} v_i = \sum_{i \in P \setminus E_h} \psi_{ih}v_i +
 because $\psi_{ih}p_i > \psi_{il}v_i$ as $p_i \geq v_i$ and $\psi_{ih}>\psi_{il}$. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of proposition ref:Linear_price_above_value*
+*Proof of proposition [[Linear_price_above_value]]*
 Note that the right hand side of the condition in the proposition is positive. We know from equation eqref:eq:36 that $\mu_l \varepsilon_l<1$ because we consider the case where $\lambda_l > 0$ (see below). This we can write as $1-\varepsilon_l (\sigma-c_l)/\sigma >0$.
 
 Further note that $\sigma-c_l >0$. We prove this by contradiction. Assume that $c_l \geq \sigma$. That is, the $l$ contract is loss making. Consider the $h$ contract:
@@ -881,7 +892,7 @@ Firm $i$ can set $p_i = v_i$ and sell to both types or set $p_i>v_i$ and only se
 \end{equation}
 Using the expression for $\lambda_l$ in equation eqref:eq:36 written as $\lambda_l = \phi/n (1 - \varepsilon_l (1-c_{l}/\sigma))$, this expression can be written as the inequality in the proposition. If the inequality holds, equation eqref:eq:55 can be written as eqref:eq:56.
 
-Finally, note that assumption ref:Elasticities is also a sufficient condition for $\lambda_l > 0$ in this separating equilibrium. This can be seen as follows. Equation eqref:eq:36 implies that
+Finally, note that our assumption in the main text is also a sufficient condition for $\lambda_l > 0$ in this separating equilibrium. This can be seen as follows. Equation eqref:eq:36 implies that
 \begin{equation}
 \label{eq:68}
 \lambda_l > 0 \text{ if and only if } 1-\varepsilon_l \left(1-\frac{c_l}{\sigma} \right) > 0
@@ -891,10 +902,10 @@ Hence, if
 \label{eq:69}
 1-\varepsilon_l \left(1-\frac{c_l}{\sigma} \right) > 0
 \end{equation}
-holds for an upper-bound on $\sigma_l$, we find that $\lambda_l > 0$ for each $\sigma$ below this upper-bound. Comparing the expressions in eqref:eq:29 and eqref:eq:37, we see that $\Delta \sigma > 0$ implies $\sigma/(\sigma+\Delta\sigma)<1$ and $\sigma$ in eqref:eq:37 is lower than $\sigma$ in eqref:eq:29 -- see the proof of lemma ref:Linear_pricing_comparative_statics on how to solve the implicit equation eqref:eq:37. Hence, eqref:eq:29 provides the upper-bound for $\sigma$ in eqref:eq:37. Inequality eqref:eq:33 ensures that eqref:eq:69 holds for the upper-bound of $\sigma$ given by eqref:eq:29. Hence, eqref:eq:69 also holds for the solution to eqref:eq:37. @@html: <p style="text-align:right">∎</p> @@
+holds for an upper-bound on $\sigma_l$, we find that $\lambda_l > 0$ for each $\sigma$ below this upper-bound. Comparing the expressions in eqref:eq:29 and eqref:eq:37, we see that $\Delta \sigma > 0$ implies $\sigma/(\sigma+\Delta\sigma)<1$ and $\sigma$ in eqref:eq:37 is lower than $\sigma$ in eqref:eq:29 -- see the proof of lemma [[Linear_pricing_comparative_statics]] on how to solve the implicit equation eqref:eq:37. Hence, eqref:eq:29 provides the upper-bound for $\sigma$ in eqref:eq:37. Inequality eqref:eq:33 ensures that eqref:eq:69 holds for the upper-bound of $\sigma$ given by eqref:eq:29. Hence, eqref:eq:69 also holds for the solution to eqref:eq:37. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of lemma ref:Linear_pricing_comparative_statics*
+*Proof of lemma [[Linear_pricing_comparative_statics]]*
 Deriving comparative statics from implicit equation eqref:eq:37, we view this equation as looking for a fixed point of the expression on its right hand side (which we denote $rhs$).
 
 #+caption: Solving equation eqref:eq:37 for $\sigma$.
@@ -942,7 +953,7 @@ To find $d\sigma/d\varepsilon_l$, we consider $\partial rhs/\partial \varepsilon
 \label{eq:62}
 (1-\phi) \varepsilon_h \left(c_l-c_h \frac{\sigma}{\sigma+\Delta\sigma} \right) - c_l
 \end{equation}
-This expression is negative, as can be seen as follows. We know from lemma ref:Linear_pricing_profit_margins that $\mu_l>\mu_h$ which can be written as
+This expression is negative, as can be seen as follows. We know from lemma [[Linear_pricing_profit_margins]] that $\mu_l>\mu_h$ which can be written as
 \begin{equation}
 \label{eq:70}
 1-\frac{c_l}{\sigma} > 1-\frac{c_h}{\sigma+\Delta\sigma}
@@ -975,7 +986,7 @@ It is clear that $\partial rhs/\partial c_l <0$ and hence $\partial \tilde \sigm
 The effect of $\zeta_i$ is obvious: since we assume that there are many treatments covered by insurance so that the effect of $\zeta_i$ on $\sigma$ is negligible, we have $d(\Delta\psi_i/\psi_{ih})/d\zeta_i>0$. @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-*Proof of Corollary ref:Targeting_profitable*
+*Proof of Corollary [[Targeting_profitable]]*
 We find the following derivative
 \begin{equation}
 \label{eq:66}
