@@ -10,6 +10,12 @@
 /* took out: content: 'Theorem ' counter(theorem) '. '; */
 /* because counter did not increase across sections */
 /* also for lemma, corollary etc. */
+body {
+  counter-reset: lemma theorem corollary assumption proposition definition;
+}
+
+
+/* Theorem */
 .theorem {
   counter-increment: theorem;
   display: block;
@@ -17,7 +23,7 @@
   font-style: italic;
 }
 .theorem::before {
-  content: 'Theorem. ';
+  content: 'Theorem ' counter(theorem) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -30,7 +36,20 @@
   font-style: italic;
 }
 .lemma::before {
-  content: 'Lemma. ';
+  content: 'Lemma ' counter(lemma) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Corollary */
+.corollary {
+  counter-increment: corollary;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+}
+.corollary::before {
+  content: 'Corollary ' counter(corollary) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -43,10 +62,11 @@
   font-style: italic;
 }
 .proposition::before {
-  content: 'Proposition. ';
+  content: 'Proposition' counter(proposition) '. ';
   font-weight: bold;
   font-style: normal;
 }
+
 /* Assumption */
 .assumption {
   counter-increment: assumption;
@@ -55,22 +75,27 @@
   font-style: italic;
 }
 .assumption::before {
-  content: 'Assumption. ';
+  content: 'Assumption' counter(assumption) '. ';
   font-weight: bold;
   font-style: normal;
 }
-/* Corollary */
-.corollary {
-  counter-increment: corollary;
+
+/* Definition */
+.definition {
+  counter-increment: definition;
   display: block;
   margin: 12px 0;
   font-style: italic;
 }
-.corollary::before {
-  content: 'Corollary. ';
+.definition::before {
+  content: 'Definition ' counter(definition) '. ';
   font-weight: bold;
   font-style: normal;
 }
+
+
+
+
 
 /* Proof */
 .proof {
@@ -88,19 +113,6 @@
   position: absolute;
   right: -12px;
   bottom: -2px;
-}
-
-/* Definition */
-.definition {
-  counter-increment: definition;
-  display: block;
-  margin: 12px 0;
-  font-style: normal;
-}
-.definition::before {
-  content: 'Definition ' counter(definition) '. ';
-  font-weight: bold;
-  font-style: normal;
 }
 
 /* Sidenotes */
