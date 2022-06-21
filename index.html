@@ -250,32 +250,37 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4804e60">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
-<li><a href="#orgce07591">1. Introduction</a></li>
-<li><a href="#sec:example">2. Duopoly example</a></li>
-<li><a href="#orgb659a6d">3. Framework</a></li>
-<li><a href="#org13281e4">4. Supra profits</a>
+<li><a href="#org8ed5741">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
+<li><a href="#org9d94c56">1. Introduction</a></li>
+<li><a href="#sec:example">2. Duopoly example</a>
 <ul>
-<li><a href="#org52b8088">4.1. two-part tariff</a></li>
-<li><a href="#orgc37a90b">4.2. linear pricing and separation</a></li>
+<li><a href="#orgea4c41a">2.1. code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
 </ul>
 </li>
-<li><a href="#org7b2286e">5. Bounded rationality</a></li>
-<li><a href="#orgbd3ecc7">6. Policy implications</a></li>
-<li><a href="#org5671de8">7. Bibliography</a></li>
-<li><a href="#org29dc7a5">8. Proof of results</a>
+<li><a href="#org000cefe">3. Framework</a></li>
+<li><a href="#orgce6c34b">4. Supra profits</a>
 <ul>
-<li><a href="#orgd8990c5">8.1. Hotelling model</a></li>
-<li><a href="#orgee7d038">8.2. Framework</a></li>
-<li><a href="#orgbfd60f4">8.3. Two-part tariff</a></li>
-<li><a href="#org5716c54">8.4. Linear pricing</a></li>
-<li><a href="#org22c768e">8.5. Bounded rationality</a></li>
+<li><a href="#orgce1f901">4.1. two-part tariff</a></li>
+<li><a href="#org20f4158">4.2. linear pricing and separation</a></li>
+</ul>
+</li>
+<li><a href="#org74256b3">5. Bounded rationality</a></li>
+<li><a href="#orgb3ee68b">6. Policy implications</a></li>
+<li><a href="#orga52f933">7. Bibliography</a></li>
+<li><a href="#org86f0525">8. Proof of results</a>
+<ul>
+<li><a href="#orgc463e9a">8.1. Hotelling model</a></li>
+<li><a href="#org82fa143">8.2. Framework</a></li>
+<li><a href="#orgadd52b4">8.3. Two-part tariff</a></li>
+<li><a href="#orgdbed2fd">8.4. Linear pricing</a></li>
+<li><a href="#orgb85631f">8.5. Bounded rationality</a></li>
+<li><a href="#org95bee0f">8.6. code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="abstract" id="orga78fc66">
+<div class="abstract" id="orgba12fc5">
 <p>
 This paper shows that selection incentives in downstream markets affect upstream prices. In fact, it is possible for inputs to be priced above the value that the good has for final consumers. We apply this framework to pharmaceutical companies selling drugs to a health insurance market with adverse selection problems. We specify the conditions under which drugs are sold at prices exceeding treatment value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
 </p>
@@ -290,9 +295,9 @@ This paper shows that selection incentives in downstream markets affect upstream
 <b>JEL codes:</b> I13, I11
 </p>
 
-<div id="outline-container-org4804e60" class="outline-2">
-<h2 id="org4804e60">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h2>
-<div class="outline-text-2" id="text-org4804e60">
+<div id="outline-container-org8ed5741" class="outline-2">
+<h2 id="org8ed5741">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h2>
+<div class="outline-text-2" id="text-org8ed5741">
 <p>
 With this document, any reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. The numbering of and references to some math environments (like lemma, proposition etc.) do not work yet.
 </p>
@@ -300,8 +305,8 @@ With this document, any reader can retrace the code which we use to produce the 
 </div>
 
 
-<div id="outline-container-orgce07591" class="outline-2">
-<h2 id="orgce07591"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org9d94c56" class="outline-2">
+<h2 id="org9d94c56"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Consider a value chain where firms in an upstream market \(U\) sell inputs to firms in a downstream market \(D\) and the latter sell to final consumers. When considering the input prices set by firms in \(U\), there are a number of common sense results: 1. do not set the input price above the final consumers' valuation of your input; 2. try to innovate to make your product attractive to a bigger group of final consumers and 3. reduce your price as the downstream market becomes more competitive.
@@ -396,11 +401,11 @@ We assume that the consumer buys insurance to get access to treatments. That is,
 Each insurer offers two contracts (which can be identical in case of a pooling outcome), each contract aimed at a consumer type. We write the value/utility of the contract for type \(k=1,2\) as follows:
 </p>
 \begin{equation}
-\label{org22a71fe}
+\label{orgc2681f2}
 u_{k} = \alpha \psi_{1k} x_{1k} v_1 + \psi_{2} x_{2k} v_2 - \sigma_k
 \end{equation}
 <p>
-where \(x_{ik} \in [0,1]\) denotes the probability that treatment \(i\) is covered by contract \(k\) (below we have that \(x_{ik}\) equals either 0 or 1) and \(\sigma_k\) denotes the price/premium of contract \(k\). Value \(v_i\) denotes the utility of receiving the treatment in case the consumer needs it (with probability \(\psi_{ik}\)) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in \eqref{org22a71fe} which we leave out to ease notation.
+where \(x_{ik} \in [0,1]\) denotes the probability that treatment \(i\) is covered by contract \(k\) (below we have that \(x_{ik}\) equals either 0 or 1) and \(\sigma_k\) denotes the price/premium of contract \(k\). Value \(v_i\) denotes the utility of receiving the treatment in case the consumer needs it (with probability \(\psi_{ik}\)) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in \eqref{orgc2681f2} which we leave out to ease notation.
 </p>
 
 <p>
@@ -477,7 +482,7 @@ We finish the section with an example where indeed \(IC_l\) is binding. As the g
 </p>
 
 <p>
-The profit insurer \(a\) makes on type \(k\) buying its contract is given by \(\sigma_k^{a} - \alpha\psi_{1k}x_{1k}p_1 - \psi_{2k}x_{2k}p_2\): premium minus expected costs for type \(k\). Solving equation \eqref{org22a71fe} for \(\sigma_{k}\) and substituting this into the expression for the per type profit gives:
+The profit insurer \(a\) makes on type \(k\) buying its contract is given by \(\sigma_k^{a} - \alpha\psi_{1k}x_{1k}p_1 - \psi_{2k}x_{2k}p_2\): premium minus expected costs for type \(k\). Solving equation \eqref{orgc2681f2} for \(\sigma_{k}\) and substituting this into the expression for the per type profit gives:
 </p>
 \begin{equation}
 \label{eq:6}
@@ -511,7 +516,7 @@ where \(\lambda_l\) denotes the Lagrange multiplier on \(IC_l\) constraint .
 <p>
 In the appendix, we derive the following equilibrium outcome.
 </p>
-<div class="lemma" id="orgf5787bf">
+<div class="lemma" id="org3a20ffb">
 <p>
 <a href="Hotelling_equilibrium">Hotelling_equilibrium</a>
 In the Hotelling model, assume that \(p_1 =v_1\) and \(t_l - t_h > v_1 (\psi_{1h}-\psi_{1l})\). Then in equilibrium, it is the case that \(x_{1h}=x_{2h}=x_{2l}=1\), \(x_{1l} \in [0,1]\) and
@@ -547,21 +552,78 @@ We show in the appendix (Lemma ) that \(\lambda_l\) is increasing in \(t_l\) and
 
 
 
-<div id="org323591c" class="figure">
+<div id="org4be0762" class="figure">
 <p><img src="profitfunctions.png" alt="profitfunctions.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Insurer \(a\)'s profits \(\pi(u^a,\theta_l),\pi(u^a,\theta_h)\) as a function of \(u^a\).</p>
 </div>
 
 <p>
-Figure <a href="#org323591c">1</a> illustrates the lemma above.<sup><a id="fnr.10" class="footref" href="#fn.10" role="doc-backlink">10</a></sup> As can be seen in the figure, the \(l\) market is more profitable than the \(h\) market in that profits on the \(l\) market exceed \(h\) profits over the relevant range of \(u\). This is intuitive since \(l\) customers are cheaper in expectation than \(h\) types. In addition, for the insurer to attract customers on the \(h\) market, a larger utility level needs to be left to its customers than on the \(l\) market. This can be due to the fact that \(h\) customers have more experience with treatments and are better able to compare the values offered by different insurance plans. Or \(h\) types (high risk/low health status) tend to have low income and hence pay a relatively low premium \(\sigma_h\) leading to high \(u_h\). Hence, the profit maximizing level of \(u_h\) exceeds that of \(u_l\). But the utility left to \(h\) customers cannot be too high, because this would induce \(l\) customers to buy the \(h\) contract.<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup> The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.<sup><a id="fnr.12" class="footref" href="#fn.12" role="doc-backlink">12</a></sup>
+Figure <a href="#org4be0762">1</a> illustrates the lemma above.<sup><a id="fnr.10" class="footref" href="#fn.10" role="doc-backlink">10</a></sup> As can be seen in the figure, the \(l\) market is more profitable than the \(h\) market in that profits on the \(l\) market exceed \(h\) profits over the relevant range of \(u\). This is intuitive since \(l\) customers are cheaper in expectation than \(h\) types. In addition, for the insurer to attract customers on the \(h\) market, a larger utility level needs to be left to its customers than on the \(l\) market. This can be due to the fact that \(h\) customers have more experience with treatments and are better able to compare the values offered by different insurance plans. Or \(h\) types (high risk/low health status) tend to have low income and hence pay a relatively low premium \(\sigma_h\) leading to high \(u_h\). Hence, the profit maximizing level of \(u_h\) exceeds that of \(u_l\). But the utility left to \(h\) customers cannot be too high, because this would induce \(l\) customers to buy the \(h\) contract.<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup> The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.<sup><a id="fnr.12" class="footref" href="#fn.12" role="doc-backlink">12</a></sup>
 </p>
 </div>
+
+<div id="outline-container-orgea4c41a" class="outline-3">
+<h3 id="orgea4c41a"><span class="section-number-3">2.1.</span> code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #cfa6ff; font-weight: bold;">import</span> matplotlib.pyplot <span style="color: #cfa6ff; font-weight: bold;">as</span> plt
+<span style="color: #cfa6ff; font-weight: bold;">import</span> numpy <span style="color: #cfa6ff; font-weight: bold;">as</span> np
+plt.style.use(<span style="color: #a0acef;">'seaborn'</span>)
+
+<span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">assume &#981; = 0.5</span>
+<span style="color: #90c4ed;">V1</span> = 1. <span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">v_1 (&#968;_1h - &#968;_1l)</span>
+<span style="color: #90c4ed;">V2</span> = 5. <span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">&#968;_2 v_2</span>
+<span style="color: #90c4ed;">th</span> = 1.
+<span style="color: #90c4ed;">tl</span> = 3.
+<span style="color: #90c4ed;">&#955;</span> = 0.5*(tl-th-V1)/(tl+th)
+<span style="color: #ef9fe4; font-weight: bold;">print</span>(tl-th&gt;V1) <span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">IC_l</span>
+<span style="color: #90c4ed;">equil_uh</span> = V2 + th/(th+tl)* V1 - 2*tl*th/(tl+th)
+<span style="color: #90c4ed;">equil_ul</span> = V2 - tl/(th+tl)* V1 - 2*tl*th/(tl+th)
+<span style="color: #cfa6ff; font-weight: bold;">def</span> <span style="color: #e0b2d6;">profit</span>(ua,ub,t):
+    <span style="color: #cfa6ff; font-weight: bold;">return</span> (0.5+(ua-ub)/(2*t))*(V2-ua)
+plt.tick_params(labelsize=20)
+<span style="color: #90c4ed;">epsilon</span> = 0.5
+<span style="color: #90c4ed;">range_l</span> = np.arange(equil_ul-epsilon,equil_ul+epsilon+0.1,0.1)
+plt.plot(range_l, [profit(equil_ul,equil_ul,tl)-&#955;*(u-equil_ul)   <span style="color: #cfa6ff; font-weight: bold;">for</span> u <span style="color: #cfa6ff; font-weight: bold;">in</span> range_l],color=<span style="color: #a0acef;">'k'</span>)
+<span style="color: #90c4ed;">range_h</span> = np.arange(equil_uh-epsilon,equil_uh+epsilon+0.1,0.1)
+plt.plot(range_h, [profit(equil_uh,equil_uh,th)+&#955;*(u-equil_uh)   <span style="color: #cfa6ff; font-weight: bold;">for</span> u <span style="color: #cfa6ff; font-weight: bold;">in</span> range_h],color=<span style="color: #a0acef;">'k'</span>)
+<span style="color: #90c4ed;">range_ul</span> = np.arange(0,5.1,0.1)
+<span style="color: #90c4ed;">range_uh</span> = np.arange(3,5.1,0.1)
+plt.plot(range_ul,[profit(u,equil_ul,tl) <span style="color: #cfa6ff; font-weight: bold;">for</span> u <span style="color: #cfa6ff; font-weight: bold;">in</span> range_ul],label=<span style="color: #a0acef;">'$\pi(u^a,\\theta_l)$'</span>,linewidth=3)
+plt.plot(range_uh,[profit(u,equil_uh,th) <span style="color: #cfa6ff; font-weight: bold;">for</span> u <span style="color: #cfa6ff; font-weight: bold;">in</span> range_uh],label=<span style="color: #a0acef;">'$\pi(u^a,\\theta_h)$'</span>,linewidth=3)
+plt.vlines(equil_uh,0,profit(equil_uh,equil_uh,th), linestyles=<span style="color: #a0acef;">'dotted'</span>)
+plt.vlines(equil_ul,0,profit(equil_ul,equil_ul,tl), linestyles=<span style="color: #a0acef;">'dotted'</span>)
+plt.xticks([equil_ul,equil_uh],[<span style="color: #a0acef;">'$u_l$'</span>,<span style="color: #a0acef;">'$u_h$'</span>])
+plt.yticks([],[])
+plt.xlabel(<span style="color: #a0acef;">'$u^a$'</span>, fontsize = 20)
+plt.ylabel(<span style="color: #a0acef;">'$\pi$'</span>, fontsize = 20)
+plt.text(equil_ul,profit(equil_ul,equil_ul,tl) , r<span style="color: #a0acef;">'slope: $-\lambda_{l}$'</span>, {<span style="color: #a0acef;">'color'</span>: <span style="color: #a0acef;">'k'</span>, <span style="color: #a0acef;">'fontsize'</span>: 20})
+plt.text(equil_uh-0.95,profit(equil_uh,equil_uh,th) , r<span style="color: #a0acef;">'slope: $\lambda_{l}$'</span>, {<span style="color: #a0acef;">'color'</span>: <span style="color: #a0acef;">'k'</span>, <span style="color: #a0acef;">'fontsize'</span>: 20})
+<span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">plt.text(equil_ul,profit(equil_ul,equil_ul,tl)/9 , r'$u_h-u_l \leq v_1(\psi_{1h}-\psi_{1l})$', {'color': 'k', 'fontsize': 20},</span>
+         <span style="color: #7f7f7f; font-style: italic;"># </span><span style="color: #a8a8a8; font-style: italic;">bbox=dict(boxstyle="round",</span>
+         <span style="color: #7f7f7f; font-style: italic;">#           </span><span style="color: #a8a8a8; font-style: italic;">ec=(1., 0.5, 0.5),</span>
+         <span style="color: #7f7f7f; font-style: italic;">#           </span><span style="color: #a8a8a8; font-style: italic;">fc=(1., 0.8, 0.8),</span>
+         <span style="color: #7f7f7f; font-style: italic;">#           </span><span style="color: #a8a8a8; font-style: italic;">alpha = 0.5))</span>
+plt.xlim(-0,5)
+plt.ylim(0,1.2)
+plt.legend(loc = <span style="color: #a0acef;">'lower left'</span>, fontsize = 20)
+<span style="color: #7f7f7f; font-style: italic;">#</span><span style="color: #a8a8a8; font-style: italic;">plt.show()</span>
+plt.savefig(<span style="color: #a0acef;">'profitfunctions.png'</span>)
+
+</pre>
+</div>
+
+<pre class="example">
+None
+</pre>
+</div>
+</div>
 </div>
 
 
-<div id="outline-container-orgb659a6d" class="outline-2">
-<h2 id="orgb659a6d"><span class="section-number-2">3.</span> Framework</h2>
+<div id="outline-container-org000cefe" class="outline-2">
+<h2 id="org000cefe"><span class="section-number-2">3.</span> Framework</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 In this section we generalize the framework above. Let \(P\) denote the set of treatments that are currently under patent and \(O\) the set of treatments where the patent has run out ("open" as in open source). To simplify the exposition we assume that \(\psi_{il}<\psi_{ih}\) for each \(i \in P\). For \(j \in O\) we assume \(\psi_{jl} \leq \psi_{jh}\). This ensures that single crossing is satisfied in our set up.<sup><a id="fnr.13" class="footref" href="#fn.13" role="doc-backlink">13</a></sup>
@@ -609,7 +671,7 @@ As the price of \(j \in O\) treatments is normalized to 0, the expected cost of 
 <p>
 The appendix derives the following properties of the solution.
 </p>
-<div class="lemma" id="orgb4ad25b">
+<div class="lemma" id="org9163814">
 <p>
 <a href="Baseline_results">Baseline_results</a>
 Assume \(p_i = v_i\) and \(\alpha_i \in \langle 0,1]\) for \(i \in P\), then we have that \(\lambda_{l}>0\) implies that \(\lambda_h=0\), \(x_{ih}=x_{jh}=x_{jl}=1\) and \(x_{il} \in [0,1]\); further, \(p_i >v_i\) implies \(x_{il} =0\).
@@ -623,16 +685,16 @@ With \(p_i \leq v_i\), both contracts can cover all treatments. But \(p_i > v_i\
 </div>
 </div>
 
-<div id="outline-container-org13281e4" class="outline-2">
-<h2 id="org13281e4"><span class="section-number-2">4.</span> Supra profits</h2>
+<div id="outline-container-orgce6c34b" class="outline-2">
+<h2 id="orgce6c34b"><span class="section-number-2">4.</span> Supra profits</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 We consider two contractual arrangements that lead to a profit for the patent holder that exceeds the value of its innovation; we call these extra rents "supra profits". First, we consider the innovator using a two-part tariff which captures most non-linear pricing schemes like quantity discounts (lower price per unit if you buy more). Then we consider the case where the innovator can only use a linear fee (a fixed price per unit).
 </p>
 </div>
 
-<div id="outline-container-org52b8088" class="outline-3">
-<h3 id="org52b8088"><span class="section-number-3">4.1.</span> two-part tariff</h3>
+<div id="outline-container-orgce1f901" class="outline-3">
+<h3 id="orgce1f901"><span class="section-number-3">4.1.</span> two-part tariff</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The easiest way to see the main effects of this paper is to assume that innovators sell treatments to insurers using two-part tariffs. It turns out that the intuitions we find here, carry over to the case of linear pricing.
@@ -646,7 +708,7 @@ To characterize the optimal prices set by innovator \(i\), we first derive the i
 The following assumption ensures that we are in the relevant parameter space that allows for supra profits. First, equation implies that \(\lambda_l >0\) (see Lemma in the appendix). Further, for the insurers' optimization problem to be well defined, we need that the "average elasticity" on the two markets exceeds 1.<sup><a id="fnr.14" class="footref" href="#fn.14" role="doc-backlink">14</a></sup> Throughout this paper, we assume that both conditions are satisfied.
 </p>
 
-<div class="assumption" id="org04cd365">
+<div class="assumption" id="org16dc535">
 <p>
 <a href="Elasticities">Elasticities</a>
 </p>
@@ -667,7 +729,7 @@ Lemma in the appendix shows that can be written as a comparison of elasticity an
 The following lemma derives properties of insurance markets and treatments that tend to lead to high supra profits.
 </p>
 
-<div class="lemma" id="orgcfb7954">
+<div class="lemma" id="org4cd41a6">
 <p>
 <a href="Comparative_static_lambda">Comparative_static_lambda</a>
 Supra profits are proportional to \(\tau_i = \lambda_l v_i \Delta \psi_i\) where \(\Delta \psi_{i} = \psi_{ih} - \psi_{il}\). Further, the shadow price \(\lambda_l\) on the low type's IC constraint is:
@@ -736,8 +798,8 @@ To the extent that the specialty pharmaceutical market and  personalized medicin
 </div>
 </div>
 
-<div id="outline-container-orgc37a90b" class="outline-3">
-<h3 id="orgc37a90b"><span class="section-number-3">4.2.</span> linear pricing and separation</h3>
+<div id="outline-container-org20f4158" class="outline-3">
+<h3 id="org20f4158"><span class="section-number-3">4.2.</span> linear pricing and separation</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Consider the case where the innovating firm cannot use a two-part tariff but only linear pricing (a fixed price per unit). To capture the supra profits, firm \(i\) cannot use the fixed fee (of the two-part tariff) but has to set \(p_i > v_i\). We know from lemma that \(p_i>v_i\) implies \(x_{il}=0\): the insurer drops treatment \(i\) in the \(l\) contract. Hence, firm \(i\) weighs a higher price \(p_i\) against a smaller group of customers using the treatment.
@@ -746,7 +808,7 @@ Consider the case where the innovating firm cannot use a two-part tariff but onl
 <p>
 The following proposition presents the condition under which setting \(p_i>v_i\) maximizes \(i\)'s profits and we derive the comparative static results with respect to the supra profits.
 </p>
-<div class="proposition" id="org4855b8c">
+<div class="proposition" id="org6b4c4ec">
 <p>
 <a href="Linear_price_above_value">Linear_price_above_value</a>
 If \(\psi_{il} \leq \Delta \psi_i (1-\varepsilon_l (1-\frac{c_l}{\sigma}))\) then the profit maximizing \(p_{i}\) satisfies
@@ -809,7 +871,7 @@ Let \(\pi_i\) denote the profits earned on the insurance market by research lab 
 We can then derive the following result which does not hold in "normal" markets.
 </p>
 
-<div class="corollary" id="orge543784">
+<div class="corollary" id="org0cc97af">
 <p>
 <a href="Targeting_profitable">Targeting_profitable</a>
 For each \(d\psi_{ih}/d\zeta_i<0\) and \(d\Delta\psi_i/d\zeta_i>0\), there exists \(\phi \in [0,1]\) close enough to 1 such that \(d\pi_i/d\zeta_i>0\).
@@ -829,8 +891,8 @@ The argument is not that the specialty pharmaceutical market and personalized me
 </div>
 
 
-<div id="outline-container-org7b2286e" class="outline-2">
-<h2 id="org7b2286e"><span class="section-number-2">5.</span> Bounded rationality</h2>
+<div id="outline-container-org74256b3" class="outline-2">
+<h2 id="org74256b3"><span class="section-number-2">5.</span> Bounded rationality</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Above we assume that consumers are perfectly rational: they understand the value of the treatments covered by the insurance plan and they know their probability of needing a particular treatment. The main result is that part of the reason why drug prices are so high is that they are sold to a health insurance market with adverse selection problems. We formalize this by showing that even with rational consumers it can be optimal for insurers to over-pay for a treatment, that is pay more than the treatment's value for patients.
@@ -850,8 +912,8 @@ Assuming that low risk types over-estimate (to some extent) the probability that
 </div>
 </div>
 
-<div id="outline-container-orgbd3ecc7" class="outline-2">
-<h2 id="orgbd3ecc7"><span class="section-number-2">6.</span> Policy implications</h2>
+<div id="outline-container-orgb3ee68b" class="outline-2">
+<h2 id="orgb3ee68b"><span class="section-number-2">6.</span> Policy implications</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 This paper introduces a framework where upstream firms sell inputs to a downstream market where the downstream market suffers from adverse selection problems. We show that if the low type wants to buy the high type contract, we find a number of results that are counter-intuitive at first sight. First, upstream firms can charge prices in excess of consumers' valuation of their product. Second, upstream firms have an incentive to narrow their market; that is, make their product attractive to a subset of final consumers. Third, making downstream market segments more competitive, tends to increase upstream prices.
@@ -879,8 +941,8 @@ Second, assuming that consumers stop buying insurance in case the expected value
 </div>
 </div>
 
-<div id="outline-container-org5671de8" class="outline-2">
-<h2 id="org5671de8"><span class="section-number-2">7.</span> Bibliography</h2>
+<div id="outline-container-orga52f933" class="outline-2">
+<h2 id="orga52f933"><span class="section-number-2">7.</span> Bibliography</h2>
 <div class="outline-text-2" id="text-7">
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Atherly, Adam, Bryan E. Dowd, and Roger Feldman. 2004. “The Effect of Benefits, Premiums, and Health Risk on Health Plan Choice in the Medicare Program.” <i>Health Services Research</i> 39 (4p1): 847–64.</div>
@@ -941,12 +1003,12 @@ Second, assuming that consumers stop buying insurance in case the expected value
 
 
 
-<div id="outline-container-org29dc7a5" class="outline-2">
-<h2 id="org29dc7a5"><span class="section-number-2">8.</span> Proof of results</h2>
+<div id="outline-container-org86f0525" class="outline-2">
+<h2 id="org86f0525"><span class="section-number-2">8.</span> Proof of results</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgd8990c5" class="outline-3">
-<h3 id="orgd8990c5"><span class="section-number-3">8.1.</span> Hotelling model</h3>
+<div id="outline-container-orgc463e9a" class="outline-3">
+<h3 id="orgc463e9a"><span class="section-number-3">8.1.</span> Hotelling model</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 <b>Proof of Lemma </b>
@@ -1071,7 +1133,7 @@ Since these results are similar to the symmetric case \(\alpha^a=\alpha^b\), we 
 One of the questions in this paper is: how does this extra profit \(d\Pi/d\alpha|_{p_1=v_1}\) vary with competition? In our model, competition is inversely related to travel cost \(t\). As illustrates, \(d\Pi/d\alpha\) increases in \(\lambda_l\).
 </p>
 
-<div class="lemma" id="orgb021313">
+<div class="lemma" id="org5c24c69">
 <p>
 <a href="Hotelling_lambda">Hotelling_lambda</a>
 In the Hotelling model, the multiplier \(\lambda_l\) is increasing in \(t_l\) and decreasing in \(t_h\).
@@ -1087,8 +1149,8 @@ Taking the derivatives of \(\lambda_l\) with respect to \(t_h\) and \(t_l\), it 
 </div>
 </div>
 
-<div id="outline-container-orgee7d038" class="outline-3">
-<h3 id="orgee7d038"><span class="section-number-3">8.2.</span> Framework</h3>
+<div id="outline-container-org82fa143" class="outline-3">
+<h3 id="org82fa143"><span class="section-number-3">8.2.</span> Framework</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 <b>Proof of Lemma </b>
@@ -1152,14 +1214,14 @@ Finally, if \(p_i > v_i\) then \(d\Pi/dx_{il} <0\) (even if \(\lambda_h =0\)) an
 </div>
 
 
-<div id="outline-container-orgbfd60f4" class="outline-3">
-<h3 id="orgbfd60f4"><span class="section-number-3">8.3.</span> Two-part tariff</h3>
+<div id="outline-container-orgadd52b4" class="outline-3">
+<h3 id="orgadd52b4"><span class="section-number-3">8.3.</span> Two-part tariff</h3>
 <div class="outline-text-3" id="text-8-3">
 <p>
 Before we can prove lemma , we need to derive two other results: 1. the equilibrium outcome in the health insurance market (Lemma ) and 2. the conditions under which \(IC_l\) is binding (and hence \(\lambda_l > 0\); Lemma ).
 </p>
 
-<div class="lemma" id="org992f6d4">
+<div class="lemma" id="org258476d">
 <p>
 <a href="Two_part_tariff">Two_part_tariff</a>
 With \(p_i \leq v_i\), we find the following expressions for the premium and the mark-ups on the two markets:
@@ -1232,7 +1294,7 @@ From equations and we find the expression for \(\lambda_l\) with \(q_k^{\iota}=1
 
 </p>
 
-<div class="lemma" id="org85db388">
+<div class="lemma" id="org742a649">
 <p>
 <a href="IC_l_binding">IC_l_binding</a>
 We find that \(\lambda_l >0\) if either
@@ -1331,8 +1393,8 @@ Using equation , the result on relative supra profits of treatments \(i\) and \(
 </div>
 </div>
 
-<div id="outline-container-org5716c54" class="outline-3">
-<h3 id="org5716c54"><span class="section-number-3">8.4.</span> Linear pricing</h3>
+<div id="outline-container-orgdbed2fd" class="outline-3">
+<h3 id="orgdbed2fd"><span class="section-number-3">8.4.</span> Linear pricing</h3>
 <div class="outline-text-3" id="text-8-4">
 <p>
 Before we can prove Proposition , we derive the equilibrium insurance premia \(\sigma_l,\sigma_h\) (Lemma ) and the price cost margins \(\mu_l,\mu_h\) (Lemma ).
@@ -1346,7 +1408,7 @@ The first order conditions for \(u_h,u_l\) are unchanged, hence equations , and 
 The following result characterizes the insurance premia charged on both market segments. The set \(E_h\) denotes the patented treatments that are exclusively available to \(h\) types: \(x_{ih}=1\) and \(x_{il}=0\) for all \(i \in E_h\).
 </p>
 
-<div class="lemma" id="org2668921">
+<div class="lemma" id="org8017942">
 <p>
 <a href="Linear_pricing_premium">Linear_pricing_premium</a>
 Let \(\sigma=\sigma_l\). Then \(\sigma_h=\sigma+\Delta \sigma\) where
@@ -1394,7 +1456,7 @@ From this it follows that needs to be adjusted to in case \(\Delta \sigma \neq 0
 Note that with \(\Delta \sigma =0\), the expression in is identical to : if the set \(E_h\) is empty, we are back to a pooling contract. In the pooling setting above, we know that \(\mu_l>\mu_h\); the same is true here.
 </p>
 
-<div class="lemma" id="orgcef3ea1">
+<div class="lemma" id="org69a6e26">
 <p>
 <a href="Linear_pricing_profit_margins">Linear_pricing_profit_margins</a>
 With \(\Delta \sigma > 0\), we find that \(\mu_l > \mu_h\).
@@ -1486,14 +1548,14 @@ Deriving comparative statics from implicit equation , we view this equation as l
 </p>
 
 
-<div id="org25ff0f8" class="figure">
+<div id="orgba23fa3" class="figure">
 <p><img src="./fixedpoint.png" alt="fixedpoint.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Solving equation <a href="eq:37">eq:37</a> for \(\sigma\).</p>
 </div>
 
 <p>
-We will show that \(\partial rhs/\partial \sigma \in \langle 0,1 \rangle\) and hence a change in a variable that shifts \(rhs\) up (down) will increase (decrease) \(\sigma\) in ; see Figure <a href="#org25ff0f8">2</a>. Hence, we want to show that
+We will show that \(\partial rhs/\partial \sigma \in \langle 0,1 \rangle\) and hence a change in a variable that shifts \(rhs\) up (down) will increase (decrease) \(\sigma\) in ; see Figure <a href="#orgba23fa3">2</a>. Hence, we want to show that
 </p>
 \begin{equation}
 \label{eq:25}
@@ -1530,7 +1592,7 @@ To prove this inequality, first consider the case of \(\Delta \sigma=0\), i.e. w
 </p>
 
 <p>
-As \(\varepsilon_h\) increases, \(rhs\) shifts downwards in Figure <a href="#org25ff0f8">2</a> and \(\sigma\) falls. Hence, we find that
+As \(\varepsilon_h\) increases, \(rhs\) shifts downwards in Figure <a href="#orgba23fa3">2</a> and \(\sigma\) falls. Hence, we find that
 </p>
 \begin{equation}
 \label{eq:45}
@@ -1615,10 +1677,10 @@ for \(\phi\) close enough to 1 because \(d\psi_{ih}/d\zeta_{i}<0\) and \(d\Delta
 </div>
 </div>
 
-<div id="outline-container-org22c768e" class="outline-3">
-<h3 id="org22c768e"><span class="section-number-3">8.5.</span> Bounded rationality</h3>
+<div id="outline-container-orgb85631f" class="outline-3">
+<h3 id="orgb85631f"><span class="section-number-3">8.5.</span> Bounded rationality</h3>
 <div class="outline-text-3" id="text-8-5">
-<div class="proposition" id="orgfbfb41c">
+<div class="proposition" id="org5708f32">
 <p>
 <a href="propBounded">propBounded</a>
 For \(\delta_{il} > 0\) but small, charging \(p_i>v_i\) is optimal and the insurance contract is sold to both the \(h\) and \(l\) type.
@@ -1673,6 +1735,51 @@ Hence, we can have a pooling contract with \(x_{il}=x_{ih}=1\) for \(p_i>v_i\) a
  <p style="text-align:right">∎</p>
 
 </p>
+</div>
+</div>
+
+<div id="outline-container-org95bee0f" class="outline-3">
+<h3 id="org95bee0f"><span class="section-number-3">8.6.</span> code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h3>
+<div class="outline-text-3" id="text-8-6">
+<div class="org-src-container">
+<pre class="src src-ipython">import matplotlib.pyplot as plt
+import numpy as np
+plt.style.use('seaborn')
+
+range_x = np.arange(0,1.1,0.1)
+plt.plot(range_x,range_x,linewidth=3)
+range_x_small = np.arange(0.2,0.9,0.1)
+plt.plot(range_x_small,[0.4+0.2*x for x in range_x_small],linewidth=3)
+plt.plot(range_x_small,[0.2+0.2*x for x in range_x_small],'--',c='g',linewidth=3)
+
+plt.tick_params(labelsize=20)
+plt.xticks([],[])
+plt.yticks([],[])
+plt.xlabel('$\sigma$', fontsize = 20)
+plt.ylabel('$\sigma$', fontsize = 20)
+plt.text(0.7,0.45 , r'slope: $\frac{\partial rhs}{\partial \sigma} &lt;1$', {'color': 'k', 'fontsize': 20})
+
+plt.text(0.7,0.58 , r'$rhs$', {'color': 'k', 'fontsize': 20})
+
+plt.text(0.15,0.33 , r'$\frac{\partial rhs}{\partial \varepsilon_{h}} &lt;0$', {'color': 'k', 'fontsize': 20})
+plt.arrow(0.35,0.47,0,-0.18,width=0.005)
+
+#plt.show()
+plt.savefig('fixedpoint.png')
+
+</pre>
+</div>
+
+<pre class="example">
+&lt;Figure size 576x396 with 1 Axes&gt;
+</pre>
+
+
+
+<div id="org40d638b" class="figure">
+<p><img src="obipy-resources/f155da14081e57d7c1eabe98ba977a95eebb2f07/1e2d2bf3d22fc4007a495171e32bd5144f8c8416.png" alt="1e2d2bf3d22fc4007a495171e32bd5144f8c8416.png" />
+</p>
+</div>
 </div>
 </div>
 </div>

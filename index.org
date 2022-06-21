@@ -204,7 +204,7 @@ We show in the appendix (Lemma ref:Hotelling_lambda) that $\lambda_l$ is increas
 
 Figure [[fig:profitfunctions]] illustrates the lemma above.[fn::This figure is based on parameter values: $\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5,t_h=1,t_l=3,\eta =1,y_l=y_h=0$.] As can be seen in the figure, the $l$ market is more profitable than the $h$ market in that profits on the $l$ market exceed $h$ profits over the relevant range of $u$. This is intuitive since $l$ customers are cheaper in expectation than $h$ types. In addition, for the insurer to attract customers on the $h$ market, a larger utility level needs to be left to its customers than on the $l$ market. This can be due to the fact that $h$ customers have more experience with treatments and are better able to compare the values offered by different insurance plans. Or $h$ types (high risk/low health status) tend to have low income and hence pay a relatively low premium $\sigma_h$ leading to high $u_h$. Hence, the profit maximizing level of $u_h$ exceeds that of $u_l$. But the utility left to $h$ customers cannot be too high, because this would induce $l$ customers to buy the $h$ contract.[fn::If the $h$ market would become too small, an insurer can decide to stop serving this market segment. We assume throughout the paper that the $h$ market is big enough that the insurer keeps on selling to $h$ types.] The distance $u_h - u_l$ in the figure is determined by $IC_l$ holding with equality.[fn::In the figure, $u_l$ denotes the symmetric equilibrium outcome on the $l$ market and $u_h$ on the $h$ market. The former is chosen higher than its profit maximizing level --$u_{l}$ is to the right of the $u^a$ value maximizing $\pi_{l}$ -- and the latter lower, if one would consider each market in isolation. At the margin, the loss in profits of not being able to lower $u_l$ equals the loss of not being able to increase $u_h$ (which equals $\lambda_{l}$).]
 
-** code :noexport:
+** code :code:
 
 #+BEGIN_SRC python :exports none
 import matplotlib.pyplot as plt
@@ -944,7 +944,7 @@ Hence, we can have a pooling contract with $x_{il}=x_{ih}=1$ for $p_i>v_i$ as lo
 @@html: <p style="text-align:right">∎</p> @@
 @@latex: \qed@@
 
-** code :noexport:
+** code :code:
 
 #+BEGIN_SRC ipython :exports none
 import matplotlib.pyplot as plt
