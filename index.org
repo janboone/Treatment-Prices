@@ -46,7 +46,7 @@ This paper shows that selection incentives in downstream markets distort upstrea
 :UNNUMBERED: t
 :END:
 
-With this document, any reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. The numbering of and references to some math environments (like lemma, proposition etc.) do not work yet.
+With this document, any reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. 
 
 
 * Introduction
@@ -100,12 +100,15 @@ u_{k} = \psi_{1k} x_{1k} v_1 + \psi_{2} x_{2k} v_2 - \sigma_k
 where $x_{ik} \in [0,1]$ denotes the probability that treatment $i$ is covered by contract $k$ (below we have that $x_{ik}$ equals either 0 or 1) and $\sigma_k$ denotes the price/premium of contract $k$. Value $v_i$ denotes the utility of receiving the treatment in case the consumer needs it (with probability $\psi_{ik}$) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in eqref:eq:5 which we leave out to ease notation.
 
 The incentive compatibility (IC) constraints for these contracts can be written as follows.
-\begin{align}
-\label{eq:2}
-u_h &\geq  \psi_{1h} x_{1l} v_1 + \psi_{2} x_{2l} v_2 - \sigma_{l} \\
-\label{eq:4}
-u_l &\geq  \psi_{1l} x_{1h} v_1 + \psi_{2} x_{2h} v_2 - \sigma_h
-\end{align}
+
+#+name: eq:2
+\begin{equation}
+u_h \geq  \psi_{1h} x_{1l} v_1 + \psi_{2} x_{2l} v_2 - \sigma_{l}
+\end{equation}
+#+name: eq:4
+\begin{equation}
+u_l \geq  \psi_{1l} x_{1h} v_1 + \psi_{2} x_{2h} v_2 - \sigma_h
+\end{equation}
 The first equation, $IC_h$, implies that the high type is better off choosing the high contract (yielding utility $u_h$) than to buy the low type's contract (which yields her utility equal to the right hand side of eqref:eq:2). To illustrate, the $h$ type needs treatment 1 with probability $\psi_{1h}$, but the $l$ contract provides this treatment with probability $x_{1l}$ in which case she gets utility $v_{1}$; the price of this contract equals $\sigma_{l}$. And, similarly, $IC_l$ implies that the low type is better off buying the $l$ contract --yielding $u_l$ -- than buying the $h$ contract which yields her utility equal to the right hand side of eqref:eq:4. These constraints capture intra-brand competition faced by the insurer: if the $h$ contract becomes too attractive, $l$ types buy this contract instead of the $l$ contract (that is, eqref:eq:4 is violated).
 
 As we will see below, pricing a treatment above its value is possible if low types want to mimic high types; that is, $IC_l$ is binding. The next section shows that this can happen when the $h$ market is more elastic than the $l$ market.
@@ -226,7 +229,7 @@ As the private incentive to innovate is driven by $p_1$ (profit for the company 
 
 ** code :code:
 
-Figure [[fig:profitfunctions]] is generated for an Hotelling model of insurer competition. The figure is based on the following parameter values: $\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5,t_h=1,t_l=3,\eta =1,y_l=y_h=0$. Here we give the details of the model and the python code for the figure.
+Figure [[ref:fig:profitfunctions]] is generated for an Hotelling model of insurer competition. The figure is based on the following parameter values: $\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5$ and the following Hotelling travel costs $t_h=1,t_l=3$ as explained below. Here we give the details of the model and the python code for the figure.
 
 We have a standard Hotelling model with linear travel costs $t_k$ on market segment $t_k, k=l,h$ and two insurers denoted $a,b$ [[citep:&Tirole]]. Market share for insurer $a$ on segment $k$ is given by $q_k^a = 1/2 + (u_k^a - u_k^b)/(2t_k)$. If both insurers offer the same utility level, each insurer has a market share equal to $1/2$. If $a$ offers higher utility than $b$, $q_k^a$ increases and the speed with which a utility difference is translated into market share is determined by $t_k$.
 
@@ -238,7 +241,7 @@ With $p_1=v_1$ and $p_2=0$ due to competition on the generic (off-patent) market
      & + (1-\phi) \left(\frac{1}{2} + \frac{u_h^a-u_h^b}{2t_h} \right) (\psi_2 x_{2h}^a v_2 -u_h^a) \\ \nonumber
      & + \lambda_l (u_l^a - u_h^a + \alpha v_1 x_{1h}^a (\psi_{1h}-\psi_{1l}))
 \end{align}
-where $\lambda_l$ denotes the Lagrange multiplier on $IC_l$ constraint eqref:eq:4. In the main text we use a shortcut and differentiate profits with respect to $x_{1h}$. Strictly speaking, $x_{1h}$ is an endogenous variable chosen by the insurer. Hence, we introduce $\alpha$ as the probability that research lab 1 offers treatment 1 at all to the insurers. 
+where $\lambda_l$ denotes the Lagrange multiplier on $IC_l$ constraint. In the main text we use a shortcut and differentiate profits with respect to $x_{1h}$. Strictly speaking, $x_{1h}$ is an endogenous variable chosen by the insurer. Hence, we introduce $\alpha$ as the probability that research lab 1 offers treatment 1 at all to the insurers. 
 
 We show that with $p_1=v_1$, the insurers set $x_{1h}=1$. Even then the insurer's profits are *strictly* increasing in the probability $\alpha$ that the research lab sells treatment 1.
 
@@ -254,7 +257,7 @@ In the Hotelling model, assume that $p_1 =v_1$ and $t_l - t_h > v_1 (\psi_{1h}-\
 \end{align}
 #+end_lemma
 
-First observe that the derivative of equation eqref:eq:20 with respect to $x_{1h},x_{2h},x_{2l}$ is strictly positive (with $\lambda_l >0$) and hence each of these variables equals 1, the derivative with respect to $x_{1l}$ equals 0 and this variable can take on any value between 0 and 1. The first order conditions with respect to $u_l^a$ and $u_h^a$ can be written as
+First observe that the derivative of profits with respect to $x_{1h},x_{2h},x_{2l}$ is strictly positive (with $\lambda_l >0$) and hence each of these variables equals 1, the derivative with respect to $x_{1l}$ equals 0 and this variable can take on any value between 0 and 1. The first order conditions with respect to $u_l^a$ and $u_h^a$ can be written as
 \begin{align}
 \label{eq:22}
 \frac{\phi}{2t_l}(\psi_2 v_2 - u_l^a) - \phi(\frac{1}{2} + \frac{u_l^a-u_l^b}{2t_l}) + \lambda_{l}  &=0 \\
@@ -274,7 +277,7 @@ u_h &= \psi_2 v_2 + \frac{\frac{\phi}{t_l}}{\frac{\phi}{t_l}+\frac{1-\phi}{t_h}}
 u_l &= \psi_2 v_2 - \frac{\frac{1-\phi}{t_h}}{\frac{\phi}{t_l}+\frac{1-\phi}{t_h}}\alpha v_1 (\psi_{1h}-\psi_{1l})- \frac{1}{\frac{\phi}{t_l}+\frac{1-\phi}{t_h}}
 \end{align}
 
-The expression for $\lambda_{l}$ in the lemma follows from equation eqref:eq:22b with the values for $u_l,u_h$ substituted in.
+The expression for $\lambda_{l}$ in the lemma follows from the first order condition for $u_h^a$ with the values for $u_l,u_h$ substituted in.
 
 It is straightforward to see that $d\Pi/d\alpha = \lambda_{l} v_1 (\psi_{1h}-\psi_{1l})>0$.
 
@@ -284,6 +287,8 @@ Finally, we need to check that $IC_h$ is indeed satisfied. Using the values for 
 \frac{\frac{\phi}{t_l}}{\frac{\phi}{t_l}+\frac{1-\phi}{t_h}}\alpha v_1 (\psi_{1h}-\psi_{1l}) \geq -\frac{\frac{1-\phi}{t_h}}{\frac{\phi}{t_l}+\frac{1-\phi}{t_h}}\alpha v_1 (\psi_{1h}-\psi_{1l}) + \alpha v_1 x_{1l} (\psi_{1h}-\psi_{1l})
 \end{equation}
 which holds because $x_{1l} \leq 1$.
+
+We use these outcomes in the following python code block to plot Figure ref:fig:profitfunctions.
 
 #+BEGIN_SRC python
 import matplotlib.pyplot as plt
@@ -326,8 +331,6 @@ plt.savefig('profitfunctions.png')
 
 #+END_SRC
 
-#+RESULTS:
-: None
 
 
 * Precision medicine

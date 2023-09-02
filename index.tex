@@ -74,7 +74,7 @@ This paper shows that selection incentives in downstream markets distort upstrea
 \newpage
 
 \section{Introduction}
-\label{sec:orgbf2debf}
+\label{sec:org429004f}
 
 With some regularity there appear newspaper articles documenting the level and increases in drug prices. Experts argue that some patented drugs are priced above their value for patients. From an economic point of view this seems impossible: if the price of a treatment exceeds its value for consumers, a health insurer should not cover this treatment in its contracts. This paper introduces a model that shows that, in fact, it can be optimal for an insurer to cover such a treatment and hence that it is optimal for a pharmaceutical company to price its drug above patient value. The key insight is that health insurance is a selection market and pharmaceutical companies sell to this market. The selection problems in the downstream (insurance) market distort prices in the upstream (pharmaceutical) market.
 
@@ -123,18 +123,21 @@ u_{k} = \psi_{1k} x_{1k} v_1 + \psi_{2} x_{2k} v_2 - \sigma_k
 where \(x_{ik} \in [0,1]\) denotes the probability that treatment \(i\) is covered by contract \(k\) (below we have that \(x_{ik}\) equals either 0 or 1) and \(\sigma_k\) denotes the price/premium of contract \(k\). Value \(v_i\) denotes the utility of receiving the treatment in case the consumer needs it (with probability \(\psi_{ik}\)) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in \eqref{eq:5} which we leave out to ease notation.
 
 The incentive compatibility (IC) constraints for these contracts can be written as follows.
-\begin{align}
+
+\begin{equation}
 \label{eq:2}
-u_h &\geq  \psi_{1h} x_{1l} v_1 + \psi_{2} x_{2l} v_2 - \sigma_{l} \\
+u_h \geq  \psi_{1h} x_{1l} v_1 + \psi_{2} x_{2l} v_2 - \sigma_{l}
+\end{equation}
+\begin{equation}
 \label{eq:4}
-u_l &\geq  \psi_{1l} x_{1h} v_1 + \psi_{2} x_{2h} v_2 - \sigma_h
-\end{align}
+u_l \geq  \psi_{1l} x_{1h} v_1 + \psi_{2} x_{2h} v_2 - \sigma_h
+\end{equation}
 The first equation, \(IC_h\), implies that the high type is better off choosing the high contract (yielding utility \(u_h\)) than to buy the low type's contract (which yields her utility equal to the right hand side of \eqref{eq:2}). To illustrate, the \(h\) type needs treatment 1 with probability \(\psi_{1h}\), but the \(l\) contract provides this treatment with probability \(x_{1l}\) in which case she gets utility \(v_{1}\); the price of this contract equals \(\sigma_{l}\). And, similarly, \(IC_l\) implies that the low type is better off buying the \(l\) contract --yielding \(u_l\) -- than buying the \(h\) contract which yields her utility equal to the right hand side of \eqref{eq:4}. These constraints capture intra-brand competition faced by the insurer: if the \(h\) contract becomes too attractive, \(l\) types buy this contract instead of the \(l\) contract (that is, \eqref{eq:4} is violated).
 
 As we will see below, pricing a treatment above its value is possible if low types want to mimic high types; that is, \(IC_l\) is binding. The next section shows that this can happen when the \(h\) market is more elastic than the \(l\) market.
 
 \subsection{First best}
-\label{sec:org7e55ff0}
+\label{sec:orgc36344b}
 
 A straightforward way to check which incentive constraint is binding in second best is to derive the first best outcome. First best is defined here as the case where insurers can observe insured's risk type and are allowed to risk rate. Put differently, first best here refers to the absence of asymmetric information.
 
@@ -188,7 +191,7 @@ When \(IC_l\) is violated in first best, we know that it will be binding in the 
 
 
 \subsection{Why are high risk types more elastic?}
-\label{sec:org507f465}
+\label{sec:org63b3bc6}
 
 Equation \eqref{eq:ICelasticities} shows that \(IC_l\) is binding in case the high risk segment is sufficiently more elastic than the low risk segment.
 
@@ -208,7 +211,7 @@ Finally, as we show above, if the high risk segment is more elastic than the low
 
 
 \section{Pricing above value}
-\label{sec:org7cf7baf}
+\label{sec:orgd747daa}
 
 The previous section showed that with the elasticity difference between high and low risk types compensating the cost difference, the incentive compatibility constraint for the low type (\(IC_l\)) tends to be binding. In this section we show how this allows a pharmaceutical company to charge a price that exceeds treatment value.
 
@@ -252,8 +255,9 @@ Summarizing, we introduced a simple model of health insurer competition and show
 As the private incentive to innovate is driven by \(p_1\) (profit for the company with the patent) while the social incentive is determined by \(v_1\) (value for patients), \(p_1>v_1\) implies that pharmaceutical firms have an excessive incentive to innovate: the private value of innovation exceeds the social value. The next section considers the incentives for firms to target treatments at subgroups of patients.
 
 
+
 \section{Precision medicine}
-\label{sec:orge3dc495}
+\label{sec:org9d883d0}
 
 Now that we have seen that pricing above value can happen in equilibrium, a natural question is: for which treatments is this most likely to happen? Based on the model, we argue that this problem seems pertinent to precision medicine.
 
@@ -283,7 +287,7 @@ To the extent that the specialty pharmaceutical market and  personalized medicin
 
 
 \section{Policy implications}
-\label{sec:orgf141759}
+\label{sec:orga9892b6}
 
 This paper introduces a framework where upstream pharmaceutical companies sell drugs to a downstream health insurance market which suffers from selection problems. If the low risk type wants to buy the high risk type contract, we find that upstream firms can charge prices in excess of treatment value. Further, pharmaceutical companies have an excessive incentive to narrow their market; that is, target treatments at patient subgroups.
 
@@ -298,7 +302,7 @@ To reduce the excessive R\&D incentives, a government can reduce tax breaks for 
 Finally, assuming that consumers stop buying insurance in case the expected value of the insurance plan is lower than the premium, treatment prices can be reduced by creating a separate insurance market for patented treatments. The separation would be similar to having basic and supplementary insurance markets as some countries have; but here there would be insurance for patented drugs and separate insurance for treatments  where the patent has run out (like generic drugs). The latter insurance would cover all generic drugs which yield high patient utility compared to their cost. This leaves less rents for patented treatments on their insurance market segment to appropriate by charging a price above treatment value. Such a segmentation of the health insurance market helps to reduce treatment prices and healthcare expenditure.
 
 \section{Bibliography}
-\label{sec:org3476511}
+\label{sec:orgce0821b}
 
 \hypertarget{citeproc_bib_item_1}{Atherly, Adam, Bryan E. Dowd, and Roger Feldman. 2004. “The Effect of Benefits, Premiums, and Health Risk on Health Plan Choice in the Medicare Program.” \textit{Health Services Research} 39 (4p1): 847–64.}
 
