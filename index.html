@@ -261,26 +261,26 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4385c33">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
-<li><a href="#orgb0d60e4">1. Introduction</a></li>
+<li><a href="#org3302895">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
+<li><a href="#org66daef0">1. Introduction</a></li>
 <li><a href="#sec:example">2. Simple model</a>
 <ul>
-<li><a href="#org35e85cd">2.1. First best</a></li>
-<li><a href="#orgf170d00">2.2. Why are high risk types more elastic?</a></li>
+<li><a href="#org089dbc0">2.1. First best</a></li>
+<li><a href="#orgba3c692">2.2. Why are high risk types more elastic?</a></li>
 </ul>
 </li>
-<li><a href="#org2ae02fe">3. Pricing above value</a>
+<li><a href="#orgaff4532">3. Pricing above value</a>
 <ul>
-<li><a href="#orgef2b5a6">3.1. code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
+<li><a href="#org757a175">3.1. code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></a></li>
 </ul>
 </li>
-<li><a href="#orgb1bf9cc">4. Precision medicine</a></li>
-<li><a href="#orgc69df40">5. Policy implications</a></li>
-<li><a href="#orga61ed55">6. Bibliography</a></li>
+<li><a href="#orgfe20384">4. Precision medicine</a></li>
+<li><a href="#org98b7281">5. Policy implications</a></li>
+<li><a href="#org3e45a86">6. Bibliography</a></li>
 </ul>
 </div>
 </div>
-<div class="abstract" id="org721e9f0">
+<div class="abstract" id="orgc522bae">
 <p>
 This paper shows that selection incentives in downstream markets distort upstream prices. It is possible for inputs to be priced above the value that the good has for final consumers. We apply this idea to pharmaceutical companies selling drugs to a health insurance market with selection problems. We specify the conditions under which drugs are sold at prices exceeding treatment value. Another feature of the model is an excessive private incentive to reduce market size, e.g. in the form of personalized medicine.
 </p>
@@ -295,9 +295,9 @@ This paper shows that selection incentives in downstream markets distort upstrea
 <b>JEL codes:</b> I13, I11
 </p>
 
-<div id="outline-container-org4385c33" class="outline-2">
-<h2 id="org4385c33">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h2>
-<div class="outline-text-2" id="text-org4385c33">
+<div id="outline-container-org3302895" class="outline-2">
+<h2 id="org3302895">How does this work?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h2>
+<div class="outline-text-2" id="text-org3302895">
 <p>
 With this document, any reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. 
 </p>
@@ -305,8 +305,8 @@ With this document, any reader can retrace the code which we use to produce the 
 </div>
 
 
-<div id="outline-container-orgb0d60e4" class="outline-2">
-<h2 id="orgb0d60e4"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org66daef0" class="outline-2">
+<h2 id="org66daef0"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 With some regularity there appear newspaper articles documenting the level and increases in drug prices. Experts argue that some patented drugs are priced above their value for patients. From an economic point of view this seems impossible: if the price of a treatment exceeds its value for consumers, a health insurer should not cover this treatment in its contracts. This paper introduces a model that shows that, in fact, it can be optimal for an insurer to cover such a treatment and hence that it is optimal for a pharmaceutical company to price its drug above patient value. The key insight is that health insurance is a selection market and pharmaceutical companies sell to this market. The selection problems in the downstream (insurance) market distort prices in the upstream (pharmaceutical) market.
@@ -321,7 +321,7 @@ Further, it has been noted that &ldquo;prices of &#x2026; drugs in the so-called
 </p>
 
 <p>
-We propose a set-up with upstream pharmaceutical companies selling drugs to downstream insurers for inclusion in their health insurance contracts. The health insurance market suffers from selection. The condition we need for our results is that low risk types are tempted to buy the insurance contract aimed at high risk types. Pharmaceutical firms then charge prices in excess of their treatments&rsquo; value for patients and still have their treatments covered by insurance. To reduce low risk rents insurers distort the high type&rsquo;s allocation upwards by covering a treatment that is expensive. 
+To analyze whether it is possible for drugs to be priced above their value for patients, we introduce a model with upstream pharmaceutical companies selling drugs to downstream insurers for inclusion in their health insurance contracts. The health insurance market suffers from selection. The condition we need for our results is that low risk types are tempted to buy the insurance contract aimed at high risk types. Pharmaceutical firms then charge prices in excess of their treatments&rsquo; value for patients and still have their treatments covered by insurance. To reduce low risk rents insurers distort the high type&rsquo;s allocation upwards by covering a treatment that is expensive. 
 </p>
 
 <p>
@@ -329,7 +329,7 @@ Moreover, targeting of pharmaceutical R&amp;D investments on subgroups (precisio
 </p>
 
 <p>
-The main assumption we need in our analysis is that low types want to buy the generous high type contract. In the next section we discuss the empirical evidence that supports this assumption. Further, our analysis is related to the following strands of literature. 
+In the next section we discuss the empirical evidence that supports the assumption that low types want to buy the generous high type contract. Further, our analysis is related to the following strands of literature. 
 </p>
 
 <p>
@@ -349,7 +349,7 @@ In terms of the mechanism design literature, our focus on a binding incentive co
 </p>
 
 <p>
-In (health) insurance markets this situation with binding incentive compatibility constraints for low types is reminiscent of advantageous selection (<a href="#citeproc_bib_item_12">Einav and Finkelstein 2011</a>; <a href="#citeproc_bib_item_28">Mahoney and Weyl 2017</a>). There are two main differences between these papers and our model. First, we allow insurers to screen consumers into different contracts. Second, we analyze the effects of selection on upstream prices. Neither of these are analyzed in this literature.
+In (health) insurance markets this situation with binding incentive compatibility constraints for low types is reminiscent of advantageous selection (<a href="#citeproc_bib_item_12">Einav and Finkelstein 2011</a>; <a href="#citeproc_bib_item_28">Mahoney and Weyl 2017</a>). There are two main differences between these papers and our model. First, we allow insurers to screen consumers into different contracts instead of each firm offering only one contract. Second, we analyze the effects of selection on upstream prices. 
 </p>
 
 <p>
@@ -390,11 +390,11 @@ Second, it streamlines the analysis. With risk aversion as motivation to buy ins
 Each insurer offers two contracts (which can be identical in case of a pooling outcome), each contract aimed at a consumer type. We write the value/utility of the contract for type \(k=1,2\) as follows:
 </p>
 \begin{equation}
-\label{orgaf6a257}
+\label{orgdbfd1c0}
 u_{k} = \psi_{1k} x_{1k} v_1 + \psi_{2} x_{2k} v_2 - \sigma_k
 \end{equation}
 <p>
-where \(x_{ik} \in [0,1]\) denotes the probability that treatment \(i\) is covered by contract \(k\) (below we have that \(x_{ik}\) equals either 0 or 1) and \(\sigma_k\) denotes the price/premium of contract \(k\). Value \(v_i\) denotes the utility of receiving the treatment in case the consumer needs it (with probability \(\psi_{ik}\)) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in \eqref{orgaf6a257} which we leave out to ease notation.
+where \(x_{ik} \in [0,1]\) denotes the probability that treatment \(i\) is covered by contract \(k\) (below we have that \(x_{ik}\) equals either 0 or 1) and \(\sigma_k\) denotes the price/premium of contract \(k\). Value \(v_i\) denotes the utility of receiving the treatment in case the consumer needs it (with probability \(\psi_{ik}\)) compared to not receiving this treatment. Note that falling ill in itself can cause a disutility for the individual. Taking this into account would add a constant to the expression in \eqref{orgdbfd1c0} which we leave out to ease notation.
 </p>
 
 <p>
@@ -402,15 +402,15 @@ The incentive compatibility (IC) constraints for these contracts can be written 
 </p>
 
 \begin{equation}
-\label{org5422a53}
+\label{orgf1013d8}
 u_h \geq  \psi_{1h} x_{1l} v_1 + \psi_{2} x_{2l} v_2 - \sigma_{l}
 \end{equation}
 \begin{equation}
-\label{org2716f02}
+\label{org82152cd}
 u_l \geq  \psi_{1l} x_{1h} v_1 + \psi_{2} x_{2h} v_2 - \sigma_h
 \end{equation}
 <p>
-The first equation, \(IC_h\), implies that the high type is better off choosing the high contract (yielding utility \(u_h\)) than to buy the low type&rsquo;s contract (which yields her utility equal to the right hand side of \eqref{org5422a53}). To illustrate, the \(h\) type needs treatment 1 with probability \(\psi_{1h}\), but the \(l\) contract provides this treatment with probability \(x_{1l}\) in which case she gets utility \(v_{1}\); the price of this contract equals \(\sigma_{l}\). And, similarly, \(IC_l\) implies that the low type is better off buying the \(l\) contract &#x2013;yielding \(u_l\) &#x2013; than buying the \(h\) contract which yields her utility equal to the right hand side of \eqref{org2716f02}. These constraints capture intra-brand competition faced by the insurer: if the \(h\) contract becomes too attractive, \(l\) types buy this contract instead of the \(l\) contract (that is, \eqref{org2716f02} is violated).
+The first equation, \(IC_h\), implies that the high type is better off choosing the high contract (yielding utility \(u_h\)) than to buy the low type&rsquo;s contract (which yields her utility equal to the right hand side of \eqref{orgf1013d8}). To illustrate, the \(h\) type needs treatment 1 with probability \(\psi_{1h}\), but the \(l\) contract provides this treatment with probability \(x_{1l}\) in which case she gets utility \(v_{1}\); the price of this contract equals \(\sigma_{l}\). And, similarly, \(IC_l\) implies that the low type is better off buying the \(l\) contract &#x2013;yielding \(u_l\) &#x2013; than buying the \(h\) contract which yields her utility equal to the right hand side of \eqref{org82152cd}. These constraints capture intra-brand competition faced by the insurer: if the \(h\) contract becomes too attractive, \(l\) types buy this contract instead of the \(l\) contract (that is, \eqref{org82152cd} is violated).
 </p>
 
 <p>
@@ -418,15 +418,15 @@ As we will see below, pricing a treatment above its value is possible if low typ
 </p>
 </div>
 
-<div id="outline-container-org35e85cd" class="outline-3">
-<h3 id="org35e85cd"><span class="section-number-3">2.1.</span> First best</h3>
+<div id="outline-container-org089dbc0" class="outline-3">
+<h3 id="org089dbc0"><span class="section-number-3">2.1.</span> First best</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 A straightforward way to check which incentive constraint is binding in second best is to derive the first best outcome. First best is defined here as the case where insurers can observe insured&rsquo;s risk type and are allowed to risk rate. Put differently, first best here refers to the absence of asymmetric information.
 </p>
 
 <p>
-The profit an insurer makes on type \(k\) is given by \(\sigma_k - \psi_{1k}x_{1k}p_1 - \psi_{2}x_{2k}p_2\): insurance premium minus expected costs for type \(k\) where insurers&rsquo; costs are determined by the prices \(p_{i}\) charged by the research labs. Solving equation \eqref{orgaf6a257} for \(\sigma_{k}\) and substituting this into the expression for the per type profit gives:
+The profit an insurer makes on type \(k\) is given by \(\sigma_k - \psi_{1k}x_{1k}p_1 - \psi_{2}x_{2k}p_2\): insurance premium minus expected costs for type \(k\) where insurers&rsquo; costs are determined by the prices \(p_{i}\) charged by the pharmaceutical companies. Solving equation \eqref{orgdbfd1c0} for \(\sigma_{k}\) and substituting this into the expression for the per type profit gives:
 </p>
 \begin{equation}
 \label{eq:6}
@@ -460,7 +460,7 @@ The first order condition for \(u_k\) (\(k=l,h\)) can be written as
 It is routine to verify that this can be written as
 </p>
 \begin{equation}
-\label{orge50d1d5}
+\label{org98c574d}
 u_k = \frac{\varepsilon_{k}}{1+\varepsilon_{k}}\psi_2 v_2
 \end{equation}
 <p>
@@ -468,7 +468,7 @@ where the elasticity is defined as \(\varepsilon_k = \partial q_k/\partial u_k *
 </p>
 
 <p>
-We are interested in the case where \(IC_h\) is satisfied and \(IC_l\) is violated. This happens when inequality \eqref{org2716f02} is violated. It is routine to verify that the violation of \eqref{org2716f02} can be written as:
+We are interested in the case where \(IC_h\) is satisfied and \(IC_l\) is violated. This happens when inequality \eqref{org82152cd} is violated. It is routine to verify that the violation of \eqref{org82152cd} can be written as:
 </p>
 \begin{equation}
 \label{eq:1}
@@ -481,14 +481,14 @@ In first best it is optimal to cover treatment 1 (\(x_{1h}=1\)) as long as \(p_1
 u_h - u_l > v_1 \Delta \psi_1
 \end{equation}
 <p>
-Using \eqref{orge50d1d5}, we can write this inequality as
+Using \eqref{org98c574d}, we can write this inequality as
 </p>
 \begin{equation}
-\label{org101438d}
+\label{orgf4c6844}
 \frac{\varepsilon_{h}}{1+\varepsilon_{h}} - \frac{\varepsilon_{l}}{1+\varepsilon_{l}} > \frac{v_{1} \Delta\psi_1}{\psi_2 v_2}
 \end{equation}
 <p>
-In words, if the \(h\) market is sufficiently more elastic than the \(l\) market, the first best solution violates the \(IC_l\) constraint (and satisfies \(IC_h\)). As we are working here with \(p_1=v_1\), the interpretation is that the elasticity difference (between \(h\) and \(l\)) should exceed the cost difference.
+In words, if the \(h\) market is sufficiently more elastic than the \(l\) market,<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup> the first best solution violates the \(IC_l\) constraint (and satisfies \(IC_h\)). As we are working here with \(p_1=v_1\), the interpretation is that the elasticity difference (between \(h\) and \(l\)) should exceed the cost difference \(p_1 \Delta\psi_1\) by enough to satisfy \eqref{orgf4c6844}.
 </p>
 
 <p>
@@ -502,11 +502,11 @@ When \(IC_l\) is violated in first best, we know that it will be binding in the 
 </div>
 
 
-<div id="outline-container-orgf170d00" class="outline-3">
-<h3 id="orgf170d00"><span class="section-number-3">2.2.</span> Why are high risk types more elastic?</h3>
+<div id="outline-container-orgba3c692" class="outline-3">
+<h3 id="orgba3c692"><span class="section-number-3">2.2.</span> Why are high risk types more elastic?</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Equation \eqref{org101438d} shows that \(IC_l\) is binding in case the high risk segment is sufficiently more elastic than the low risk segment.
+Equation \eqref{orgf4c6844} shows that \(IC_l\) is binding in case the high risk segment is sufficiently more elastic than the low risk segment.
 </p>
 
 <p>
@@ -514,7 +514,7 @@ Broadly speaking there are two reasons why the high risk market is more elastic 
 </p>
 
 <p>
-Second, high risk types tend to have lower incomes and hence are more price sensitive than low risk types.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup> For people on low income it pays to keep searching for a contract that is, say, 50 euros cheaper while people on high income may not be bothered to spend time on this.
+Second, high risk types tend to have lower incomes and hence are more price sensitive than low risk types.<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup> For people on low income it pays to keep searching for a contract that is, say, 50 euros cheaper while people on high income may not be bothered to spend time on this.
 </p>
 
 <p>
@@ -534,15 +534,15 @@ One reason for the seemingly lower price elasticity is that people with low heal
 </p>
 
 <p>
-Finally, as we show above, if the high risk segment is more elastic than the low risk segment, low risk types want to mimic high risk types (that is, \(IC_l\) is violated). Two recent papers actually document this behavior (<a href="#citeproc_bib_item_21">Handel and Kolstad 2015</a>; <a href="#citeproc_bib_item_20">Handel et al. 2020</a>).<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup> If it would be the case that the high risk segment is less elastic than the low risk segment, we should only observe high risk types buying low risk contracts.
+Finally, as we show above, if the high risk segment is more elastic than the low risk segment, low risk types want to mimic high risk types (that is, \(IC_l\) is violated). Two recent papers document this behavior (<a href="#citeproc_bib_item_21">Handel and Kolstad 2015</a>; <a href="#citeproc_bib_item_20">Handel et al. 2020</a>).<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup> If it would be the case that the high risk segment is less elastic than the low risk segment, we should only observe high risk types buying low risk contracts.
 </p>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-org2ae02fe" class="outline-2">
-<h2 id="org2ae02fe"><span class="section-number-2">3.</span> Pricing above value</h2>
+<div id="outline-container-orgaff4532" class="outline-2">
+<h2 id="orgaff4532"><span class="section-number-2">3.</span> Pricing above value</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The previous section showed that with the elasticity difference between high and low risk types compensating the cost difference, the incentive compatibility constraint for the low type (\(IC_l\)) tends to be binding. In this section we show how this allows a pharmaceutical company to charge a price that exceeds treatment value.
@@ -556,7 +556,7 @@ With \(IC_l\) binding, we write the insurer&rsquo;s profit maximization problem 
      & + \lambda_l (u_l - u_h + v_1 x_{1h} (\psi_{1h}-\psi_{1l}))
 \end{align*}
 <p>
-where \(\lambda_l\) denotes the Lagrange multiplier on \(IC_l\) constraint \eqref{org2716f02}.
+where \(\lambda_l\) denotes the Lagrange multiplier on \(IC_l\) constraint \eqref{org82152cd}.
 </p>
 
 <p>
@@ -583,16 +583,16 @@ will not be bought by type \(k=l,h\). The price (premium) exceeds the consumer&r
 </p>
 
 <p>
-Figure <a href="#org2af527f">1</a> illustrates the situation in terms of profits. The \(l\) market is more profitable than the \(h\) market: expected costs are lower on the \(l\) market and margins are higher on the \(l\) market (as the elasticity is lower) Hence, profits on the \(l\) market, \(\pi_l(u)\) exceed profits on the \(h\) market. As the \(h\) market is more competitive, profits are lower and the insurer optimally leaves a higher surplus \(u_h\) to high risk insured than to low risk insured.
+Figure <a href="#orga0ddd77">1</a> illustrates the situation in terms of profits. The \(l\) market is more profitable than the \(h\) market: expected costs are lower on the \(l\) market and margins are higher on the \(l\) market (as the elasticity is lower) Hence, profits on the \(l\) market, \(\pi_l(u)\) exceed profits on the \(h\) market. As the \(h\) market is more competitive, profits are lower and the insurer optimally leaves a higher surplus \(u_h\) to high risk insured than to low risk insured.
 </p>
 
 <p>
-The first best outcomes (characterized in equation \eqref{orge50d1d5}) correspond to maxima of the curves \(\pi_l(u),\pi_h(u)\) resp. (derivative equal to zero). But the first best outcome leads to such a big difference \(u_h-u_l\) that \(IC_l\) is violated. Equalizing the slopes \(\pi'(u)\) in absolute value (and equal to \(\lambda_l\)) gives the second best solution. The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.
+The first best outcomes (characterized in equation \eqref{org98c574d}) correspond to maxima of the curves \(\pi_l(u),\pi_h(u)\) resp. (derivative equal to zero). But the first best outcome leads to such a big difference \(u_h-u_l\) that \(IC_l\) is violated. Equalizing the slopes \(\pi'(u)\) in absolute value (and equal to \(\lambda_l\)) gives the second best solution. The distance \(u_h - u_l\) in the figure is determined by \(IC_l\) holding with equality.
 </p>
 
 
 
-<div id="org2af527f" class="figure">
+<div id="orga0ddd77" class="figure">
 <p><img src="profitfunctions.png" alt="profitfunctions.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Insurer&rsquo;s profits \(\pi_{l}(u),\pi_{h}(u)\) as a function of \(u\).</p>
@@ -600,6 +600,10 @@ The first best outcomes (characterized in equation \eqref{orge50d1d5}) correspon
 
 <p>
 Given that the insurer cannot implement first best, it is willing to introduce some inefficiency which helps to separate the low from the high types. In a standard health insurance model (Like <a href="#citeproc_bib_item_34">Rothschild and Stiglitz 1976</a>) the \(h\) type wants to mimic the \(l\) type and the insurer introduces an inefficiency by distorting coverage of the \(l\) contract below first best coverage. In our set-up, the \(l\) type wants to mimic the \(h\) type and in response the insurer is willing to distort coverage of the \(h\) contract. This is where \(p_1>v_1\) comes in. With price above value, the first best contract would remove treatment 1 from coverage. But in second best, covering treatment 1 (\(x_{1h}=1\)) is the inefficiency that helps the insurer to separate the types. Hence, treatment 1 has still value for the insurer (and is willing to cover it) even though it costs more than treatment value.
+</p>
+
+<p>
+In second best, the inefficiency reduces \(u_h\) below the level that would maximize \(\pi_h\). The extent to which the insurer is willing to reduce \(u_h\) depends on the elasticity \(\varepsilon_h\). The more \(h\) customers leave due to a fall in \(u_h\), the more reluctant the insurer is to introduce such a reduction.
 </p>
 
 <p>
@@ -616,11 +620,11 @@ As the private incentive to innovate is driven by \(p_1\) (profit for the compan
 </div>
 
 
-<div id="outline-container-orgef2b5a6" class="outline-3">
-<h3 id="orgef2b5a6"><span class="section-number-3">3.1.</span> code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h3>
+<div id="outline-container-org757a175" class="outline-3">
+<h3 id="org757a175"><span class="section-number-3">3.1.</span> code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="code">code</span></span></h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
-Figure <a href="#org2af527f">1</a> is generated for an Hotelling model of insurer competition. The figure is based on the following parameter values: \(\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5\) and the following Hotelling travel costs \(t_h=1,t_l=3\) as explained below. Here we give the details of the model and the python code for the figure.
+Figure <a href="#orga0ddd77">1</a> is generated for an Hotelling model of insurer competition. The figure is based on the model below  with the following parameter values: \(\phi=0.5,v_1(\psi_{1h}-\psi_{1l})=1,\psi_2v_2=5\) and the following Hotelling travel costs \(t_h=1,t_l=3\). Here we give the details of the model and the python code for the figure.
 </p>
 
 <p>
@@ -649,7 +653,7 @@ We show that with \(p_1=v_1\), the insurers set \(x_{1h}=1\). Even then the insu
 We can derive a closed form solution for \(\lambda_l > 0\) in the Hotelling example and also here we derive the condition that \(IC_l\) is binding if the elasticity difference between the market segments exceeds the expected cost difference. Because travel cost \(t\) is an inverse measure of competition, the \(h\) market is more competitive than the \(l\) market if \(t_l - t_h >0\).
 </p>
 
-<div class="lemma" id="org031ee6b">
+<div class="lemma" id="orgfea6736">
 <p>
 In the Hotelling model, assume that \(p_1 =v_1\) and \(t_l - t_h > v_1 (\psi_{1h}-\psi_{1l})\). Then in equilibrium, it is the case that \(x_{1h}=x_{2h}=x_{2l}=1\), \(x_{1l} \in [0,1]\) and
 </p>
@@ -708,7 +712,7 @@ which holds because \(x_{1l} \leq 1\).
 </p>
 
 <p>
-We use these outcomes in the following python code block to plot Figure <a href="#org2af527f">1</a>.
+We use these outcomes in the following python code block to plot Figure <a href="#orga0ddd77">1</a>.
 </p>
 
 <div class="org-src-container">
@@ -758,8 +762,8 @@ plt.savefig(<span style="color: #3548cf;">'profitfunctions.png'</span>)
 
 
 
-<div id="outline-container-orgb1bf9cc" class="outline-2">
-<h2 id="orgb1bf9cc"><span class="section-number-2">4.</span> Precision medicine</h2>
+<div id="outline-container-orgfe20384" class="outline-2">
+<h2 id="orgfe20384"><span class="section-number-2">4.</span> Precision medicine</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Now that we have seen that pricing above value can happen in equilibrium, a natural question is: for which treatments is this most likely to happen? Based on the model, we argue that this problem seems pertinent to precision medicine.
@@ -779,7 +783,7 @@ The \(\Delta \psi_1\) term measures the difference in probability that treatment
 
 
 <p>
-One can think of two reasons why \(\Delta \psi_1\) is high for a treatment: the first is exogenous to the R&amp;D lab or pharmaceutical company and the second endogenous. First, it can be a matter of biology: some people suffer from diabetes and others do not. The difference between the prevalence of diabetes among high and low risk types determines \(\Delta \psi_1\) and the pharmaceutical company cannot change this.<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup>
+One can think of two reasons why \(\Delta \psi_1\) is high for a treatment: the first is exogenous to the R&amp;D lab or pharmaceutical company and the second endogenous. First, it can be a matter of biology: some people suffer from diabetes and others do not. The difference between the prevalence of diabetes among high and low risk types determines \(\Delta \psi_1\) and the pharmaceutical company cannot change this.<sup><a id="fnr.8" class="footref" href="#fn.8" role="doc-backlink">8</a></sup>
 </p>
 
 <p>
@@ -804,7 +808,7 @@ To capture this idea of excessive targeting, we introduce a parameter \(\zeta\) 
 </p>
 
 <p>
-The model implies that even in the case where there is no social value to targeting at all, there is still a private incentive to do so if the increase in \(p_1\) compensates the fall in \(\psi_{1l},\psi_{1h}\). If targeting does not raise \(v_1\) nor reduce the development costs for the treatment, a social planner would not invest in targeting. But a private company would if the increase in price exceeds the fall in market share. In this sense, there is an excessive (private) incentive for the pharmaceutical sector to invest in precision medicine. The result is higher prices and higher healthcare expenditure but no increased value or life expectancy. As explained in the Introduction, this is how some experts view the developments in personalized medicine.
+The model implies that even in the (extreme) case where there is no social value to targeting at all, there is still a private incentive to do so if the increase in \(p_1\) compensates the fall in \(\psi_{1l},\psi_{1h}\). If targeting does not raise \(v_1\) nor reduce the development costs for the treatment, a social planner would not invest in targeting. But a private company would if the increase in price exceeds the fall in market share. In this sense, there is an excessive (private) incentive for the pharmaceutical sector to invest in precision medicine. The result is higher prices and higher healthcare expenditure but no increased value or life expectancy. As explained in the Introduction, this is how some experts view the developments in personalized medicine.
 </p>
 
 <p>
@@ -814,8 +818,8 @@ To the extent that the specialty pharmaceutical market and  personalized medicin
 </div>
 
 
-<div id="outline-container-orgc69df40" class="outline-2">
-<h2 id="orgc69df40"><span class="section-number-2">5.</span> Policy implications</h2>
+<div id="outline-container-org98b7281" class="outline-2">
+<h2 id="org98b7281"><span class="section-number-2">5.</span> Policy implications</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 This paper introduces a framework where upstream pharmaceutical companies sell drugs to a downstream health insurance market which suffers from selection problems. If the low risk type wants to buy the high risk type contract, we find that upstream firms can charge prices in excess of treatment value. Further, pharmaceutical companies have an excessive incentive to narrow their market; that is, target treatments at patient subgroups.
@@ -834,7 +838,7 @@ The implications of our analysis for policy can be summarized as follows. First,
 </p>
 
 <p>
-To reduce the excessive R&amp;D incentives, a government can reduce tax breaks for R&amp;D in the pharmaceutical sector and increase the industry&rsquo;s financial contribution to research by (public) universities both for fundamental research and for running trials to test new treatments. Further, the government can consider introducing price caps; for instance, in the form of not approving treatments for insurance coverage if the price per qaly (quality adjusted life year) is too high. This helps to keep the healthcare system affordable and reduces excessive R&amp;D incentives. As shown, relying on market forces to keep prices low does not work for an upstream sector selling to a downstream market with selection problems.
+To reduce the excessive R&amp;D incentives, a government can reduce tax breaks for R&amp;D in the pharmaceutical sector and increase the industry&rsquo;s financial contribution to research by (public) universities both for fundamental research and for running trials to test new treatments. Further, the government can consider introducing price caps; for instance, in the form of not approving treatments for insurance coverage if the price per qaly (quality adjusted life year) gained is too high. This helps to keep the healthcare system affordable and reduces excessive R&amp;D incentives. As shown, relying on market forces to keep prices low does not work for an upstream sector selling to a downstream market with selection problems.
 </p>
 
 <p>
@@ -843,8 +847,8 @@ Finally, assuming that consumers stop buying insurance in case the expected valu
 </div>
 </div>
 
-<div id="outline-container-orga61ed55" class="outline-2">
-<h2 id="orga61ed55"><span class="section-number-2">6.</span> Bibliography</h2>
+<div id="outline-container-org3e45a86" class="outline-2">
+<h2 id="org3e45a86"><span class="section-number-2">6.</span> Bibliography</h2>
 <div class="outline-text-2" id="text-6">
 <div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Atherly, Adam, Bryan E. Dowd, and Roger Feldman. 2004. “The Effect of Benefits, Premiums, and Health Risk on Health Plan Choice in the Medicare Program.” <i>Health Services Research</i> 39 (4p1): 847–64.</div>
@@ -902,7 +906,7 @@ Finally, assuming that consumers stop buying insurance in case the expected valu
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Although the links are &ldquo;clickable&rdquo; in the pdf version of the paper, navigation is easier in the html version at: <a href="https://janboone.github.io/Treatment-Prices/">https://janboone.github.io/Treatment-Prices/</a>. This webappendix includes details of the model underlying Figure <a href="#org2af527f">1</a>.</p></div></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Although the links are &ldquo;clickable&rdquo; in the pdf version of the paper, navigation is easier in the html version at: <a href="https://janboone.github.io/Treatment-Prices/">https://janboone.github.io/Treatment-Prices/</a>. This webappendix includes details of the model underlying Figure <a href="#orga0ddd77">1</a>.</p></div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">In free market systems, the insurer can decide what to cover or not in its contracts. In regulated market systems, like the Netherlands, the government often prescribes which conditions need to be covered by basic insurance but does not define which treatments need to be covered.</p></div></div>
 
@@ -910,11 +914,13 @@ Finally, assuming that consumers stop buying insurance in case the expected valu
 
 <div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">To simplify notation, we normalized \(c_1=c_2=0\). For the access to care interpretation, think of \(c_1,c_2\) being high enough that a patient without insurance cannot afford them even at cost price.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">The correlation between health status and income is well documented in the empirical health literature (<a href="#citeproc_bib_item_15">Frijters, Haisken-DeNew, and Shields 2005</a>; <a href="#citeproc_bib_item_14">Finkelstein and McGarry 2006</a>; <a href="#citeproc_bib_item_19">Gravelle and Sutton 2009</a>; <a href="#citeproc_bib_item_31">Munkin and Trivedi 2010</a>). Potential explanations for this correlation include the following. High income people are better educated and hence know the importance of healthy food, exercise etc. Healthy food options tend to be more expensive and therefore better affordable to high income people. Or (with causality running in the other direction) healthy people are more productive and therefore earn higher incomes.</p></div></div>
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Note that \(\varepsilon/(1+\varepsilon)\) is increasing in \(\varepsilon\).</p></div></div>
 
-<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">One of the reasons why this happens is a deviation from rationality. The working paper version of our paper shows that bounded rationality can strengthen our results.</p></div></div>
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">The correlation between health status and income is well documented in the empirical health literature (<a href="#citeproc_bib_item_15">Frijters, Haisken-DeNew, and Shields 2005</a>; <a href="#citeproc_bib_item_14">Finkelstein and McGarry 2006</a>; <a href="#citeproc_bib_item_19">Gravelle and Sutton 2009</a>; <a href="#citeproc_bib_item_31">Munkin and Trivedi 2010</a>). Potential explanations for this correlation include the following. High income people are better educated and hence know the importance of healthy food, exercise etc. Healthy food options tend to be more expensive and therefore better affordable to high income people. Or (with causality running in the other direction) healthy people are more productive and therefore earn higher incomes.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Note the following distinction: type 2 diabetes tends to be endogenous to an individual&rsquo;s lifestyle but exogenous to a pharmaceutical company. Here we focus on the exogeneity with respect to the company.</p></div></div>
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">One of the reasons why this happens is a deviation from rationality. The working paper version of our paper shows that bounded rationality can strengthen our results.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8" role="doc-backlink">8</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Note the following distinction: type 2 diabetes tends to be endogenous to an individual&rsquo;s lifestyle but exogenous to a pharmaceutical company. Here we focus on the exogeneity with respect to the company.</p></div></div>
 
 
 </div>
