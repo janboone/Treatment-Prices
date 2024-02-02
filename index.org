@@ -1,7 +1,7 @@
 #+STARTUP: inlineimages hideblocks
 #+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
 #+TITLE: Pricing above value: selling /to/ a market with selection problems
-#+Author: Jan Boone@@latex:\thanks{Tilburg University, Department of Economics, Tilec and CEPR, E-mail: \textit{j.boone@uvt.nl}.}@@
+#+Author: 
 
 #+LATEX_HEADER: \usepackage[round,authoryear]{natbib}
 #+LATEX_HEADER: \setcitestyle{authoryear, round, comma, aysep={;}, yysep={,}, notesep={, }}
@@ -9,6 +9,7 @@
 #+LANGUAGE:  en
 #+INFOJS_OPT: view:showall toc:t ltoc:t mouse:underline path:http://orgmode.org/org-info.js
 #+LaTeX_CLASS: article-12
+#+latex_header: \input{author.tex}
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+OPTIONS: toc:nil num:2 ':t \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t timestamp:nil
@@ -57,11 +58,11 @@ Examples of newspaper stories on pharmaceutical companies charging "outrageous" 
 
 Further, it has been noted that "prices of ... drugs in the so-called 'specialty' pharmaceutical market have been increasing over time" [[citep:&Howard2015 pp. 140]]. The promise of specialty or precision medicine was "to give 'the right drug to the right patient' to maximize the effectiveness and safety of the treatment" citep:Garattini2015. However, up till now this targeting of treatments has not lived up to this promise and one reason is that these treatments turn out to be extremely expensive. It is not clear that we can afford precision medicine. To illustrate, in oncology there are treatments costing $300,000 while they "only result in minimal benefit" citep:&Doble2016.
 
-To analyze whether it is possible for drugs to be priced above their value for patients, we introduce a model with upstream pharmaceutical companies selling drugs to downstream insurers for inclusion in their health insurance contracts. The health insurance market suffers from selection. The condition we need for our results is that low risk types are tempted to buy the insurance contract aimed at high risk types. Pharmaceutical firms then charge prices in excess of their treatments' value for patients and still have their treatments covered by insurance. To reduce low risk rents insurers distort the high type's allocation upwards by covering a treatment that is expensive. 
+To analyze whether it is possible for drugs to be priced above their value for patients, we introduce a model with upstream pharmaceutical companies selling drugs to downstream insurers for inclusion in their health insurance contracts. The health insurance market suffers from selection. The condition we need for our results is that low risk types are tempted to buy the insurance contract aimed at high risk types. This can happen if high risk types feature a higher elasticity on the health insurance market than low risk types. Pharmaceutical firms then charge prices in excess of their treatments' value for patients and still have their treatments covered by insurance. To increase the premium for low risk contracts, insurers distort the high type's allocation upwards by covering a treatment that is expensive. 
 
 Moreover, targeting of pharmaceutical R&D investments on subgroups (precision medicine) tends to increase the gap between price and patient value further. This result sheds light on developments in specialty drugs or personalized medicine where higher prices are easier to spot than improved treatments. Finally, the introduction of generic drugs helps to increase prices of patented drugs. To the extent that people can decide to go without insurance, the insurance premium cannot exceed the total value of the insurance contract. Generic drug competition leads to prices below the value of treatment thereby creating the "space" for patented drugs to charge prices above value.
 
-In the next section we discuss the empirical evidence that supports the assumption that low types want to buy the generous high type contract. Further, our analysis is related to the following strands of literature. 
+In the next section we discuss the empirical evidence that supports the assumption that low risk types want to buy the generous high risk type contract. Further, our analysis is related to the following strands of literature. 
 
 First, there are a number of explanations for high drug prices found in the literature citep:Howard2015. However,  these cannot fully explain why prices would exceed treatment value. To illustrate, an explanation that is often mentioned is that with health insurance people want a treatment, no matter what the cost since the insurer pays (most of) the price. This is true ex post: once I have insurance, the effects of the cost of treatment are reduced for me. Economists tend to refer to this as moral hazard. However, why would I buy insurance coverage for a treatment that costs more than the benefit it provides? Dropping such a treatment from the contract leads to a bigger reduction in the premium than the loss in expected utility. Hence, an insurer --whether or not it has market power-- benefits from removing such treatments from its insurance contract. This threat of not being covered by an insurance contract limits the price a pharmaceutical company can ask for patented drugs.
 
@@ -90,7 +91,7 @@ Competing insurers sell insurance to a customer who can be either of risk type $
 
 We assume that the consumer buys insurance to get access to treatments. That is, without insurance, the consumer goes without treatment.[fn::To simplify notation, we normalized $c_1=c_2=0$. For the access to care interpretation, think of $c_1,c_2$ being high enough that a patient without insurance cannot afford them even at cost price.] This has two reasons. First, it is well documented that people without health insurance tend to forgo treatment as they have difficulty financing it. These access issues have been stressed both in the popular press citep:Cohn07 and in academic journals citep:Nyman1999141,Schoen2008,Schoen2010a. Many governments are concerned about health consumption inequality caused by income differences and design policies to make healthcare accessible to low income families citep:Schokkaert2011o.
 
-Second, it streamlines the analysis. With risk aversion as motivation to buy insurance, we need a non-linear (concave) utility function. Further, with risk aversion there is an additional reason why insurers prefer high prices for treatments: it is more attractive for customers to insure an expensive treatment than a cheap one. Both effects make derivations less straightforward while not changing our results.
+Second, it streamlines the analysis. With risk aversion as motivation to buy insurance, we need a non-linear (concave) utility function. Further, with risk aversion there is an additional reason why insurers prefer high prices for treatments: it is more attractive for customers to insure an expensive treatment than a cheap one. Both effects make derivations less straightforward while not changing our results.[fn::The appendix introduces a model with only risk aversion to illustrate the difference with our selection framework.]
 
 Each insurer offers two contracts (which can be identical in case of a pooling outcome), each contract aimed at a consumer type. We write the value/utility of the contract for type $k=1,2$ as follows:
 #+name: eq:5
@@ -163,8 +164,7 @@ In words, if the $h$ market is sufficiently more elastic than the $l$ market,[fn
 
 The equation also shows why we need imperfect competition in the health insurance market. With perfect competition (infinitely elastic demand at the firm level) in both markets the left hand side equals 0 (because $\lim_{\varepsilon \rightarrow \infty} \varepsilon/(1+\varepsilon) = 1$) and the inequality cannot be satisfied.
 
-When $IC_l$ is violated in first best, we know that it will be binding in the second best outcome (with asymmetric information).
-
+Note that equation eqref:eq:ICelasticities focuses on one particular parameter constellation. In general, there are other cases where, for instance, $IC_h$ is binding or where no IC constraint is binding. As these cases are not relevant for the argument developed in the paper, they are not analyzed here.
 
 ** Why are high risk types more elastic?
 
@@ -189,6 +189,8 @@ Finally, as we show above, if the high risk segment is more elastic than the low
 
 The previous section showed that with the elasticity difference between high and low risk types compensating the cost difference, the incentive compatibility constraint for the low type ($IC_l$) tends to be binding. In this section we show how this allows a pharmaceutical company to charge a price that exceeds treatment value.
 
+** Insurer's optimization problem
+
 With $IC_l$ binding, we write the insurer's profit maximization problem as follows; where we assume as before that $p_1=v_1$ and $p_2=0$.
 \begin{align*}
 \max_{u_l,u_h,x_{1l}, x_{1h},x_{2l},x_{2h}} & \phi q_{l}(u_l) (\psi_2 x_{2l} v_2 -u_l) + (1-\phi) q_h(u_h) (\psi_2 x_{2h} v_2 -u_h) \\
@@ -200,6 +202,8 @@ The derivative of these profits with respect to $x_{1h}$ is strictly positive: $
 
 The result says that even if $p_1=v_1$, the insurer's profits are strictly increasing in $x_{1h}$. Hence, the producer of treatment 1 can ask more than $p_1 = v_1$ --the final consumers' valuation of the treatment-- and the insurer will still cover this treatment in its health insurance contract. If $p_1 = v_1$ would be the maximum price firm $1$ can charge for its treatment, an insurer would be indifferent between covering the treatment or not: $d\Pi/dx_{1h} = 0$ at $p_1 = v_1$. As this derivative is strictly positive, the producer of patented treatment 1 can charge more than $p_1=v_1$.
 
+** Intuition: why cover a treatment with $p>v$?
+
 The reason why the insurer is willing to cover a treatment which is sold at a price in excess of its value to patients is that covering the treatment helps to increase the $l$ type's premium $\sigma_{l}$, which is profitable for the insurer. In other words, the treatment has value for the insurer in addition to the utility created by the treatment for the insured. The insurer's $h$ contract competes with its own $l$ contract. The more attractive the $h$ contract becomes, the lower $\sigma_{l}$ has to be; this intra-brand competition is captured by $IC_{l}$. Covering the expensive treatment relaxes the $IC_l$ constraint and the value of relaxing $IC_l$ is given by its shadow price $\lambda_l > 0$. Since the $h$ type is more likely to need the treatment than the $l$ type, covering the treatment makes the $h$ contract less attractive to the $l$ type. This allows the insurer to increase $\sigma_l$ and profits.
 
 Note the role of generic drugs, here captured by treatment 2, being sold at a price below their value ($p_2 < v_2$). As these drugs are patent-free, any company can produce them thereby competing the price down below value. Here we assume that the price is competed down to marginal costs (normalized to 0) on the generic drugs market. But all we need, is that $p_2 < v_2$ on the generic market to make $p_1>v_1$ possible. Generic drugs are needed for our argument to "create space" for patented firms to charge prices above their treatments' values. To see this, consider the case where $p_2=v_2$. Together with $p_1>v_1$ this makes a contract covering treatment 1 loss-making because a consumer is not willing to pay more than $\psi_{1k} v_1 + \psi_{2} v_2$ for an insurance contract covering both treatments. Hence in this case, treatment 1 with $p_1>v_1$ will be dropped by the insurer because a contract with
@@ -209,7 +213,7 @@ Note the role of generic drugs, here captured by treatment 2, being sold at a pr
 \end{equation}
 will not be bought by type $k=l,h$. The price (premium) exceeds the consumer's expected value of the contract. This is a violation of the so called individual rationality (or participation) constraint.
 
-Figure ref:fig:profitfunctions illustrates the situation in terms of profits. The $l$ market is more profitable than the $h$ market: expected costs are lower on the $l$ market and margins are higher on the $l$ market (as the elasticity is lower) Hence, profits on the $l$ market, $\pi_l(u)$ exceed profits on the $h$ market. As the $h$ market is more competitive, profits are lower and the insurer optimally leaves a higher surplus $u_h$ to high risk insured than to low risk insured.
+Figure ref:fig:profitfunctions illustrates the situation in terms of profits. The $l$ market is more profitable than the $h$ market: expected costs are lower on the $l$ market and margins are higher on the $l$ market (as the elasticity is lower). Hence, profits on the $l$ market, $\pi_l(u)$ exceed profits on the $h$ market over the relevant $u$ range. As the $h$ market is more competitive, profits are lower and the insurer optimally leaves a higher surplus $u_h$ to high risk insured than to low risk insured.
 
 The first best outcomes (characterized in equation eqref:eq:elastEquation) correspond to maxima of the curves $\pi_l(u),\pi_h(u)$ resp. (derivative equal to zero). But the first best outcome leads to such a big difference $u_h-u_l$ that $IC_l$ is violated. Equalizing the slopes $\pi'(u)$ in absolute value (and equal to $\lambda_l$) gives the second best solution. The distance $u_h - u_l$ in the figure is determined by $IC_l$ holding with equality.
 
@@ -218,15 +222,24 @@ The first best outcomes (characterized in equation eqref:eq:elastEquation) corre
 #+name: fig:profitfunctions
 [[file:profitfunctions.png]]
 
-Given that the insurer cannot implement first best, it is willing to introduce some inefficiency which helps to separate the low from the high types. In a standard health insurance model [[citep:like &rot76]] the $h$ type wants to mimic the $l$ type and the insurer introduces an inefficiency by distorting coverage of the $l$ contract below first best coverage. In our set-up, the $l$ type wants to mimic the $h$ type and in response the insurer is willing to distort coverage of the $h$ contract. This is where $p_1>v_1$ comes in. With price above value, the first best contract would remove treatment 1 from coverage. But in second best, covering treatment 1 ($x_{1h}=1$) is the inefficiency that helps the insurer to separate the types. Hence, treatment 1 has still value for the insurer (and is willing to cover it) even though it costs more than treatment value.
+Given that the insurer cannot implement first best, it is willing to introduce some inefficiency which helps to separate the low from the high types. In a standard health insurance model [[citep:&rot76]] the $h$ type wants to mimic the $l$ type and the insurer introduces an inefficiency by distorting coverage of the $l$ contract below first best coverage. In our set-up, the $l$ type wants to mimic the $h$ type and in response the insurer is willing to distort coverage of the $h$ contract. This is where $p_1>v_1$ comes in. With price above value, the first best contract would remove treatment 1 from coverage. But in second best, covering treatment 1 is the inefficiency that helps the insurer to separate the types. Hence, treatment 1 has still value for the insurer (and is willing to cover it) even though it costs more than treatment value.
 
 In second best, the inefficiency reduces $u_h$ below the level that would maximize $\pi_h$. The extent to which the insurer is willing to reduce $u_h$ depends on the elasticity $\varepsilon_h$. The more $h$ customers leave due to a fall in $u_h$, the more reluctant the insurer is to introduce such a reduction.
 
 As treatment 1 has still value for insurers at a price $p_1 > v_1$ and they are willing to cover this treatment, the prediction is that pharmaceutical companies will charge prices above the value of their medicines. The bigger the value of $\lambda_l v_1 \Delta \psi_1$, the higher $p_1$ is expected to be.
 
+** Health insurance context and summary
+
+In which health insurance context does the model explain excessive pricing for treatments? The main issue is selection on the insurance market. Hence, in a setting with government financed insurance (like the NHS in the UK), there is no selection on the insurance market and the model does not apply.
+
+In the discussion of equation eqref:eq:ICelasticities we already noted that the model does not apply with perfect competition. In that case, there are no elasticity differences between the market segments and the left hand side of equation eqref:eq:ICelasticities equals 0. In this sense, we need insurers with market power for the model to apply. A monopoly insurer faces selection (if health insurance is not mandatory) as well as oligopoly insurers. As long as the functions $q_l(u_l),q_h(u_h)$ are not constants, the model applies. Insurers can distort their contracts to get a more profitable case-mix of insured. 
+
+Finally, there are selection problems for the health insurer if it is not able to risk rate. If insurers can observe risk types and are allowed to price discriminate, the model does not apply. There are no incentive compatibility constraints with risk rating. Hence, we need either unobserved risk types or a community rating requirement. 
+The appendix presents a simple analysis to illustrate that a model with only risk averse consumers (and no selection) cannot easily explain that treatments with price above value are covered by health insurance. 
+
 Summarizing, we introduced a simple model of health insurer competition and showed that it is indeed possible for a pharmaceutical company with a patented drug to sell this at a price that exceeds treatment value. As quoted in the Introduction, some experts claim that prices for some drugs are out of proportion with the value they offer. Although this seems counter-intuitive (insurers should not cover treatments that cost more than the value they create), the model above shows that this can, in fact, happen in equilibrium.
 
-As the private incentive to innovate is driven by $p_1$ (profit for the company with the patent) while the social incentive is determined by $v_1$ (value for patients), $p_1>v_1$ implies that pharmaceutical firms have an excessive incentive to innovate: the private value of innovation exceeds the social value. The next section considers the incentives for firms to target treatments at subgroups of patients.
+As the private incentive to innovate is driven by $p_1$ (profit for the company with the patent) while the social incentive is determined by $v_1$ (value for patients), $p_1>v_1$ implies that pharmaceutical firms have an excessive incentive to innovate: the private value of innovation exceeds the social value. The next section considers firms' incentives to target treatments at subgroups of patients.
 
 
 ** code :code:
@@ -341,7 +354,7 @@ Now that we have seen that pricing above value can happen in equilibrium, a natu
 
 Recall from above that the marginal value for the insurer of including treatment 1 equals $\lambda_l v_1 \Delta \psi_1 >0$. The Lagrange multiplier $\lambda_l$ on the $IC_l$ constraint is the same for all treatments. Hence, overpricing is likely to be bigger for treatments that have high value $v_1$ and feature high $\Delta \psi_1$.
 
-The value effect is intuitive; no one is likely to worry about a treatment with a value of 10 euros. But for treatments with values around 100k, potential and damage due to over-pricing is big. As cancer treatments can potentially extend life years, treatments for such drugs are in this ball park. Without going into the literature on the value of life years (quality adjusted life years or qaly's, to be precise), a value of a healthy life year around 100k is not unreasonable [[citep:&cutler]].
+The value effect is intuitive; no one is likely to worry about a treatment with a value of 10 euros. But for treatments with values around 100k, potential and damage due to over-pricing is big. As cancer treatments can potentially extend life years, treatments for such drugs are in this ball park. Without going into the literature on the value of life years (usually measured with quality adjusted life years or qaly's), a value of a healthy life year around 100k is not unreasonable [[citep:&cutler]].
 
 The $\Delta \psi_1$ term measures the difference in probability that treatment 1 is used by the $h$ vs the $l$ type. High $\Delta \psi_1$ implies that the treatment is targeted at $h$ types and hence effective at separating the types for the insurer.
 
@@ -393,5 +406,35 @@ bibliography:../marginalinnovation.bib
 #+END_EXPORT
 
 
+* Model with risk aversion
+
+In this appendix we consider a model with only risk aversion to understand what the selection model used in the main text adds to a risk aversion model. The idea is that a model with risk aversion (only) can also explain that treatment producers charge a price above the value of their treatment. Intuitively, insurance creates a surplus for the insurer-provider combination that both parties can bargain over. If the treatment supplier has sufficient bargaining power, this can lead to a price above treatment value.
+
+The point of this section is to illustrate that: (i) it is not obvious that a model with a risk averse agent can generate this result and (ii) if it does lead to $p>v$, it does so mainly for treatments that are used by many people. In the Introduction we showed that the evidence for over-pricing is in markets for (very) small patient populations e.g. due to precision medicine.
+
+Consider a simple model with two states of the world: an agent falls ill and needs treatment (probability $\psi \in \langle0,1\rangle$) and the agent is healthy (probability $1-\psi$). In the bad state of the world, the agent's utility is given by $u_b(.)$ and in the good state of the world by $u_g(.)$, where we assume increasing and concave utility in each state of the world: $u'_i > 0, u''_i <0, i=g,b$.
+
+If the agent receives treatment in the bad state her utility equals $u_b(y+v)$ where $y$ denotes the agent's income that is spent on consumption and $v$ the (consumption) value of the treatment. We assume that the treatment has no value in the good state of the world. If there is no insurance, the agent would buy the treatment if and only if $u_b(y+v-p) \geq u_b(y)$ where $p$ denotes the (uninsured) price of the treatment. Clearly, this implies that an uninsured only buys treatment if $p \le v$.
+
+Let $x \in [0,1]$ denote the fraction of treatment covered by insurance. We want to see whether a consumer chooses $x=1$ if $p>v$. That is, a risk averse consumer buys insurance for a treatment with a price in excess of the treatment's value. We assume perfect competition in the health insurance market: $\sigma = \psi x p$. Then utility can be written as:
+#+name: eq:utility
+\begin{equation}
+U(x) = (1-\psi) u_g(y-\sigma) + \psi u_b (y+xv-\sigma)
+\end{equation}
+The first derivative with respect to $x$ can be written as
+#+name: eq:DutilityDx
+\begin{equation}
+\frac{dU}{dx}=-(1-\psi)u'_g(y-\sigma) \psi p + \psi u'_b(y+xv-\sigma)(v-\psi p)
+\end{equation}
+To see whether the agent is willing to buy insurance, consider $dU/dx$ evaluated at $x=0$. In words, starting from no insurance, would the agent be willing to increase $x$ (ultimately to $x=1$):
+#+name: eq:DutilityDxAt0
+\begin{equation}
+\left. \frac{dU}{dx} \right|_{x=0} = \psi u'_g(y) \left( \left(\frac{u'_b}{u'_g} -1 \right) (1-\psi)p + \frac{u'_b}{u'_g} (v-p)  \right)
+\end{equation}
+A natural assumption seems to be that $u'_g(y) \ge u'_b(y)$: the marginal utility of consumption is higher when you are healthy than when you are ill. You can enjoy consumption more when you can travel, visit friends, go skiing than when you are in hospital or at home lying in bed all day. Then the last equation makes clear that $p>v$ implies $dU/dx < 0$ at $x=0$. In words, the consumer does not want to buy health insurance if the treatment features $p>v$.
+
+This is not to argue that it is impossible to write down a model where risk aversion leads to $p>v$. We only illustrate that it is not obvious that risk aversion can explain pricing above value.
+
+If we are willing to assume that $u'_b > u'_g$, we can have $dU/dx >0$ but the equation shows that $dU/dx > 0$ is small for treatments with $\psi$ close to zero. That is, treatments that are only used by small groups of patients are unlikely to be able to claim much of the joint surplus created by risk aversion. But as shown in the Introduction it is for these (very) rare diseases that we see the most "outrageous" prices. A model based on risk aversion cannot explain this observation that payers value rarity. Finally, there is no incentive for pharmaceutical firms to reduce $\psi$ through precision medicine unless this would increase treatment value or reduce costs (which we do not tend to observe in the real world). Therefore, we find the model based on selection in the main text more useful for this analysis than a model based on risk-aversion.
 
 
