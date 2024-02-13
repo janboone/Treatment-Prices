@@ -47,7 +47,7 @@ This paper shows that selection incentives in downstream markets distort upstrea
 :UNNUMBERED: t
 :END:
 
-With this document, any reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. 
+With this document, the reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. 
 
 
 * Introduction
@@ -232,7 +232,7 @@ As treatment 1 has still value for insurers at a price $p_1 > v_1$ and they are 
 
 In which health insurance context does the model explain excessive pricing for treatments? The main issue is selection on the insurance market. Hence, in a setting with government financed insurance (like the NHS in the UK), there is no selection on the insurance market and the model does not apply.
 
-In the discussion of equation eqref:eq:ICelasticities we already noted that the model does not apply with perfect competition. In that case, there are no elasticity differences between the market segments and the left hand side of equation eqref:eq:ICelasticities equals 0. In this sense, we need insurers with market power for the model to apply. A monopoly insurer faces selection (if health insurance is not mandatory) as well as oligopoly insurers. As long as the functions $q_l(u_l),q_h(u_h)$ are not constants, the model applies. Insurers can distort their contracts to get a more profitable case-mix of insured. 
+In the discussion of equation eqref:eq:ICelasticities we already note that the model does not apply with perfect competition. In that case, there are no elasticity differences between the market segments and the left hand side of equation eqref:eq:ICelasticities equals 0. In this sense, we need insurers with market power for the model to apply. A monopoly insurer faces selection (if health insurance is not mandatory) as well as oligopoly insurers. As long as the functions $q_l(u_l),q_h(u_h)$ are not constants, the model applies. Insurers can distort their contracts to get a more profitable case-mix of insured. 
 
 Finally, there are selection problems for the health insurer if it is not able to risk rate. If insurers can observe risk types and are allowed to price discriminate, the model does not apply. There are no incentive compatibility constraints with risk rating. Hence, we need either unobserved risk types or a community rating requirement. 
 The appendix presents a simple analysis to illustrate that a model with only risk averse consumers (and no selection) cannot easily explain that treatments with price above value are covered by health insurance. 
