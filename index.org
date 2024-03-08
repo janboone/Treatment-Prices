@@ -47,7 +47,9 @@ This paper shows that selection incentives in downstream markets distort upstrea
 :UNNUMBERED: t
 :END:
 
-With this document, the reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect. 
+With this document, the reader can retrace the code which we use to produce the simulation results in this paper. The rendering of Latex is quite reasonable but not perfect.
+
+You can also download the [[file:Pricing_above_value_JHE.pdf][the pdf version]] of the paper.
 
 
 * Introduction
@@ -91,7 +93,7 @@ Competing insurers sell insurance to a customer who can be either of risk type $
 
 We assume that the consumer buys insurance to get access to treatments. That is, without insurance, the consumer goes without treatment.[fn::To simplify notation, we normalized $c_1=c_2=0$. For the access to care interpretation, think of $c_1,c_2$ being high enough that a patient without insurance cannot afford them even at cost price.] This has two reasons. First, it is well documented that people without health insurance tend to forgo treatment as they have difficulty financing it. These access issues have been stressed both in the popular press citep:Cohn07 and in academic journals citep:Nyman1999141,Schoen2008,Schoen2010a. Many governments are concerned about health consumption inequality caused by income differences and design policies to make healthcare accessible to low income families citep:Schokkaert2011o.
 
-Second, it streamlines the analysis. With risk aversion as motivation to buy insurance, we need a non-linear (concave) utility function. Further, with risk aversion there is an additional reason why insurers prefer high prices for treatments: it is more attractive for customers to insure an expensive treatment than a cheap one. Both effects make derivations less straightforward while not changing our results.[fn::The appendix introduces a model with only risk aversion to illustrate the difference with our selection framework.]
+Second, it streamlines the analysis. With risk aversion as motivation to buy insurance, we need a non-linear (concave) utility function. 
 
 Each insurer offers two contracts (which can be identical in case of a pooling outcome), each contract aimed at a consumer type. We write the value/utility of the contract for type $k=1,2$ as follows:
 #+name: eq:5
@@ -235,7 +237,6 @@ In which health insurance context does the model explain excessive pricing for t
 In the discussion of equation eqref:eq:ICelasticities we already note that the model does not apply with perfect competition. In that case, there are no elasticity differences between the market segments and the left hand side of equation eqref:eq:ICelasticities equals 0. In this sense, we need insurers with market power for the model to apply. A monopoly insurer faces selection (if health insurance is not mandatory) as well as oligopoly insurers. As long as the functions $q_l(u_l),q_h(u_h)$ are not constants, the model applies. Insurers can distort their contracts to get a more profitable case-mix of insured. 
 
 Finally, there are selection problems for the health insurer if it is not able to risk rate. If insurers can observe risk types and are allowed to price discriminate, the model does not apply. There are no incentive compatibility constraints with risk rating. Hence, we need either unobserved risk types or a community rating requirement. 
-The appendix presents a simple analysis to illustrate that a model with only risk averse consumers (and no selection) cannot easily explain that treatments with price above value are covered by health insurance. 
 
 Summarizing, we introduced a simple model of health insurer competition and showed that it is indeed possible for a pharmaceutical company with a patented drug to sell this at a price that exceeds treatment value. As quoted in the Introduction, some experts claim that prices for some drugs are out of proportion with the value they offer. Although this seems counter-intuitive (insurers should not cover treatments that cost more than the value they create), the model above shows that this can, in fact, happen in equilibrium.
 
@@ -393,48 +394,5 @@ Finally, assuming that consumers stop buying insurance in case the expected valu
 
 * Bibliography
 bibliography:../marginalinnovation.bib
-
-
-@@latex:\newpage@@
-@@latex:\appendix@@
-
-
-
-#+BEGIN_EXPORT latex
-\setcounter{table}{0}
-\renewcommand{\thetable}{\thesection\arabic{table}}
-#+END_EXPORT
-
-
-* Model with risk aversion
-
-In this appendix we consider a model with only risk aversion to understand what the selection model used in the main text adds to a risk aversion model. The idea is that a model with risk aversion (only) can also explain that treatment producers charge a price above the value of their treatment. Intuitively, insurance creates a surplus for the insurer-provider combination that both parties can bargain over. If the treatment supplier has sufficient bargaining power, this can lead to a price above treatment value.
-
-The point of this section is to illustrate that: (i) it is not obvious that a model with a risk averse agent can generate this result and (ii) if it does lead to $p>v$, it does so mainly for treatments that are used by many people. In the Introduction we showed that the evidence for over-pricing is in markets for (very) small patient populations e.g. due to precision medicine.
-
-Consider a simple model with two states of the world: an agent falls ill and needs treatment (probability $\psi \in \langle0,1\rangle$) and the agent is healthy (probability $1-\psi$). In the bad state of the world, the agent's utility is given by $u_b(.)$ and in the good state of the world by $u_g(.)$, where we assume increasing and concave utility in each state of the world: $u'_i > 0, u''_i <0, i=g,b$.
-
-If the agent receives treatment in the bad state her utility equals $u_b(y+v)$ where $y$ denotes the agent's income that is spent on consumption and $v$ the (consumption) value of the treatment. We assume that the treatment has no value in the good state of the world. If there is no insurance, the agent would buy the treatment if and only if $u_b(y+v-p) \geq u_b(y)$ where $p$ denotes the (uninsured) price of the treatment. Clearly, this implies that an uninsured only buys treatment if $p \le v$.
-
-Let $x \in [0,1]$ denote the fraction of treatment covered by insurance. We want to see whether a consumer chooses $x=1$ if $p>v$. That is, a risk averse consumer buys insurance for a treatment with a price in excess of the treatment's value. We assume perfect competition in the health insurance market: $\sigma = \psi x p$. Then utility can be written as:
-#+name: eq:utility
-\begin{equation}
-U(x) = (1-\psi) u_g(y-\sigma) + \psi u_b (y+xv-\sigma)
-\end{equation}
-The first derivative with respect to $x$ can be written as
-#+name: eq:DutilityDx
-\begin{equation}
-\frac{dU}{dx}=-(1-\psi)u'_g(y-\sigma) \psi p + \psi u'_b(y+xv-\sigma)(v-\psi p)
-\end{equation}
-To see whether the agent is willing to buy insurance, consider $dU/dx$ evaluated at $x=0$. In words, starting from no insurance, would the agent be willing to increase $x$ (ultimately to $x=1$):
-#+name: eq:DutilityDxAt0
-\begin{equation}
-\left. \frac{dU}{dx} \right|_{x=0} = \psi u'_g(y) \left( \left(\frac{u'_b}{u'_g} -1 \right) (1-\psi)p + \frac{u'_b}{u'_g} (v-p)  \right)
-\end{equation}
-A natural assumption seems to be that $u'_g(y) \ge u'_b(y)$: the marginal utility of consumption is higher when you are healthy than when you are ill. You can enjoy consumption more when you can travel, visit friends, go skiing than when you are in hospital or at home lying in bed all day. Then the last equation makes clear that $p>v$ implies $dU/dx < 0$ at $x=0$. In words, the consumer does not want to buy health insurance if the treatment features $p>v$.
-
-This is not to argue that it is impossible to write down a model where risk aversion leads to $p>v$. We only illustrate that it is not obvious that risk aversion can explain pricing above value.
-
-If we are willing to assume that $u'_b > u'_g$, we can have $dU/dx >0$ but the equation shows that $dU/dx > 0$ is small for treatments with $\psi$ close to zero. That is, treatments that are only used by small groups of patients are unlikely to be able to claim much of the joint surplus created by risk aversion. But as shown in the Introduction it is for these (very) rare diseases that we see the most "outrageous" prices. A model based on risk aversion cannot explain this observation that payers value rarity. Finally, there is no incentive for pharmaceutical firms to reduce $\psi$ through precision medicine unless this would increase treatment value or reduce costs (which we do not tend to observe in the real world). Therefore, we find the model based on selection in the main text more useful for this analysis than a model based on risk-aversion.
 
 
